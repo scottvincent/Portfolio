@@ -41,6 +41,13 @@
         font-size: 2.7rem;
         letter-spacing: -0.1rem;
       }
+      .sticky-header {
+          font-size: 8vw;
+          color: rgba(0,0,0,0.1);
+          position: fixed;
+          top: 0;
+          z-index: -1;
+      }
       h2{
         font-size: 2.3rem;
         line-height: 1;
@@ -53,8 +60,9 @@
         height: 100vh;
       }
       header{
-        background: rgba(0,0,0,0.1);
+        background-color: #212121;
         width: 15rem;
+        overflow: auto;
       }
       main{
         flex-grow: 1;
@@ -88,19 +96,52 @@
         text-align: center;
       }
       nav ul li a{
+        color: #fff;
         padding: 1em;
         text-transform: uppercase;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.125em;
         display: block;
         text-decoration: none;
         font-weight: lighter;
         
       }
-      footer, .about, .contact{
+      footer, .about, .contact, .project-info{
         max-width:1024px;
         //margin:0px auto;
         padding: 1rem 1rem;
         //display: none;
+      }
+      .projects{
+        background-size: 70%;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        height: 100vh;
+      }
+      .ex1{
+        background-image: url("img/ex1.png");
+      }
+      .ex2{
+        background-image: url("img/ex2.png");
+      }
+      .ex3{
+        background-image: url("img/ex3.png");
+      }
+      .ex4{
+        background-image: url("img/ex4.png");
+      }
+      .ex5{
+        background-image: url("img/ex5.png");
+      }
+      .ex6{
+        background-image: url("img/ex6.png");
+      }
+      .project-info{
+        background: rgba(255,255,255,0.8);
+        max-width: 768px;
+        position: absolute;
+        bottom: 0;
       }
       .contact-flex{
         display: flex;
@@ -155,25 +196,101 @@
         <a href="index.html">
           <amp-img class="logo" layout="responsive" src="http://placehold.it/480x300" width="480" height="300"></amp-img>
         </a>
+        <p></p>
         <ul>
-          <li><a href="#">Section 1</a></li>
-          <li><a href="#">Section 2</a></li>
-          <li><a href="#">Section 3</a></li>
-          <li><a href="#">Section 4</a></li>
+          <li><a href="#">Story</a></li>
+          <li><a href="#">Web Projects</a></li>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Music</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
      
-        <div class="about-container">
+        <div class="about-container" style="display: none">
           <div class="about">
-            <h2>ABOUT</h2>
+            <h2>Story</h2>
             <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
           </div>
         </div>
+        <div class="web-projects">
+        <h1 class="sticky-header">Web Projects</h1>
+        <div class="projects ex1">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <!-- start slipsum code -->
 
-        <div class="contact">
+<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+
+<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+
+<!-- end slipsum code -->
+
+          </div>
+        </div>
+        <div class="projects ex2">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <!-- start slipsum code -->
+
+<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+
+<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+
+<!-- end slipsum code -->
+          </div>
+        </div>
+        <div class="projects ex3">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <!-- start slipsum code -->
+
+<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+
+<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+
+<!-- end slipsum code -->
+          </div>
+        </div>
+        <div class="projects ex4">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <!-- start slipsum code -->
+
+<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+
+<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+
+<!-- end slipsum code -->
+          </div>
+        </div>
+         <div class="projects ex5">
+          <div class="project-info">
+            <h1>Project 5</h1>
+            <!-- start slipsum code -->
+
+<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+
+<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+
+<!-- end slipsum code -->
+          </div>
+        </div>
+         <div class="projects ex6">
+          <div class="project-info">
+            <h1>Project 6</h1><!-- start slipsum code -->
+
+<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+
+<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+
+<!-- end slipsum code -->
+          </div>
+        </div>
+        </div>
+
+        <div class="contact" style="display: none">
           <h2>CONTACT</h2>
           <p>Get in touch by emailing me</p>
           <div class="contact-flex">
@@ -185,7 +302,7 @@
         </div>
     
     
-        <footer>
+        <footer style="display: none;">
           &copy; 2016. All Rights Reserved 
           <div class="social">
             <a href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a> &nbsp;&nbsp;
