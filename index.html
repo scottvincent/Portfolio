@@ -21,7 +21,7 @@
   </script>
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-  <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400' rel='stylesheet' type='text/css'>
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
   <style amp-custom>
@@ -30,9 +30,15 @@
       margin: 0;
       line-height: 1.6;
       color: #2D2E2F;
+      background: rgb(248,153,36);
+      background: -moz-linear-gradient(-45deg,  rgba(248,153,36,1) 0%, rgba(242,70,67,1) 100%);
+      background: -webkit-linear-gradient(-45deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
+      background: linear-gradient(135deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
+
     }  
     h1,h2,h3{
-      font-family: "Bungee", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+      font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       line-height: 1.2;
       color: #3d3e40;
       font-weight: 400;
@@ -61,17 +67,8 @@
       height: 100vh;
     }
     header{
-      background-color: #d5d5d5;
       width: 15rem;
       overflow: auto;
-      background: rgb(248,153,36);
-      background: -moz-linear-gradient(-45deg,  rgba(248,153,36,1) 0%, rgba(242,70,67,1) 100%);
-      background: -webkit-linear-gradient(-45deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
-      background: linear-gradient(135deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
-
-
-
     }
     main{
       flex-grow: 1;
@@ -116,16 +113,17 @@
       font-weight: lighter;
 
     }
-    footer, .about, .contact, .project-info{
+    .story-container{
+      display: none;
+    }
+    footer, .story, .contact, .project-info{
       max-width:1024px;
       //margin:0px auto;
       padding: 1rem 1rem;
       //display: none;
-      background: #fff;
     }
-    .about-container, .projects{
-      
-      border-bottom: 0.5em solid #F89924;
+    .projects{
+      border-bottom: 0.9rem solid #fff;
     }
     .web-projects{
       position: relative;
@@ -226,10 +224,10 @@
 
     <main>
 
-      <div class="about-container">
-        <div class="about">
+      <div class="story-container">
+        <div class="story">
           <h2>Story</h2>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>  
         </div>
       </div>
 
@@ -237,20 +235,17 @@
         <h1 class="sticky-header">Web Projects</h1>
         <div class="projects ex1">
           <div class="project-info">
-            <h1>Project 1</h1>
-            <!-- start slipsum code -->
+            <h1>Scott Vincent Design Portfolio</h1>
 
-            <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+            <p>The site you're currently on is an exercise in lightweight web design. Utilizing Google's Accelerated Mobile Pages, it ensures incredibly quick page load times. Regular web pages in this day and age are getting lazy when adding large libraries and dependancies to accomplish fairly simple tasks. Bloated and inconsiderate web pages currently are the norm for users to visit.</p>
 
-            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
-
-            <!-- end slipsum code -->
+            <p>This site loads less than <b>2.0MB</b> onto your device to deliver all its information. Along with the shear speed in which it loads, it still takes into consideration the browser size and device type to deliever a responsive user friendly experience regardless of how you got here.</p>
 
           </div>
         </div>
         <div class="projects ex2">
           <div class="project-info">
-            <h1>Project 2</h1>
+            <h1>Media Sonar</h1>
             <!-- start slipsum code -->
 
             <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
@@ -262,7 +257,7 @@
         </div>
         <div class="projects ex3">
           <div class="project-info">
-            <h1>Project 3</h1>
+            <h1>Baitclick</h1>
             <!-- start slipsum code -->
 
             <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
@@ -274,7 +269,7 @@
         </div>
         <div class="projects ex4">
           <div class="project-info">
-            <h1>Project 4</h1>
+            <h1>Diply</h1>
             <!-- start slipsum code -->
 
             <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
@@ -286,7 +281,7 @@
         </div>
         <div class="projects ex5">
           <div class="project-info">
-            <h1>Project 5</h1>
+            <h1>G2PO</h1>
             <!-- start slipsum code -->
 
             <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
@@ -298,7 +293,7 @@
         </div>
         <div class="projects ex6">
           <div class="project-info">
-            <h1>Project 6</h1><!-- start slipsum code -->
+            <h1>Aura at College Park</h1><!-- start slipsum code -->
 
             <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
 
@@ -310,7 +305,7 @@
       </div>
 
       <div class="contact">
-        <h2>CONTACT</h2>
+        <h2>Contact</h2>
         <p>Get in touch by emailing me</p>
         <div class="contact-flex">
           <div class="contact-info">username@gmail.com<br><span>EMAIL</span></div>
