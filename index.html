@@ -183,6 +183,9 @@
       padding: 10vw 1rem 1rem 1rem;
       position: relative;      
     }
+    .section-text{
+      padding: 0 1rem 1rem;
+    }
     .projects{
       background-size: 70%;
       background-position: center right;
@@ -215,6 +218,7 @@
       max-width: 768px;
       position: absolute;
       bottom: 0;
+      padding: 1rem;
     }
 
     /*---------------------- Phone Styles -------------------*/
@@ -222,6 +226,7 @@
       .flex-container{
         display: block;
         height: auto;
+        min-height: 100vh;
       }
       .left-container{
         width: auto;
@@ -247,6 +252,8 @@
       .panel{
         height: 0;
         overflow: hidden;
+        margin-left: -100vw;
+
       }
       .panel, .panel:target{
         max-height: none;
@@ -257,13 +264,28 @@
       .panel:target{
         height: auto;
         overflow: initial;
+        margin-left: 0;
+        transition: margin-left 0.3s ease-in-out, background 0.3s ease-out .3s;
       }
       .section-container{
-        padding: 1rem;
+        padding: 1rem 0;
       }
       .sticky-header{
         position:relative;
         font-size: 2.7rem;
+        padding: 0 1rem;
+      }
+      .projects{
+        background-attachment: initial;
+        height: auto;
+        background-position: top center;
+        padding-top: 50vw;
+      }
+      .project-info{
+        position: relative;
+      }
+      .section-text{
+        padding: 1rem;
       }
     }
   </style>
@@ -307,37 +329,39 @@
       <div class="panel" id="story">
         <div class="section-container">
           <h1 class="sticky-header">Story</h1>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+          <div class="section-text">
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+          </div>
         </div>
       </div>
 
@@ -411,92 +435,96 @@
       <div class="panel" id="branding">
         <div class="section-container">
           <h1 class="sticky-header">Branding</h1>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
-          <p>List of branding stuff I've done</p>
+          <div class="section-text">
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+            <p>List of branding stuff I've done</p>
+          </div>
         </div>
       </div>  
 
       <div class="panel" id="music">
         <div class="section-container">
           <h1 class="sticky-header">Music</h1>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
-          <p>List of music stuff I've done</p>
+          <div class="section-text">
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+            <p>List of music stuff I've done</p>
+          </div>
         </div>
       </div> 
 
