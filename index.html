@@ -29,13 +29,14 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       margin: 0;
       line-height: 1.6;
+      font-size: 14px;
       color: #2D2E2F;
-      background: rgb(248,153,36);
-      background: -moz-linear-gradient(-45deg,  rgba(248,153,36,1) 0%, rgba(242,70,67,1) 100%);
-      background: -webkit-linear-gradient(-45deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
-      background: linear-gradient(135deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
-
+      background: #777;
+     background: rgb(248,153,36);
+     background: -moz-linear-gradient(-45deg,  rgba(248,153,36,1) 0%, rgba(242,70,67,1) 100%);
+     background: -webkit-linear-gradient(-45deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
+     background: linear-gradient(135deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
     }  
     h1,h2,h3{
       font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
@@ -48,38 +49,9 @@
       font-size: 2.7rem;
       letter-spacing: -0.1rem;
     }
-    .sticky-header {
-      font-size: 8vw;
-      color: rgba(61,62,64,0.1);
-      position: fixed;
-      top: 0;
-      z-index: -1;
-    }
     h2{
       font-size: 2.3rem;
       line-height: 1;
-    }
-    .flex-container{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: stretch;
-      height: 100vh;
-    }
-    header{
-      width: 15rem;
-      overflow: auto;
-    }
-    main{
-      flex-grow: 1;
-      max-height: 100vh;
-      overflow: auto;
-    }
-    footer{
-      font-size: 0.8rem;
-    }
-    footer a{
-      text-decoration: none;
     }
     a{
       color: #4285f4;
@@ -91,42 +63,108 @@
       border: none;
       border-top-width: 0.2rem;
     }
+    .flex-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      height: 100vh;
+    }
+
+    /*---------------------- Navigation Styles -------------------*/
+    .left-container{
+      width: 16rem;
+      //background: rgb(248,153,36);
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      color: #fff;
+      text-align: center;
+    }
+    .left-container a{
+      color: rgba(0,0,0,0.5);
+      text-decoration: none;
+    }
+    .left-container a:hover{
+      color: #fff;
+    }
+    header{
+      flex-grow: 2;
+    }
     .logo{
-      max-width: 480px;
+      max-width: 256px;
       margin: 0 auto;
     }
     nav ul{
       list-style-type: none;
       padding: 0;
       font-size: 1.2rem;
-      text-align: center;
-      margin-top: 0;
-      border-top: 0.9em solid #Fff;
+      margin: 0;
+      border-top: 1rem solid #fff;
     }
     nav ul li a{
-      color: #fff;
-      padding: 1em;
+      padding: 1rem;
       text-transform: uppercase;
       letter-spacing: 0.125em;
       display: block;
-      text-decoration: none;
-      font-weight: lighter;
+    }
+    .contact-toggle{
+      display: none;
+    }
+    .contact{
+      overflow: hidden;
 
+    }
+    .contact-info{
+      font-size: 1.25rem;
+      text-decoration: none;
+      font-weight: 400;
+      padding: 0.667rem 0;
+    }
+    .city{
+      font-size: 0.667rem;
+      letter-spacing: 0.16em;
+      padding-bottom: 0.667rem;
+    }
+    .social{
+      font-weight: bolder;
+      font-size: 0.7rem;
+      padding-bottom: 0.667rem;
+    }
+    footer{
+      font-size: 0.7rem;
+      padding-bottom: 1rem;
+    }
+
+
+    /*---------------------- Body Styles -------------------*/
+    main{
+      flex-grow: 1;
+      max-height: 100vh;
+      overflow: auto;
+    }
+    .sticky-header {
+      font-size: 8vw;
+      color: rgba(61,62,64,0.1);
+      position: fixed;
+      top: 0;
+      z-index: -1;
     }
     .story-container{
       display: none;
     }
-    footer, .story, .contact, .project-info{
+    .story, .project-info{
       max-width:1024px;
-      //margin:0px auto;
       padding: 1rem 1rem;
-      //display: none;
     }
     .projects{
       border-bottom: 0.9rem solid #fff;
     }
     .web-projects{
       position: relative;
+      display: none;
     }
     .projects{
       background-size: 70%;
@@ -160,46 +198,35 @@
       position: absolute;
       bottom: 0;
     }
-    .contact-flex{
-      display: flex;
-      -webkit-flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .contact-info{
-      text-align: center;
-      display: inline-block;
-      min-width: 25%;
-      font-size: 1.2rem;
-      text-decoration: none;
-      font-weight: 700;
-    }
-    .contact-info span{
-      font-size: 0.8rem;
-      font-weight: 700;
-    }
-    .social{
-      float: right;
-    }
+
+    /*---------------------- Phone Styles -------------------*/
     @media (max-width: 768px){
       .flex-container{
         display: block;
       }
-      header{
+      .left-container{
         width: auto;
+        
+      }
+      nav ul{
+        font-size: 1rem;
+        border-bottom: 1rem solid #fff;
+       
       }
       nav ul li{
         display: inline-block;
       }
+      .contact-toggle{
+        display: inline-block;
+      }
+      .contact{
+        height: 0;
+      }
+      .contact:target{
+        height: auto;
+      }
       main{
         overflow: initial;
-      }
-
-      footer{
-        text-align: center;
-      }
-      .social{
-        float: none;
       }
     }
   </style>
@@ -208,19 +235,41 @@
 </head>
 <body>
   <div class="flex-container">
-    <header>
-      <nav>
-        <a href="index.html">
-          <amp-img class="logo" layout="responsive" src="sv-logo-colour.png" width="480" height="352"></amp-img>
-        </a>
-        <ul>
-          <li><a href="#">Story</a></li>
-          <li><a href="#">Web Projects</a></li>
-          <li><a href="#">Branding</a></li>
-          <li><a href="#">Music</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="left-container">
+      <header>
+        <nav>
+          <a href="index.html">
+            <amp-img class="logo" layout="responsive" src="sv-logo-colour.png" width="480" height="352"></amp-img>
+          </a>
+          <ul>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Web Projects</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Music</a></li>
+            <li class="contact-toggle"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    
+      <div class="contact" id="contact">
+          <div class="contact-info">username@gmail.com</div>
+          <div class="city">LONDON, ONTARIO, CANADA</div>
+          <div class="social">
+            <a href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a> &nbsp;&nbsp;
+            <a href="https://twitter.com/CmdOptEsc" target="_blank">Twitter</a> &nbsp;&nbsp;
+            <a href="http://www.facebook.com/scottvincent" target="_blank">Facebook</a> &nbsp;&nbsp;
+            <a href="http://www.instagram.com/scott.v" target="_blank">Instagram</a>
+          </div>
+          <footer>
+            &copy; 2016. All Rights Reserved 
+          </footer>
+      </div>
+
+
+        
+    
+    </div>
 
     <main>
 
@@ -294,29 +343,7 @@
             <!-- end slipsum code -->
           </div>
         </div>
-      </div>
-
-      <div class="contact">
-        <h2>Contact</h2>
-        <p>Get in touch by emailing me</p>
-        <div class="contact-flex">
-          <div class="contact-info">username@gmail.com<br><span>EMAIL</span></div>
-          <div class="contact-info">519.555.5555<br><span>PHONE</span></div>
-          <div class="contact-info">London, Ontario<br><span>CANADA</span></div>
-
-        </div>
-      </div>
-
-
-      <footer style="display: none;">
-        &copy; 2016. All Rights Reserved 
-        <div class="social">
-          <a href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a> &nbsp;&nbsp;
-          <a href="https://twitter.com/CmdOptEsc" target="_blank">Twitter</a> &nbsp;&nbsp;
-          <a href="http://www.facebook.com/scottvincent" target="_blank">Facebook</a>
-        </div>
-      </footer>  
-      
+      </div>      
     </main>
   </div>
 </body>
