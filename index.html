@@ -30,12 +30,83 @@
       font-size: 14px;
       color: #2D2E2F;
       background: #777;
-      background: rgb(248,153,36);
-      background: -moz-linear-gradient(-45deg,  rgba(248,153,36,1) 0%, rgba(242,70,67,1) 100%);
-      background: -webkit-linear-gradient(-45deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
-      background: linear-gradient(135deg,  rgba(248,153,36,1) 0%,rgba(242,70,67,1) 100%);
+      transition: all 0.3s ease-in-out;
+    } 
+    #branding, #web, #music{
+      background: transparent;
+      transition: all 0.3s ease-in-out;
+    } 
+    #story:target{
+      background: #f24643;
+      background:    -moz-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
+      background: -webkit-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
+      background:         linear-gradient(135deg, #f89924 0%,#f24643 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
-    }  
+      transition: all 0.3s ease-in-out;
+    }
+    #branding:target{
+      background: #39b54a;
+      background:    -moz-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
+      background: -webkit-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
+      background:         linear-gradient(135deg,  #39b54a 1%,#29abe2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b54a', endColorstr='#29abe2',GradientType=1 );
+      transition: all 0.3s ease-in-out;
+    }
+    #web:target{
+      background: #ae29e2;
+      background:    -moz-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
+      background: -webkit-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
+      background:         linear-gradient(135deg,  #ae29e2 0%,#f24643 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae29e2', endColorstr='#f24643',GradientType=1 );
+      transition: all 0.3s ease-in-out;
+    }
+    #music:target{
+      background: #29abe2;
+      background:    -moz-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
+      background: -webkit-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
+      background:         linear-gradient(135deg,  #29abe2 0%,#ae29e2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29abe2', endColorstr='#ae29e2',GradientType=1 );
+      transition: all 0.3s ease-in-out;
+    }
+
+    /*
+      Yellow: #f2dc43
+      Green:  #39b54a
+      Blue:   #29abe2
+      Purple: #ae29e2
+      Red:    #f24643
+      Orange: #f89924
+    */
+    .greenblue {
+      background: #39b54a;
+      background:    -moz-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
+      background: -webkit-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
+      background:         linear-gradient(135deg,  #39b54a 1%,#29abe2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b54a', endColorstr='#29abe2',GradientType=1 );
+    }
+    .bluepurple {
+      background: #29abe2;
+      background:    -moz-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
+      background: -webkit-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
+      background:         linear-gradient(135deg,  #29abe2 0%,#ae29e2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29abe2', endColorstr='#ae29e2',GradientType=1 );
+    }
+    .purplered {
+      background: #ae29e2;
+      background:    -moz-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
+      background: -webkit-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
+      background:         linear-gradient(135deg,  #ae29e2 0%,#f24643 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae29e2', endColorstr='#f24643',GradientType=1 );
+    }
+
+    .orangered {
+      background: #f24643;
+      background:    -moz-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
+      background: -webkit-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
+      background:         linear-gradient(135deg, #f89924 0%,#f24643 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
+    }
+    
     h1,h2,h3{
       font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       line-height: 1.2;
@@ -139,28 +210,33 @@
 
 
     /*---------------------- Body Styles -------------------*/
-    .panel, .panel:target ~ #story{
+    .right-container{
       max-height: 100vh;
-      position: absolute;
-      transition: opacity 0.3s ease-in-out;
-      //background: rgba(255,255,255,0.8);
+      flex-grow: 1;
       height: 100vh;
+      overflow: auto;
+    }
+    .panel, #branding:target .story, #web:target .story, #music:target .story{
+      transition: opacity 0.3s ease-in-out;
+      height: 0;
       z-index: 0;
       opacity: 0;
-      width: 0;
       overflow: hidden;
       background: rgb(248,153,36);
+      transition: opacity 0.3s ease-in-out ;
     }
-    #story, .panel:target{
+    #branding:target .branding,
+    #web:target .web,
+    #music:target .music,
+    .story{
       position: relative;
       z-index: 3;
       height: auto;
-      width: auto;
+      width: 100%;
       opacity: 1;
       overflow: auto;
-      flex-grow: 1;
       background: transparent;
-      transition: opacity 0.3s ease-in-out 0.3s;
+      transition: opacity 0.3s ease-in-out 0.1s;
     }
 
     .sticky-header {
@@ -222,7 +298,11 @@
       }
       .left-container{
         width: auto;
-        
+      }
+      .right-container{
+        width: auto;
+        height: auto;
+        max-height: none;
       }
       nav ul{
         font-size: 1rem;
@@ -241,17 +321,24 @@
       .contact:target{
         height: auto;
       }
-      .panel{
+      .panel, #branding:target .story, #web:target .story, #music:target .story{
         height: 0;
         overflow: hidden;
 
       }
-      .panel, .panel:target{
+      .panel, 
+      #branding:target .branding,
+      #web:target .web,
+      #music:target .music,
+      .story{
         max-height: none;
         width: 100%;
         position: relative;
       }
-      .panel:target{
+      #branding:target .branding,
+      #web:target .web,
+      #music:target .music,
+      .story{
         height: auto;
         overflow: initial;
       }
@@ -281,7 +368,12 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 <body>
-  <div class="flex-container">
+<div id="story" class="orangered">
+<div id="web" class="greenblue">
+<div id="branding" class="purplered">
+<div id="music" class="bluepurple">
+
+<div class="flex-container">
     <div class="left-container">
       <header>
         <nav>
@@ -312,8 +404,8 @@
           </footer>
       </div> 
     </div>
-
-      <div class="panel" id="web">
+    <div class="right-container">
+      <div class="panel web">
         <div class="section-container">
           <h1 class="sticky-header">Web Projects</h1>
           <div class="projects ex1">
@@ -380,7 +472,7 @@
         </div>
       </div> 
 
-      <div class="panel" id="branding">
+      <div class="panel branding">
         <div class="section-container">
           <h1 class="sticky-header">Branding</h1>
           <div class="section-text">
@@ -404,7 +496,7 @@
         </div>
       </div>  
 
-      <div class="panel" id="music">
+      <div class="panel music">
         <div class="section-container">
           <h1 class="sticky-header">Music</h1>
           <div class="section-text">
@@ -476,7 +568,7 @@
         </div>
       </div> 
 
-      <div class="panel" id="story">
+      <div class="panel story">
         <div class="section-container">
           <h1 class="sticky-header">Story</h1>
           <div class="section-text">
@@ -514,8 +606,10 @@
           </div>
         </div>
       </div>
-
+    </div>
 
   </div>
+
+  </div></div></div></div>
 </body>
 </html>
