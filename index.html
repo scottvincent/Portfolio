@@ -139,42 +139,36 @@
 
 
     /*---------------------- Body Styles -------------------*/
-    .panel{
-      margin-top: 100vw;
+    .panel, .panel:target ~ #story{
       max-height: 100vh;
       position: absolute;
-      transition: margin-top 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
       //background: rgba(255,255,255,0.8);
       height: 100vh;
       z-index: 0;
+      opacity: 0;
       width: 0;
       overflow: hidden;
       background: rgb(248,153,36);
     }
-    .panel:target{
-      margin-top: 0;
+    #story, .panel:target{
       position: relative;
       z-index: 3;
       height: auto;
       width: auto;
+      opacity: 1;
       overflow: auto;
       flex-grow: 1;
       background: transparent;
-      transition: margin-top 0.3s ease-in-out, background 0.3s ease-out .3s;
+      transition: opacity 0.3s ease-in-out 0.3s;
     }
 
     .sticky-header {
       font-size: 8vw;
-      color: rgba(61,62,64,0.1);
+      color: rgba(61,62,64,0.2);
       position: fixed;
-      opacity: 0;
       top: 0;
       z-index: -1;
-      transition: opacity .3s ease-out .5s;
-    }
-    .panel:target .sticky-header{
-      opacity: 1;
-      transition: opacity .3s ease-out 0.5s;
     }
     .section-container{
       //max-width:1024px;
@@ -250,20 +244,16 @@
       .panel{
         height: 0;
         overflow: hidden;
-        margin-left: -100vw;
 
       }
       .panel, .panel:target{
         max-height: none;
         width: 100%;
-        margin-top: 0;
         position: relative;
       }
       .panel:target{
         height: auto;
         overflow: initial;
-        margin-left: 0;
-        transition: margin-left 0.3s ease-in-out, background 0.3s ease-out .3s;
       }
       .section-container{
         padding: 1rem 0;
@@ -322,46 +312,6 @@
           </footer>
       </div> 
     </div>
-
-    
-      <div class="panel" id="story">
-        <div class="section-container">
-          <h1 class="sticky-header">Story</h1>
-          <div class="section-text">
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-          </div>
-        </div>
-      </div>
 
       <div class="panel" id="web">
         <div class="section-container">
@@ -525,6 +475,46 @@
           </div>
         </div>
       </div> 
+
+      <div class="panel" id="story">
+        <div class="section-container">
+          <h1 class="sticky-header">Story</h1>
+          <div class="section-text">
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+          </div>
+        </div>
+      </div>
+
 
   </div>
 </body>
