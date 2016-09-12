@@ -44,7 +44,6 @@
       background: -moz-linear-gradient(-45deg,  #f24744 0%, #f89924 100%);
       background: -webkit-linear-gradient(-45deg,  #f24744 0%,#f89924 100%);
       background: linear-gradient(135deg,  #f24744 0%,#f89924 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24744', endColorstr='#f89924',GradientType=1 );
       transition: all 0.3s ease-in-out;
     } 
     #branding, #web, #music, #contact{
@@ -56,37 +55,30 @@
       background: -moz-linear-gradient(-45deg,  #f24744 0%, #f89924 100%);
       background: -webkit-linear-gradient(-45deg,  #f24744 0%,#f89924 100%);
       background: linear-gradient(135deg,  #f24744 0%,#f89924 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24744', endColorstr='#f89924',GradientType=1 );
     }
     #branding:target{
       background: #33b846;
       background: -moz-linear-gradient(-45deg,  #33b846 0%, #44bef2 100%);
       background: -webkit-linear-gradient(-45deg,  #33b846 0%,#44bef2 100%);
       background: linear-gradient(135deg,  #33b846 0%,#44bef2 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33b846', endColorstr='#44bef2',GradientType=1 );
-
     }
     #web:target{
       background: #44bef2;
       background: -moz-linear-gradient(-45deg,  #44bef2 0%, #c144f2 100%);
       background: -webkit-linear-gradient(-45deg,  #44bef2 0%,#c144f2 100%);
       background: linear-gradient(135deg,  #44bef2 0%,#c144f2 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44bef2', endColorstr='#c144f2',GradientType=1 );
-
     }
     #music:target{
       background: #c144f2;
       background: -moz-linear-gradient(-45deg,  #c144f2 0%, #f24744 100%);
       background: -webkit-linear-gradient(-45deg,  #c144f2 0%,#f24744 100%);
       background: linear-gradient(135deg,  #c144f2 0%,#f24744 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c144f2', endColorstr='#f24744',GradientType=1 );
     }
     #contact:target {
       background: #f2e744;
       background: -moz-linear-gradient(-45deg,  #f2e744 0%, #33b846 100%);
       background: -webkit-linear-gradient(-45deg,  #f2e744 0%,#33b846 100%);
       background: linear-gradient(135deg,  #f2e744 0%,#33b846 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e744', endColorstr='#33b846',GradientType=1 );
     }
 
     h1,h2,h3{
@@ -222,15 +214,14 @@
     }
 
     .sticky-header {
-      font-size: 8vw;
+      font-size: 9vmin;
       color: rgba(61,62,64,0.2);
       position: fixed;
       top: 0;
       z-index: -1;
     }
     .section-container{
-      //max-width:1024px;
-      padding: 10vw 1rem 1rem 1rem;
+      padding: 12vmin 1rem 1rem 1rem;
       position: relative;      
     }
     .section-text{
@@ -242,26 +233,26 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
       position: relative;
-      height: 100vh;
+      height: calc(100vh - 12vmin - 0.9rem);
       border-bottom: 0.9rem solid #fff;
     }
     .ex1{
-      background-image: url("img/ex1.png");
+      background-image: url("img/scottvincent.png");
     }
     .ex2{
-      background-image: url("img/ex2.png");
+      background-image: url("img/mediasonar.png");
     }
     .ex3{
-      background-image: url("img/ex3.png");
+      background-image: url("img/diply.png");
     }
     .ex4{
-      background-image: url("img/ex4.png");
+      background-image: url("img/baitclick.png");
     }
     .ex5{
-      background-image: url("img/ex5.png");
+      background-image: url("img/aura.png");
     }
     .ex6{
-      background-image: url("img/ex6.png");
+      background-image: url("img/g2po.png");
     }
     .project-info{
       background: rgba(255,255,255,0.8);
@@ -269,6 +260,10 @@
       position: absolute;
       bottom: 0;
       padding: 1rem;
+    }
+    .project-info h1{
+      font-size: 7vmin;
+}
     }
 
     /*---------------------- Phone Styles -------------------*/
@@ -329,7 +324,6 @@
       }
       .sticky-header{
         position:relative;
-        font-size: 2.7rem;
         padding: 0 1rem;
       }
       .projects{
@@ -337,6 +331,7 @@
         height: auto;
         background-position: top center;
         padding-top: 50vw;
+        background-size: contain;
       }
       .project-info{
         position: relative;
@@ -374,7 +369,7 @@
       </header>
 
       <div class="contact">
-          <div class="contact-info">username@gmail.com</div>
+          <div class="contact-info">contact@scottvincent.ca</div>
           <div class="city">LONDON, ONTARIO, CANADA</div>
           <div class="social">
             <a href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a> &nbsp;&nbsp;
@@ -393,7 +388,7 @@
           <h1 class="sticky-header">Web Projects</h1>
           <div class="projects ex1">
             <div class="project-info">
-              <h1>Scott Vincent Design Portfolio</h1>
+              <h1>Scott Vincent Design</h1>
 
               <p>The site you're currently on is an exercise in lightweight web design. Utilizing Google's Accelerated Mobile Pages guidelines, it ensures incredibly quick page load times. Regular web pages in this day and age are getting lazy when adding large libraries and heavy dependancies to accomplish fairly simple tasks. Bloated and inconsiderate web pages currently are the norm for users to visit.</p>
 
