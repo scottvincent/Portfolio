@@ -23,6 +23,16 @@
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400' rel='stylesheet' type='text/css'>
   <style amp-custom>
+
+    /* Color Palette
+      Yellow: #F2E744
+      Green:  #33B846
+      Blue:   #44BEF2
+      Purple: #C144F2
+      Red:    #F24744
+      Orange: #F89924
+    */ 
+
     body{
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       margin: 0;
@@ -30,83 +40,55 @@
       font-size: 14px;
       color: #2D2E2F;
       background: #777;
+      background: #f24744;
+      background: -moz-linear-gradient(-45deg,  #f24744 0%, #f89924 100%);
+      background: -webkit-linear-gradient(-45deg,  #f24744 0%,#f89924 100%);
+      background: linear-gradient(135deg,  #f24744 0%,#f89924 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24744', endColorstr='#f89924',GradientType=1 );
       transition: all 0.3s ease-in-out;
     } 
-    #branding, #web, #music{
+    #branding, #web, #music, #contact{
       background: transparent;
       transition: all 0.3s ease-in-out;
     } 
-    #story:target{
-      background: #f24643;
-      background:    -moz-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
-      background: -webkit-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
-      background:         linear-gradient(135deg, #f89924 0%,#f24643 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
-      transition: all 0.3s ease-in-out;
+    #story:target {
+      background: #f24744;
+      background: -moz-linear-gradient(-45deg,  #f24744 0%, #f89924 100%);
+      background: -webkit-linear-gradient(-45deg,  #f24744 0%,#f89924 100%);
+      background: linear-gradient(135deg,  #f24744 0%,#f89924 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24744', endColorstr='#f89924',GradientType=1 );
     }
     #branding:target{
-      background: #39b54a;
-      background:    -moz-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
-      background: -webkit-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
-      background:         linear-gradient(135deg,  #39b54a 1%,#29abe2 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b54a', endColorstr='#29abe2',GradientType=1 );
-      transition: all 0.3s ease-in-out;
+      background: #33b846;
+      background: -moz-linear-gradient(-45deg,  #33b846 0%, #44bef2 100%);
+      background: -webkit-linear-gradient(-45deg,  #33b846 0%,#44bef2 100%);
+      background: linear-gradient(135deg,  #33b846 0%,#44bef2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33b846', endColorstr='#44bef2',GradientType=1 );
+
     }
     #web:target{
-      background: #ae29e2;
-      background:    -moz-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
-      background: -webkit-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
-      background:         linear-gradient(135deg,  #ae29e2 0%,#f24643 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae29e2', endColorstr='#f24643',GradientType=1 );
-      transition: all 0.3s ease-in-out;
+      background: #44bef2;
+      background: -moz-linear-gradient(-45deg,  #44bef2 0%, #c144f2 100%);
+      background: -webkit-linear-gradient(-45deg,  #44bef2 0%,#c144f2 100%);
+      background: linear-gradient(135deg,  #44bef2 0%,#c144f2 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44bef2', endColorstr='#c144f2',GradientType=1 );
+
     }
     #music:target{
-      background: #29abe2;
-      background:    -moz-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
-      background: -webkit-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
-      background:         linear-gradient(135deg,  #29abe2 0%,#ae29e2 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29abe2', endColorstr='#ae29e2',GradientType=1 );
-      transition: all 0.3s ease-in-out;
+      background: #c144f2;
+      background: -moz-linear-gradient(-45deg,  #c144f2 0%, #f24744 100%);
+      background: -webkit-linear-gradient(-45deg,  #c144f2 0%,#f24744 100%);
+      background: linear-gradient(135deg,  #c144f2 0%,#f24744 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c144f2', endColorstr='#f24744',GradientType=1 );
+    }
+    #contact:target {
+      background: #f2e744;
+      background: -moz-linear-gradient(-45deg,  #f2e744 0%, #33b846 100%);
+      background: -webkit-linear-gradient(-45deg,  #f2e744 0%,#33b846 100%);
+      background: linear-gradient(135deg,  #f2e744 0%,#33b846 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e744', endColorstr='#33b846',GradientType=1 );
     }
 
-    /*
-      Yellow: #f2dc43
-      Green:  #39b54a
-      Blue:   #29abe2
-      Purple: #ae29e2
-      Red:    #f24643
-      Orange: #f89924
-    */
-    .greenblue {
-      background: #39b54a;
-      background:    -moz-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
-      background: -webkit-linear-gradient(-45deg,  #39b54a 1%,#29abe2 100%);
-      background:         linear-gradient(135deg,  #39b54a 1%,#29abe2 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#39b54a', endColorstr='#29abe2',GradientType=1 );
-    }
-    .bluepurple {
-      background: #29abe2;
-      background:    -moz-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
-      background: -webkit-linear-gradient(-45deg,  #29abe2 0%,#ae29e2 100%);
-      background:         linear-gradient(135deg,  #29abe2 0%,#ae29e2 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29abe2', endColorstr='#ae29e2',GradientType=1 );
-    }
-    .purplered {
-      background: #ae29e2;
-      background:    -moz-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
-      background: -webkit-linear-gradient(-45deg,  #ae29e2 0%,#f24643 100%);
-      background:         linear-gradient(135deg,  #ae29e2 0%,#f24643 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae29e2', endColorstr='#f24643',GradientType=1 );
-    }
-
-    .orangered {
-      background: #f24643;
-      background:    -moz-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
-      background: -webkit-linear-gradient(-45deg, #f89924 0%,#f24643 100%);
-      background:         linear-gradient(135deg, #f89924 0%,#f24643 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f89924', endColorstr='#f24643',GradientType=1 );
-    }
-    
     h1,h2,h3{
       font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       line-height: 1.2;
@@ -216,7 +198,7 @@
       height: 100vh;
       overflow: auto;
     }
-    .panel, #branding:target .story, #web:target .story, #music:target .story{
+    .panel, #contact:target .story, #branding:target .story, #web:target .story, #music:target .story{
       transition: opacity 0.3s ease-in-out;
       height: 0;
       z-index: 0;
@@ -318,7 +300,7 @@
       .contact{
         height: 0;
       }
-      .contact:target{
+      #contact:target .contact{
         height: auto;
       }
       .panel, #branding:target .story, #web:target .story, #music:target .story{
@@ -368,10 +350,11 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 <body>
-<div id="story" class="orangered">
-<div id="web" class="greenblue">
-<div id="branding" class="purplered">
-<div id="music" class="bluepurple">
+<div id="story">
+<div id="web">
+<div id="branding">
+<div id="music">
+<div id="contact">
 
 <div class="flex-container">
     <div class="left-container">
@@ -390,7 +373,7 @@
         </nav>
       </header>
 
-      <div class="contact" id="contact">
+      <div class="contact">
           <div class="contact-info">username@gmail.com</div>
           <div class="city">LONDON, ONTARIO, CANADA</div>
           <div class="social">
@@ -610,6 +593,6 @@
 
   </div>
 
-  </div></div></div></div>
+  </div></div></div></div></div>
 </body>
 </html>
