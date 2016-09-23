@@ -21,6 +21,8 @@
   </script>
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+  <script async custom-element="amp-soundcloud" src="https://cdn.ampproject.org/v0/amp-soundcloud-0.1.js"></script>
+
   <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400' rel='stylesheet' type='text/css'>
   <style amp-custom>
 
@@ -37,7 +39,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       margin: 0;
       line-height: 1.6;
-      font-size: 14px;
+      font-size: 16px;
       color: #2D2E2F;
       background: #777;
       background: #f24744;
@@ -214,7 +216,7 @@
 
     .sticky-header {
       font-size: 9vmin;
-      color: rgba(61,62,64,0.2);
+      color: rgba(61,62,64,0.4);
       position: fixed;
       top: 0;
       z-index: -1;
@@ -226,14 +228,20 @@
     .section-text{
       padding: 0 1rem 1rem;
     }
+    .section-music{
+      max-width: 320px;
+    }
     .projects{
       background-size: 70%;
       background-position: center right;
       background-repeat: no-repeat;
       background-attachment: fixed;
       position: relative;
-      height: calc(100vh - 12vmin - 0.9rem);
+      height: 100vh;
       border-bottom: 0.9rem solid #fff;
+    }
+    .projects.ex1{
+       height: calc(100vh - 12vmin - 0.9rem);
     }
     .ex1{
       background-image: url("img/scottvincent.png");
@@ -254,11 +262,20 @@
       background-image: url("img/g2po.png");
     }
     .project-info{
-      background: rgba(255,255,255,0.8);
+      background: rgba(255,255,255,0.6);
       max-width: 768px;
       position: absolute;
       bottom: 0;
-      padding: 1rem;
+      padding: 1rem 1.5rem;
+      border: 1rem solid #fff;
+      border-bottom: 0;
+      background: repeating-linear-gradient(
+        55deg,
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.8) 2px,
+        rgba(255,255,255,0.85) 2px,
+        rgba(255,255,255,0.85) 4px
+      );
     }
     .project-info h1{
       font-size: 7vmin;
@@ -324,7 +341,7 @@
         position:relative;
         padding: 0 1rem;
       }
-      .projects{
+      .projects, .projects.ex1{
         background-attachment: initial;
         height: auto;
         background-position: top center;
@@ -333,6 +350,8 @@
       }
       .project-info{
         position: relative;
+        border-left: 0;
+        border-right: 0;
       }
       .section-text{
         padding: 1rem;
@@ -388,7 +407,7 @@
             <div class="project-info">
               <h1>Scott Vincent Design</h1>
 
-              <p>The site you're currently on is an exercise in lightweight web design. Utilizing Google's Accelerated Mobile Pages guidelines, it ensures incredibly quick page load times. Regular web pages in this day and age are getting lazy when adding large libraries and heavy dependancies to accomplish fairly simple tasks. Bloated and inconsiderate web pages currently are the norm for users to visit.</p>
+              <p>The site you're currently on is an exercise in lightweight web design. Utilizing Google's Accelerated Mobile Pages guidelines, it ensures incredibly quick page load times. Bloated and inconsiderate web pages currently are the norm when they're adding large libraries and heavy dependancies to accomplish fairly simple tasks.</p>
 
               <p>This site loads less than <b>2.0MB</b> onto your device to deliver all its information. Along with the shear speed in which it loads, it still takes into consideration the browser size and device type to deliever a responsive user friendly experience regardless of how you got here.</p>
 
@@ -398,9 +417,9 @@
             <div class="project-info">
               <h1>Media Sonar</h1>
 
-              <p>Media Sonar is a social media monitoring tool used for public safety and law enforcement. I was a part of the project from 2013 to 2016. After working on the first version of the application briefly in 2013, I was brought on as the Lead Designer for the version 2 refresh at the end of 2014. Prototyping, designing, and styling the front-end was an indepth process with a web application that complex.</p>
+              <p>Media Sonar is a social media monitoring tool used for public safety and law enforcement. I was a part of the project from 2013 to 2016. After working on the first version of the application briefly in 2013, I was brought on as the Lead Designer for the version 2 refresh at the end of 2014. Prototyping, designing, and styling the front-end for a positive user experience.</p>
 
-              <p>Bootstrap 3 was the base framework used to build it fully responsive to fit any screen size. Utilizing LESS css, I created a variable styling structure that allows for multiple colour themes for users to switch between.</p>
+              <p>Bootstrap 3 was the base styling framework used to build it fully responsive to fit any screen size. Utilizing LESS css, I created a variable styling structure that allows for multiple colour themes for users to switch between.</p>
 
             </div>
           </div>
@@ -422,7 +441,7 @@
 
             </div>
           </div>
-          <div class="projects ex5">
+          <div class="projects ex5" style="display:none;">
             <div class="project-info">
               <h1>Aura at College Park</h1>
               <!-- start slipsum code -->
@@ -475,71 +494,57 @@
       <div class="panel music">
         <div class="section-container">
           <h1 class="sticky-header">Music</h1>
-          <div class="section-text">
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
-            <p>List of music stuff I've done</p>
+          <div class="section-music">
+            
+            <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              <amp-soundcloud height=150
+              layout="fixed-height"
+              data-trackid="44760070"
+              data-visual="true"
+              data-color="c144f2"></amp-soundcloud>
+
+              
           </div>
         </div>
       </div> 
