@@ -92,7 +92,7 @@
     }
     h1{
       font-size: 2.7rem;
-      letter-spacing: -0.1rem;
+      letter-spacing: -0.05em;
     }
     h2{
       font-size: 2.3rem;
@@ -222,7 +222,7 @@
       z-index: -1;
     }
     .section-container{
-      padding: 12vmin 1rem 1rem 1rem;
+      padding: 12vmin 0rem 0rem 1rem;
       position: relative;      
     }
     .section-text{
@@ -279,6 +279,12 @@
     }
     .project-info h1{
       font-size: 7vmin;
+    }
+    .project-info p a{
+      text-decoration: none;
+      border-bottom: 2px dotted #4285f4;
+      padding-bottom: 2px;
+      margin-bottom: -2px;
     }
 
     /*---------------------- Phone Styles -------------------*/
@@ -407,9 +413,9 @@
             <div class="project-info">
               <h1>Scott Vincent Design</h1>
 
-              <p>The site you're currently on is an exercise in lightweight web design. Utilizing Google's Accelerated Mobile Pages guidelines, it ensures incredibly quick page load times. Bloated and inconsiderate web pages currently are the norm when they're adding large libraries and heavy dependancies to accomplish fairly simple tasks.</p>
+              <p>The site you're currently on is an exercise in lightweight web design. Utilizing <a href="https://www.ampproject.org/" target="_blank">Google's Accelerated Mobile Pages</a> guidelines, it ensures incredibly quick page load times. Bloated and inconsiderate web pages currently are the norm when they're adding large libraries and heavy dependancies to accomplish fairly simple tasks. It is about getting down to what really is the problem you are trying to solve with a website.</p>
 
-              <p>This site loads less than <b>2.0MB</b> onto your device to deliver all its information. Along with the shear speed in which it loads, it still takes into consideration the browser size and device type to deliever a responsive user friendly experience regardless of how you got here.</p>
+              <p>This site loads less than <b>2.0MB</b> onto your device to deliver all its information. Along with the shear speed in which it loads, it still takes into consideration the browser size and device type to deliver a responsive user friendly experience regardless of how you view it.</p>
 
             </div>
           </div>
@@ -419,7 +425,7 @@
 
               <p>Media Sonar is a social media monitoring tool used for public safety and law enforcement. I was a part of the project from 2013 to 2016. After working on the first version of the application briefly in 2013, I was brought on as the Lead Designer for the version 2 refresh at the end of 2014. Prototyping, designing, and styling the front-end for a positive user experience.</p>
 
-              <p>Bootstrap 3 was the base styling framework used to build it fully responsive to fit any screen size. Utilizing LESS css, I created a variable styling structure that allows for multiple colour themes for users to switch between.</p>
+              <p>An <a href="https://angular.io" target="_blank">AngularJS</a> web app, <a href="https://getbootstrap.com" target="_blank">Bootstrap 3</a> was the base styling framework used to build it fully responsive to fit any screen size. Using <a href="https://material.google.com" target="_blank">Google's Material Design Guidelines</a> as a starting point, the design language transformed over time into a unique but familiar feel. Utilizing <a href="http://lesscss.org/" target="_blank">LESS</a> css, I created a variable styling structure that allows multiple colour themes for users to switch between, as well as modular components for fast prototyping and delivery.</p>
 
             </div>
           </div>
@@ -427,9 +433,9 @@
             <div class="project-info">
               <h1>Diply</h1>
               
-              <p>Diply was an entertainment website that I worked on from 2013 to the end of 2014. Created initially as a online product showcase, it transformed into articles to be shared on social media.</p>
+              <p>Diply was an entertainment website that I worked on from 2013 to the end of 2014. Created initially as a online product showcase, it morphed into articles to be shared on social media.</p>
 
-              <p>Built with Bootstrap 3, and leveraging LESS css. Diply is an Angular application with a custom content management system. I was the Lead UI Designer during the site's first year, responsible for prototyping, front-end styling, and user experience. From launch over the next year those pages were viewed over 1 billion times in that period.</p>
+              <p>Half of the 2 man team that built the initial site with <a href="https://getbootstrap.com" target="_blank">Bootstrap 3</a>, and leveraging <a href="http://lesscss.org/" target="_blank">LESS</a> css. Diply was an <a href="https://angular.io" target="_blank">Angular</a> web application with a custom content management system. I was the Lead UI Designer during the site's first year, responsible for prototyping, front-end styling, and user experience. From launch over the next year I was there, those pages were viewed over 1 billion times.</p>
             
             </div>
           </div>
@@ -437,7 +443,9 @@
             <div class="project-info">
               <h1>Baitclick</h1>
 
-              <p>In response to the experience in looking behind the curtain of social sharing methods, a desire to build something to stand up to the clickbait machine was formed. A</p>
+              <p>In response to the experience in looking behind the curtain of social sharing methods, a desire to build something to stand up to the clickbait machine was formed. A site where you paste links that pose a question, spoil the title, and share that insight with your friends. Saving them from the temptation to click on those links. Practicing simple user experience with a unique, fun idea was the goal after years of working on complicated, serious applications.</p>
+
+              <p>A 2 man operation not released to the public yet, this site is built with <a href="http://mean.io/" target="_blank">MEAN.io</a> framework along with <a href="https://getbootstrap.com" target="_blank">Bootstrap 3</a>, and <a href="http://lesscss.org/" target="_blank">LESS</a> css. Features include Day/Night modes, automatic image creation, and mobile specific UI.</p>
 
             </div>
           </div>
@@ -455,13 +463,12 @@
           </div>
           <div class="projects ex6">
             <div class="project-info">
-              <h1>G2PO</h1><!-- start slipsum code -->
+              <h1>G2PO</h1>
 
-              <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
+              <p>A gaming video site I worked on as designer and front end developer thorugh two versions from 2011 and 2014. It gave users options to search and follow creators or specific game titles and view videos on the site.</p>
 
-              <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+              <p>Responsive for mobile web use built with <a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap 2</a> and C# .NET. </p>
 
-              <!-- end slipsum code -->
             </div>
           </div>
         </div>
