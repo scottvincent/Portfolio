@@ -223,11 +223,51 @@
     }
     .section-container{
       padding: 12vmin 0rem 0rem 1rem;
-      position: relative;      
+      position: relative;   
     }
     .section-text{
       padding: 0 1rem 1rem;
     }
+    .education, .experience{
+      max-width: 1024px;
+      display: flex;
+    }
+    figure{
+      border: 0.2rem solid  rgba(61,62,64,0.4);
+      margin: 1rem 1rem 1rem 0;
+      padding: 1rem;
+      width: calc(1024px/3 - 4rem);
+      display: inline-block;
+      vertical-align: top;
+    }
+    figure h3{
+      color:  rgba(45, 46, 47, 0.8);
+      margin-bottom: 0.25rem;
+      line-height: 1;
+      font-size: 1em;
+    }
+    figure h4{
+      margin: 0;
+      line-height: 1.7em;
+    }
+    figcaption{
+      font-weight: lighter;
+      font-size: 1.2rem;
+      line-height: 1.4em;
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.25rem;
+    }
+    figure ul{
+      margin: 0;
+      font-size: 0.7rem;
+      padding: 0 1rem;
+      list-style-type: square;
+    }
+    figure p{
+      font-size: 0.7rem;
+      margin: 0;
+    }
+
     .section-music{
       max-width: 320px;
     }
@@ -254,9 +294,6 @@
     }
     .ex4{
       background-image: url("img/baitclick.png");
-    }
-    .ex5{
-      background-image: url("img/aura.png");
     }
     .ex6{
       background-image: url("img/g2po.png");
@@ -347,6 +384,13 @@
         position:relative;
         padding: 0 1rem;
       }
+      .education, .experience{
+        display: block;
+      }
+      figure{
+        display: block;
+        width: auto;
+      }
       .projects, .projects.ex1{
         background-attachment: initial;
         height: auto;
@@ -397,7 +441,7 @@
           <div class="social">
             <a href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a> &nbsp;&nbsp;
             <a href="https://twitter.com/CmdOptEsc" target="_blank">Twitter</a> &nbsp;&nbsp;
-            <a href="http://www.facebook.com/scottvincent" target="_blank">Facebook</a> &nbsp;&nbsp;
+            <a href="http://www.github.com/scottvincent" target="_blank">Github</a> &nbsp;&nbsp;
             <a href="http://www.instagram.com/scott.v" target="_blank">Instagram</a>
           </div>
           <footer>
@@ -521,36 +565,63 @@
           <h1 class="sticky-header">Story</h1>
           <div class="section-text">
             <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
+
+            <h2>Education</h2>
+            <div class="education">
+              <figure>
+                <h3>Fanshawe College</h3>
+                <h4>Music Industry Arts</h4>
+                <figcaption>2008 - 2010</figcaption>
+                <ul>
+                  <li>School of Contemporary Media Diploma</li>
+                  <li>2009 MIA Award, Best Performance</li>
+                </ul>
+              </figure>
+              <figure>
+                <h3>Fanshawe College</h3>
+                <h4>Multimedia Design &amp; Production</h4>
+                
+                <figcaption>2006 - 2008</figcaption>
+                <ul>
+                  <li>School of Contemporary Media Diploma</li>
+                </ul>
+              </figure>
+              <figure>
+                <h3>H.B. Beal Secondary School</h3>
+                <figcaption>2002 - 2006</figcaption>
+                <ul>
+                  <li>OSSD Diploma, Ontario Scholar</li>
+                  <li>2 year Television Broadcasting</li>
+                  <li>2006 Most Co-operative Student Award</li>
+                  <li>2005 Skills Canada Video Challenge, Ontario Bronze Medal</li>
+                </ul>
+              </figure>
+            </div>
+
+            <h2>Experience</h2>
+            <div class="experience">
+              <figure>
+                <h3>IES Group Inc.</h3>
+                <h4>Graphic / Web Designer</h4>
+                <figcaption>4/2011 - 10/2016</figcaption>
+                <p>London, ON</p>
+                <p>Design &amp; develop web application interfaces, user experience, logo illustration, branding materials, &amp; marketing collateral.</p>
+              </figure>
+              <figure>
+                <h3>OUR Coffee News</h3>
+                <h4>Graphic / Web Designer</h4>
+                <figcaption>1/2009 - 7/2011</figcaption>
+                <p>St. Thomas, ON</p>
+                <p>Update and maintain website, Create ad samples to be placed in the weekly restaurant publication.</p>
+              </figure>
+              <figure>
+                <h3>Stiches Above</h3>
+                <h4>Machine Operator</h4>
+                <figcaption>6/2005 - 12/2008</figcaption>
+                <p>London, ON</p>
+                <p>A multi-head CNC machine operator for a custom embroidery company. The job consisted of unpacking, prepping, and embroidering items, such as hats, coats, &amp; shirts.</p>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
