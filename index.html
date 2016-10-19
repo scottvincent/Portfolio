@@ -34,7 +34,9 @@
       Red:    #F24744
       Orange: #F89924
     */ 
-
+    *{
+      box-sizing: border-box;
+    }
     body{
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       margin: 0;
@@ -99,7 +101,10 @@
     }
     h2{
       font-size: 2.3rem;
-      line-height: 1;
+      line-height: 1.5;
+    }
+    h3{
+      font-size: 1.5rem; 
     }
     a{
       color: #4285f4;
@@ -107,6 +112,7 @@
     a:hover{
       color: #0d5bdd;
     }
+    
     hr{
       border: none;
       border-top-width: 0.2rem;
@@ -231,19 +237,49 @@
       position: relative;   
     }
     .section-text{
-      padding: 0 1rem 1rem;
-    }
-    .education, .experience{
+      padding: 1rem;
+      margin: 1rem 0;
       max-width: 1024px;
+      background-color: rgba(255,255,255,0.6);
+      border: 0.5rem solid #fff;
+      background: repeating-linear-gradient(
+        55deg,
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.8) 2px,
+        rgba(255,255,255,0.85) 2px,
+        rgba(255,255,255,0.85) 4px
+      );
+    }
+    .education, .experience, .examples{
       display: flex;
+      max-width: 1024px;
+    }
+    .examples{
+      flex-wrap: wrap;
+    }
+    .examples figure{
+      min-width: 330px;
+    }
+    .examples figure:last-child{
+      margin-right: 0.5rem;
+    }
+    .examples a{
+      text-decoration: none;
+      border-bottom: 2px dotted rgba(0,0,0,0.8);
+      padding-bottom: 1px;
+      margin-bottom: -1px;
+      color: rgba(0,0,0,0.8);
     }
     figure{
       border: 0.2rem solid  rgba(61,62,64,0.4);
-      margin: 0.5rem 0.5rem 0.5rem 0;
+      margin: 0.25rem 0.5rem 0.25rem 0;
       padding: 1rem;
       display: inline-block;
-      vertical-align: top;
       flex: 1;
+      
+    }
+    figure:last-child{
+      margin-right: 0;
     }
     figure h3{
       color:  rgba(45, 46, 47, 0.8);
@@ -272,6 +308,9 @@
       font-size: 0.8rem;
       margin: 0;
     }
+    amp-soundcloud{
+      margin-bottom: 1rem;
+    }
 
     .section-music{
       max-width: 320px;
@@ -284,6 +323,7 @@
       position: relative;
       height: 100vh;
       border-bottom: 0.9rem solid #fff;
+      will-change: background;
     }
     .projects.ex1{
        height: calc(100vh - 12vmin - 0.9rem);
@@ -322,19 +362,50 @@
     .project-info h1{
       font-size: 7vmin;
     }
-    .project-info p a{
+    .project-info p a, .story-info p a, .branding-info p a{
       text-decoration: none;
       border-bottom: 2px dotted #4285f4;
       padding-bottom: 2px;
       margin-bottom: -2px;
     }
+    .bottom-nav{
+      
+      display: block;
+      max-width: 1024px;
+      margin-bottom: 1rem;
+      clear: both;
+    }
+    .bottom-nav:after {
+      visibility: hidden;
+      display: block;
+      content: "";
+      clear: both;
+      height: 0;
+    }
+    .bottom-nav a{
+      color: rgba(0,0,0,0.5);
+      padding: 1rem;
+      float: left;
+      text-decoration: none;
+      padding: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.125em;
+    }
+    .bottom-nav a:hover{
+      color: #fff;
+    }
+    .bottom-nav a:last-child{
+      float: right;
+    }
 
     /*---------------------- Phone Styles -------------------*/
     @media (max-width: 960px){
-      .education, .experience{
+      .education, .experience, .examples{
         display: block;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
       }
-      figure{
+      figure, figure:last-child{
         display: block;
         width: inherit;
         margin-left: 0;
@@ -416,6 +487,12 @@
       .section-text{
         padding: 1rem;
       }
+      h3{
+        font-size: 5vmin;
+      }
+      .bottom-nav a{
+        font-size: 0.8rem;
+      }
     }
   </style>
 
@@ -460,6 +537,80 @@
       </div> 
     </div>
     <div class="right-container">
+    <div class="panel story">
+        <div class="section-container">
+          <h1 class="sticky-header">Story</h1>
+          
+          <div class="section-text">
+            <h3>Designer based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</h3>
+            <p>A constant ambition to learn new skills and an extreme attention to detail has resulted in an ever growing list of skills &amp; abilities.</p>
+            
+            <p>At a young age I gained interest in music, learning guitar at 10. In high school I started to get into Adobe Photoshop and went into a 2 year TV Broadcasting program. At the same time as being apart of the daily live news program, I was gaining more experience in live auditorium audio and lighting systems in a theatre setting. The passion for video shooting &amp; editing almost landed me in TV Broadcasting at Fanshawe College, but at the last minute I decided to try something new and go into Multimedia Design &amp; Production. After completing the two year diploma I got accepted into Music Industry Arts, and took my love of music to the studio setting. I've been lucky enough to have learned from some great professionals, and gained some valuable knowledge. Being able to do anything that is necessary in a project gives me the flexibility to keep the job fresh and interesting.</p>
+            <p>I've spent my life with a thirst for knowledge and skills. Aspiring to be a jack of all trades in new media fields. My main passion is music production, but I've come to gain skills in all facets of the industry. Creating websites &amp; graphic design work freelance, as well as within a development company environment. On the audio side, engineering and producing artists, and also the writing and managment sides. The "Do-It-Yourself" attitude and being on the cutting edge of new web design trends/technology, has kept me moving forward to my end goal of creating a living off of my favourite hobbies. Gaining experience and further knowledge in any field is an asset to the future.</p>
+          </div>
+            <h3>Education</h3>
+            <div class="education">
+              <figure>
+                <h3>Fanshawe College</h3>
+                <h4>Music Industry Arts</h4>
+                <figcaption>2008 - 2010</figcaption>
+                <ul>
+                  <li>School of Contemporary Media Diploma</li>
+                  <li>2009 MIA Award, Best Performance</li>
+                </ul>
+              </figure>
+              <figure>
+                <h3>Fanshawe College</h3>
+                <h4>Multimedia Design &amp; Production</h4>
+                
+                <figcaption>2006 - 2008</figcaption>
+                <ul>
+                  <li>School of Contemporary Media Diploma</li>
+                </ul>
+              </figure>
+              <figure>
+                <h3>H.B. Beal Secondary School</h3>
+                <figcaption>2002 - 2006</figcaption>
+                <ul>
+                  <li>OSSD Diploma, Ontario Scholar</li>
+                  <li>2 year Television Broadcasting</li>
+                  <li>2006 Most Co-operative Student Award</li>
+                  <li>2005 Skills Canada Video Challenge, Ontario Bronze Medal</li>
+                </ul>
+              </figure>
+            </div>
+
+            <h3>Experience</h3>
+            <div class="experience">
+              <figure>
+                <h3>IES Group Inc.</h3>
+                <h4>Graphic / Web Designer</h4>
+                <figcaption>4/2011 - 10/2016</figcaption>
+                <p>London, ON</p>
+                <p>Design &amp; develop web application interfaces, user experience, logo illustration, branding materials, &amp; marketing collateral.</p>
+              </figure>
+              <figure>
+                <h3>OUR Coffee News</h3>
+                <h4>Graphic / Web Designer</h4>
+                <figcaption>1/2009 - 7/2011</figcaption>
+                <p>St. Thomas, ON</p>
+                <p>Update and maintain website, Create ad samples to be placed in the weekly restaurant publication.</p>
+              </figure>
+              <figure>
+                <h3>Stiches Above</h3>
+                <h4>Machine Operator</h4>
+                <figcaption>6/2005 - 12/2008</figcaption>
+                <p>London, ON</p>
+                <p>A multi-head CNC machine operator for a custom embroidery company. The job consisted of unpacking, prepping, and embroidering items, such as hats, coats, &amp; shirts.</p>
+              </figure>
+            </div>
+            <div class="bottom-nav">
+              <p>
+                <a href="#web">Next: Web Projects</a>
+              </p>
+            </div>
+        </div>
+      </div>
       <div class="panel web">
         <div class="section-container">
           <h1 class="sticky-header">Web Projects</h1>
@@ -494,18 +645,7 @@
             </div>
           </div>
          
-          <div class="projects ex5" style="display:none;">
-            <div class="project-info">
-              <h1>Aura at College Park</h1>
-              <!-- start slipsum code -->
-
-              <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends. </p>
-
-              <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
-
-              <!-- end slipsum code -->
-            </div>
-          </div>
+          
           <div class="projects ex6">
             <div class="project-info">
               <h1>G2PO</h1>
@@ -526,6 +666,12 @@
 
             </div>
           </div>
+          <div class="bottom-nav">
+              <p>
+                <a href="#story">Previous: Story</a>
+                <a href="#branding">Next: Branding</a>
+              </p>
+            </div>
         </div>
       </div> 
 
@@ -534,107 +680,167 @@
           <h1 class="sticky-header">Branding</h1>
           <div class="section-text">
             <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
-            <p>List of branding stuff I've done</p>
           </div>
+          <div class="bottom-nav">
+              <p>
+                <a href="#web">Previous: Web Projects</a>
+                <a href="#music">Next: Music</a>
+              </p>
+            </div>
         </div>
       </div>  
 
       <div class="panel music">
         <div class="section-container">
           <h1 class="sticky-header">Music</h1>
+          <div class="section-text">
+            <h3>Discography</h3>
+            <ul>
+              <li>Another Hello - EP (2015), <em>Violet Fuse</em>. Write, Engineer, Produce, Mix, Master</li>
+              <li>Buen Dios Maldito! (2013), <em>Good Dog Damn</em>. Master</li>
+
+              <li>Demos (2012), <em>The Days</em>. Engineer, Produce, Mix, Master</li>
+              <li>Demos (2012), <em>The Drop Pockets</em>. Engineer, Produce, Mix, Master</li>
+              <li>You're A Mean One Mr. Grinch - Single (2011), <em>Violet Fuse</em>. Engineer, Produce, Mix, Master</li>
+              <li>Good God DAMN! (2010), <em>Good God DAMN</em>. Master</li>
+              <li>Violet Fuse (2010), <em>Violet Fuse</em>. Write, Engineer, Produce, Mix</li>
+            </ul>
+          </div>
+          <h3>Examples</h3>
+          <div class="examples">
+              
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="289012490"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Violet Fuse</h3>
+                <h4>Another Hello - EP</h4>
+                <figcaption>2015</figcaption>
+                <p>A 5 song EP engineered, produced, mixed, &amp; mastered by myself. Co-written and guitar performances as part of the band <a href="www.violetfuse.com" target="_blank">Violet Fuse</a>. <a href="https://itunes.apple.com/ca/album/another-hello-ep/id1049398769" target="_blank">iTunes</a></p>
+               
+              </figure>
+
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="44760070"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>The Days</h3>
+                <h4>Runnin'</h4>
+                <figcaption>2012</figcaption>
+                <p>A live off the floor recording for The Days with my mobile recording rig</p>
+                
+              </figure>
+
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="56562658"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Violet Fuse</h3>
+                <h4>Self Titled Album</h4>
+                <figcaption>2010</figcaption>
+                <p>Full length record released by <a href="www.violetfuse.com" target="_blank">Violet Fuse</a>. Produced and mixed by myself, as well as mostly engineered. Consisting of original 9 songs. The band was nominated for a Jack Richardson Music Award as well as London Music Award under the Rock Categories in 2010. <a href="https://itunes.apple.com/ca/album/violet-fuse/id392458344" target="_blank">iTunes</a></p>
+                
+              </figure>
+              
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="56562659"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Music Industry Arts</h3>
+                <h4>Song Composition Project</h4>
+                <figcaption>2010</figcaption>
+                <p>A school assignment to write and produce a commercially viable original song with a partner. "Wasted Time" was Co-Written/Co-Produced by myself and Mike Whissel.</p>
+                
+              </figure>
+
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="56562660"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Music Industry Arts</h3>
+                <h4>Beatles Cover Song Project</h4>
+                <figcaption>2009</figcaption>
+                <p>A school assignment produce a cover song. The song chosen was "Getting Better" by The Beatles. This song was produced, engineered, edited, mixed completely myself.</p>
+                
+              </figure>
+
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="56562662"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Music Industry Arts</h3>
+                <h4>Song Production Assignment</h4>
+                <figcaption>2009</figcaption>
+                <p>An assignment to produce an original song. Produced, engineered, edited, mixed myself. Won the award for "Best Performance" for the guitar tracks at the 2009 Music Industry Arts Awards. Song: "RNFNR" by Violet Fuse, Released on Aug. 7th 2010 on VF's debut album.</p>
+                
+              </figure>
+
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="56562665"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Music Industry Arts</h3>
+                <h4>Song Lift Assignment</h4>
+                <figcaption>2009</figcaption>
+                <p>A school assignment to completely recreate a song from scratch. Showcasing the skills needed to organize multiple studio times and musicians as well as budgeting. Completely self produced, engineered, edited, and mixed. All instruments recorded live. Song: "Holy Diver" by Dio</p>
+                
+              </figure>
+
+               <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="56562663"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Music Industry Arts</h3>
+                <h4>MIDI Mixing Assignment</h4>
+                <figcaption>2008</figcaption>
+                <p>A school assignment to turn a MIDI session into a piece of "radio ready" work. The original file was a General MIDI file, that then had all the tracks replaced with sampled virtual instruments and then mixed in stereo. Song: "Indiana Jones Theme" by John Williams</p>
+                
+              </figure>
+
+              <figure>
+                <amp-soundcloud height=90
+                  layout="fixed-height"
+                  data-trackid="56562664"
+                  data-visual="true"
+                  data-color="c144f2"></amp-soundcloud>
+                <h3>Music Industry Arts</h3>
+                <h4>Audio Editing Assignment</h4>
+                <figcaption>2008</figcaption>
+                <p>A school assignment to take an instrumental song and cut it down to exactly 1 minute. The song was to have unnoticable cuts and edits. Song: "Frankenstein" by Edgar Winter Group</p>
+                
+              </figure>
+            </div>
           <div class="section-music">
             
-            <amp-soundcloud height=150
-              layout="fixed-height"
-              data-trackid="44760070"
-              data-visual="true"
-              data-color="c144f2"></amp-soundcloud>
-
-              
+          
               
           </div>
+          <div class="bottom-nav">
+              <p>
+                <a href="#branding">Previous: Branding</a>
+                <a href="#story">Home: Story</a>
+              </p>
+            </div>
         </div>
       </div> 
 
-      <div class="panel story">
-        <div class="section-container">
-          <h1 class="sticky-header">Story</h1>
-          <div class="section-text">
-            <p>Based in London, Ontario, Canada with work seen on over 1 Billion pageviews.</p>
-
-            <h2>Education</h2>
-            <div class="education">
-              <figure>
-                <h3>Fanshawe College</h3>
-                <h4>Music Industry Arts</h4>
-                <figcaption>2008 - 2010</figcaption>
-                <ul>
-                  <li>School of Contemporary Media Diploma</li>
-                  <li>2009 MIA Award, Best Performance</li>
-                </ul>
-              </figure>
-              <figure>
-                <h3>Fanshawe College</h3>
-                <h4>Multimedia Design &amp; Production</h4>
-                
-                <figcaption>2006 - 2008</figcaption>
-                <ul>
-                  <li>School of Contemporary Media Diploma</li>
-                </ul>
-              </figure>
-              <figure>
-                <h3>H.B. Beal Secondary School</h3>
-                <figcaption>2002 - 2006</figcaption>
-                <ul>
-                  <li>OSSD Diploma, Ontario Scholar</li>
-                  <li>2 year Television Broadcasting</li>
-                  <li>2006 Most Co-operative Student Award</li>
-                  <li>2005 Skills Canada Video Challenge, Ontario Bronze Medal</li>
-                </ul>
-              </figure>
-            </div>
-
-            <h2>Experience</h2>
-            <div class="experience">
-              <figure>
-                <h3>IES Group Inc.</h3>
-                <h4>Graphic / Web Designer</h4>
-                <figcaption>4/2011 - 10/2016</figcaption>
-                <p>London, ON</p>
-                <p>Design &amp; develop web application interfaces, user experience, logo illustration, branding materials, &amp; marketing collateral.</p>
-              </figure>
-              <figure>
-                <h3>OUR Coffee News</h3>
-                <h4>Graphic / Web Designer</h4>
-                <figcaption>1/2009 - 7/2011</figcaption>
-                <p>St. Thomas, ON</p>
-                <p>Update and maintain website, Create ad samples to be placed in the weekly restaurant publication.</p>
-              </figure>
-              <figure>
-                <h3>Stiches Above</h3>
-                <h4>Machine Operator</h4>
-                <figcaption>6/2005 - 12/2008</figcaption>
-                <p>London, ON</p>
-                <p>A multi-head CNC machine operator for a custom embroidery company. The job consisted of unpacking, prepping, and embroidering items, such as hats, coats, &amp; shirts.</p>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
 
   </div>
