@@ -23,7 +23,7 @@
 
   <script async custom-element="amp-soundcloud" src="https://cdn.ampproject.org/v0/amp-soundcloud-0.1.js"></script>
 
-  <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400' rel='stylesheet' type='text/css'>
   <style amp-custom>
 
     /* Color Palette
@@ -84,15 +84,18 @@
     }
 
     h1,h2,h3{
-      font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
       line-height: 1.2;
       color: #3d3e40;
       font-weight: 400;
       margin: 0;
     }
+    h2, h3, h4, h5{
+      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    }
     h1{
       font-size: 2.7rem;
       letter-spacing: -0.05em;
+      font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
     }
     h2{
       font-size: 2.3rem;
@@ -119,6 +122,7 @@
     /*---------------------- Navigation Styles -------------------*/
     .left-container{
       width: 16rem;
+      min-width: 16rem;
       overflow: auto;
       display: flex;
       flex-direction: column;
@@ -220,6 +224,7 @@
       position: fixed;
       top: 0;
       z-index: -1;
+      will-change: transform;
     }
     .section-container{
       padding: 12vmin 0rem 0rem 1rem;
@@ -234,11 +239,11 @@
     }
     figure{
       border: 0.2rem solid  rgba(61,62,64,0.4);
-      margin: 1rem 1rem 1rem 0;
+      margin: 0.5rem 0.5rem 0.5rem 0;
       padding: 1rem;
-      width: calc(1024px/3 - 4rem);
       display: inline-block;
       vertical-align: top;
+      flex: 1;
     }
     figure h3{
       color:  rgba(45, 46, 47, 0.8);
@@ -259,12 +264,12 @@
     }
     figure ul{
       margin: 0;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       padding: 0 1rem;
       list-style-type: square;
     }
     figure p{
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       margin: 0;
     }
 
@@ -325,6 +330,18 @@
     }
 
     /*---------------------- Phone Styles -------------------*/
+    @media (max-width: 960px){
+      .education, .experience{
+        display: block;
+      }
+      figure{
+        display: block;
+        width: inherit;
+        margin-left: 0;
+        margin-right: 0;
+
+      }
+    }
     @media (max-width: 768px){
       .flex-container{
         display: block;
@@ -383,13 +400,6 @@
       .sticky-header{
         position:relative;
         padding: 0 1rem;
-      }
-      .education, .experience{
-        display: block;
-      }
-      figure{
-        display: block;
-        width: auto;
       }
       .projects, .projects.ex1{
         background-attachment: initial;
