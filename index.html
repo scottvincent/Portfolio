@@ -260,15 +260,15 @@
     .examples figure{
       min-width: 330px;
     }
-    .examples figure:last-child{
-      margin-right: 0.5rem;
-    }
     .examples a{
       text-decoration: none;
       border-bottom: 2px dotted rgba(0,0,0,0.8);
       padding-bottom: 1px;
       margin-bottom: -1px;
       color: rgba(0,0,0,0.8);
+    }
+    .logos figure{
+      flex: inherit;
     }
     figure{
       border: 0.2rem solid  rgba(61,62,64,0.4);
@@ -278,9 +278,10 @@
       flex: 1;
       
     }
-    figure:last-child{
-      margin-right: 0;
+    figure + figure{
+      margin-right: 0.5em;
     }
+
     figure h3{
       color:  rgba(45, 46, 47, 0.8);
       margin-bottom: 0.25rem;
@@ -405,7 +406,7 @@
         margin-left: 0.5rem;
         margin-right: 0.5rem;
       }
-      figure, figure:last-child{
+      figure, figure + figure{
         display: block;
         width: inherit;
         margin-left: 0;
@@ -681,6 +682,51 @@
           <div class="section-text">
             <p>List of branding stuff I've done</p>
           </div>
+          <h3>Logo Illustration</h3>
+            <div class="examples logos">
+              <figure>
+                <amp-img layout="responsive" src="img/logos/diply.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/g2po.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/violetfuse.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/fifty-one.png" width="960" height="560"></amp-img>
+              </figure>
+              
+              <figure>
+                <amp-img layout="responsive" src="img/logos/baitclick.png" width="960" height="560"></amp-img>
+              </figure>
+              
+              <figure>
+                <amp-img layout="responsive" src="img/logos/askthetop.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/dsh.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/hubspout.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/iesgroup.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/pathogent.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/umpire.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/tagdrone.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
+                <amp-img layout="responsive" src="img/logos/radboots.png" width="960" height="560"></amp-img>
+              </figure>
+             
+            </div>
           <div class="bottom-nav">
               <p>
                 <a href="#web">Previous: Web Projects</a>
@@ -697,8 +743,8 @@
             <h3>Discography</h3>
             <ul>
               <li>Another Hello - EP (2015), <em>Violet Fuse</em>. Write, Engineer, Produce, Mix, Master</li>
+              <li>Still Not Sober (2015), <em>Tom Woods</em>. Master</li>
               <li>Buen Dios Maldito! (2013), <em>Good Dog Damn</em>. Master</li>
-
               <li>Demos (2012), <em>The Days</em>. Engineer, Produce, Mix, Master</li>
               <li>Demos (2012), <em>The Drop Pockets</em>. Engineer, Produce, Mix, Master</li>
               <li>You're A Mean One Mr. Grinch - Single (2011), <em>Violet Fuse</em>. Engineer, Produce, Mix, Master</li>
