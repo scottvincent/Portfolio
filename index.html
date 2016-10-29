@@ -236,6 +236,10 @@
       padding: 12vmin 0rem 0rem 1rem;
       position: relative;   
     }
+    .section-container > h3{
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
     .section-text{
       padding: 1rem;
       margin: 1rem 0;
@@ -316,7 +320,6 @@
       position: relative;
       height: calc(100vh - 12vmin - 0.9rem);
       border-bottom: 0.9rem solid #fff;
-      will-change: background;
     }
     .projects.ex1{
        height: calc(100vh - 12vmin - 0.9rem);
@@ -480,6 +483,12 @@
       }
       .section-text{
         padding: 1rem;
+        border-left: 0;
+        border-right: 0;
+      }
+      .section-container > h3{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
       }
       h3{
         font-size: 5vmin;
@@ -673,8 +682,9 @@
         <div class="section-container">
           <h1 class="sticky-header">Branding</h1>
           <div class="section-text">
-            <p>One of my favourite things to do is to discuss branding. I will read <a href="http://www.underconsideration.com/brandnew/" target="_blank">branding blogs</a> daily to see what companies are doing and what the design community thinks of current trends. When a major brand makes a change, I'm usually disecting what they've done and why. I have an attention to detail that can pick apart when brands are being misused or if they're nailing it.</p>
-            <p>I enjoy designing new things in <a href="http://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>, whether it is for startups, bands, or even recreational sports teams. The items below are a collection of logos I've created, some turned into large companies, some never got off the ground, and some of these were created and never used.</p>
+            <h3>One of my favourite activities is to think about branding.</h3>
+            <p>When a major brand makes a change, I'm usually disecting what they've done and why. I will read <a href="http://www.underconsideration.com/brandnew/" target="_blank">branding blogs</a> daily to see what companies are doing and what the design community thinks of current trends. I have such an attention to detail, I usually pick apart when brands are being misused in the wild or if they're nailing it with little fanfare.</p>
+            <p>I enjoy designing &amp; constructing new things in <a href="http://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>, whether it is for startups, bands, or even recreational sports teams. The items below are a collection of logos I've created, some turned into large companies, some never got off the ground, and some of these were created and never used.</p>
             <p>Also below are a couple of branding guide PDFs I created to help with brands that I was developing at the time.</p>
 
           </div>
@@ -708,15 +718,17 @@
               <figure>
                 <amp-img layout="responsive" src="img/logos/hubspout.png" width="960" height="560"></amp-img>
               </figure>
-              <figure>
-                <amp-img layout="responsive" src="img/logos/iesgroup.png" width="960" height="560"></amp-img>
-              </figure>
+              
               <figure>
                 <amp-img layout="responsive" src="img/logos/pathogent.png" width="960" height="560"></amp-img>
               </figure>
               <figure>
+                <amp-img layout="responsive" src="img/logos/iesgroup.png" width="960" height="560"></amp-img>
+              </figure>
+              <figure>
                 <amp-img layout="responsive" src="img/logos/umpire.png" width="960" height="560"></amp-img>
               </figure>
+
               <figure>
                 <amp-img layout="responsive" src="img/logos/tagdrone.png" width="960" height="560"></amp-img>
               </figure>
@@ -751,6 +763,7 @@
           <div class="section-text">
             <h3>Discography</h3>
             <ul>
+              <li>Untitled EP (2017), <em>Sparring Partner</em>. Engineer</li>
               <li>Another Hello - EP (2015), <em>Violet Fuse</em>. Write, Engineer, Produce, Mix, Master</li>
               <li>Still Not Sober (2015), <em>Tom Woods</em>. Master</li>
               <li>Buen Dios Maldito! (2013), <em>Good Dog Damn</em>. Master</li>
@@ -777,42 +790,18 @@
                
               </figure>
 
-              <figure>
-                <amp-soundcloud height=90
-                  layout="fixed-height"
-                  data-trackid="44760070"
-                  data-visual="true"
-                  data-color="c144f2"></amp-soundcloud>
-                <h3>The Days</h3>
-                <h4>Runnin'</h4>
-                <figcaption>2012</figcaption>
-                <p>A live off the floor recording for The Days with my mobile recording rig</p>
-                
-              </figure>
+       
 
               <figure>
                 <amp-soundcloud height=90
                   layout="fixed-height"
-                  data-trackid="56562658"
+                  data-trackid="56562662"
                   data-visual="true"
                   data-color="c144f2"></amp-soundcloud>
                 <h3>Violet Fuse</h3>
                 <h4>Self Titled Album</h4>
                 <figcaption>2010</figcaption>
                 <p>Full length record released by <a href="www.violetfuse.com" target="_blank">Violet Fuse</a>. Produced and mixed by myself, as well as mostly engineered. Consisting of original 9 songs. The band was nominated for a Jack Richardson Music Award as well as London Music Award under the Rock Categories in 2010. <a href="https://itunes.apple.com/ca/album/violet-fuse/id392458344" target="_blank">iTunes</a></p>
-                
-              </figure>
-              
-              <figure>
-                <amp-soundcloud height=90
-                  layout="fixed-height"
-                  data-trackid="56562659"
-                  data-visual="true"
-                  data-color="c144f2"></amp-soundcloud>
-                <h3>Music Industry Arts</h3>
-                <h4>Song Composition Project</h4>
-                <figcaption>2010</figcaption>
-                <p>A school assignment to write and produce a commercially viable original song with a partner. "Wasted Time" was Co-Written/Co-Produced by myself and Mike Whissel.</p>
                 
               </figure>
 
@@ -826,19 +815,6 @@
                 <h4>Beatles Cover Song Project</h4>
                 <figcaption>2009</figcaption>
                 <p>A school assignment produce a cover song. The song chosen was "Getting Better" by The Beatles. This song was produced, engineered, edited, mixed completely myself.</p>
-                
-              </figure>
-
-              <figure>
-                <amp-soundcloud height=90
-                  layout="fixed-height"
-                  data-trackid="56562662"
-                  data-visual="true"
-                  data-color="c144f2"></amp-soundcloud>
-                <h3>Music Industry Arts</h3>
-                <h4>Song Production Assignment</h4>
-                <figcaption>2009</figcaption>
-                <p>An assignment to produce an original song. Produced, engineered, edited, mixed myself. Won the award for "Best Performance" for the guitar tracks at the 2009 Music Industry Arts Awards. Song: "RNFNR" by Violet Fuse, Released on Aug. 7th 2010 on VF's debut album.</p>
                 
               </figure>
 
@@ -864,7 +840,7 @@
                 <h3>Music Industry Arts</h3>
                 <h4>MIDI Mixing Assignment</h4>
                 <figcaption>2008</figcaption>
-                <p>A school assignment to turn a MIDI session into a piece of "radio ready" work. The original file was a General MIDI file, that then had all the tracks replaced with sampled virtual instruments and then mixed in stereo. Song: "Indiana Jones Theme" by John Williams</p>
+                <p>A school assignment to mix a completely MIDI session. The original file was a General MIDI file, that then had all the tracks replaced with sampled virtual instruments and then mixed in stereo. Song: "Indiana Jones Theme" by John Williams</p>
                 
               </figure>
 
