@@ -23,7 +23,6 @@
 
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 
-  <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400' rel='stylesheet' type='text/css'>
   <style amp-custom>
 
     /* Color Palette
@@ -256,6 +255,14 @@
     }
     .examples figure{
       min-width: 330px;
+    }
+    .examples.disc figure{
+      min-width: 240px;
+    }
+    .examples.disc amp-img{
+      margin-bottom: 1rem;
+      max-height: 250px;
+      max-width: 250px;
     }
     .examples a{
       text-decoration: none;
@@ -500,6 +507,8 @@
   </style>
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+  <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="story">
@@ -540,7 +549,7 @@
       </div> 
     </div>
     <div class="right-container">
-    <div class="panel story">
+      <div class="panel story">
         <div class="section-container">
           <h1 class="sticky-header">Story</h1>
           
@@ -614,6 +623,7 @@
             </div>
         </div>
       </div>
+
       <div class="panel web">
         <div class="section-container">
           <h1 class="sticky-header">Web Projects</h1>
@@ -761,60 +771,72 @@
         <div class="section-container">
           <h1 class="sticky-header">Music</h1>
           <div class="section-text">
-            <h3>Discography</h3>
-            <ul>
-              <li>Untitled EP (2017), <em>Sparring Partner</em>. Engineer</li>
-              <li>Another Hello - EP (2015), <em>Violet Fuse</em>. Write, Engineer, Produce, Mix, Master</li>
-              <li>Still Not Sober (2015), <em>Tom Woods</em>. Master</li>
-              <li>Buen Dios Maldito! (2013), <em>Good Dog Damn</em>. Master</li>
-              <li>Demos (2012), <em>The Days</em>. Engineer, Produce, Mix, Master</li>
-              <li>Demos (2012), <em>The Drop Pockets</em>. Engineer, Produce, Mix, Master</li>
-              <li>You're A Mean One Mr. Grinch - Single (2011), <em>Violet Fuse</em>. Engineer, Produce, Mix, Master</li>
-              <li>Good God DAMN! (2010), <em>Good God DAMN</em>. Master</li>
-              <li>Violet Fuse (2010), <em>Violet Fuse</em>. Write, Engineer, Produce, Mix</li>
-            </ul>
+            <h3>Music Heading</h3>
+            
           </div>
-          <h3>Examples</h3>
-          <div class="examples">
-            <div class="player">
-             
-
-              
-
-            <amp-iframe width=300 height=300
-               layout="responsive"
-               sandbox="allow-scripts allow-same-origin"
-               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2363747&amp;color=f24744&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
-             <amp-img layout="fill" src="sv-logo-colour.png" placeholder></amp-img>
-            </amp-iframe>
-            </div>
-             
+          <h3>Discography</h3>
+          <div class="examples disc">
+            
             <figure>
-              
-              <h3>Violet Fuse</h3>
-              <h4>Another Hello - EP</h4>
+              <amp-img layout="responsive" src="img/VF2.jpg" width="250" height="250"></amp-img>
+              <h3>Violet Fuse</a></h3>
+              <h4><a href="http://www.violetfuse.com" target="_blank">Another Hello - EP</a></h4>
               <figcaption>2015</figcaption>
-              <p>A 5 song EP engineered, produced, mixed, &amp; mastered by myself. Co-written and guitar performances as part of the band <a href="www.violetfuse.com" target="_blank">Violet Fuse</a>. <a href="https://itunes.apple.com/ca/album/another-hello-ep/id1049398769" target="_blank">iTunes</a></p>
-             
+              <p>Engineer, Producer, Mixer, Mastering Engineer, Co-writer, Guitar. <a href="https://itunes.apple.com/ca/album/another-hello-ep/id1049398769" target="_blank">iTunes</a></p>
             </figure>
-
             <figure>
-              
+              <amp-img layout="responsive" src="img/tomwoods.jpg" width="250" height="250"></amp-img>
+              <h3>Tom Woods</h3>
+              <h4><a href="https://tomwoods.bandcamp.com/releases" target="_blank">Still Not Sober</a></h4>
+              <figcaption>2015</figcaption>
+              <p>Mastering Engineer</p>
+            </figure>
+            <figure>
+              <amp-img layout="responsive" src="img/ggd2.jpg" width="250" height="250"></amp-img>
+              <h3>Good God DAMN!</h3>
+              <h4><a href="https://goodgoddamn.bandcamp.com/album/buen-dios-maldito" target="_blank">Buen Dios Maldito!</a></h4>
+              <figcaption>2013</figcaption>
+              <p>Mastering Engineer</p>
+            </figure>
+            <figure>
+              <amp-img layout="responsive" src="img/demos.png" width="250" height="250"></amp-img>
               <h3>The Days</h3>
-              <h4>Runnin'</h4>
+              <h4>Demos</h4>
               <figcaption>2012</figcaption>
-              <p>A live off the floor recording for The Days with my mobile recording rig</p>
-              
+              <p>Engineer, Mixer, Mastering Engineer</p>
+            </figure>
+            <figure>
+              <amp-img layout="responsive" src="img/demos.png" width="250" height="250"></amp-img>
+              <h3>The Drop Pockets</h3>
+              <h4>Demos</h4>
+              <figcaption>2012</figcaption>
+              <p>Engineer, Mixer</p>
+            </figure>
+            <figure>
+              <amp-img layout="responsive" src="img/grinch.jpg" width="250" height="250"></amp-img>
+              <h3>Violet Fuse</h3>
+              <h4><a href="http://www.violetfuse.com">You're a Mean One Mr. Grinch</a></h4>
+              <figcaption>2011</figcaption>
+              <p>Engineer, Producer, Mixer, Mastering Engineer, Guitar</p>
+            </figure>
+            <figure>
+              <amp-img layout="responsive" src="img/ggd1.jpg" width="250" height="250"></amp-img>
+              <h3>Good God DAMN!</h3>
+              <h4><a href="https://goodgoddamn.bandcamp.com/album/good-god-damn" target="_blank">Good God DAMN!</a></h4>
+              <figcaption>2010</figcaption>
+              <p>Mastering Engineer</p>
+            </figure>
+            <figure>
+              <amp-img layout="responsive" src="img/VF1.jpg" width="250" height="250"></amp-img>
+              <h3>Violet Fuse</h3>
+              <h4><a href="http://www.violetfuse.com">Violet Fuse</a></h4>
+              <figcaption>2010</figcaption>
+              <p>Engineer, Producer, Mixer, Mastering Engineer, Co-writer, Guitar. Nominated for a Jack Richardson Music Award as well as London Music Award under the Rock Categories in 2010. <a href="https://itunes.apple.com/ca/album/violet-fuse/id392458344" target="_blank">iTunes</a></p>
             </figure>
 
-            <figure>
-              
-              <h3>Violet Fuse</h3>
-              <h4>Self Titled Album</h4>
-              <figcaption>2010</figcaption>
-              <p>Full length record released by <a href="www.violetfuse.com" target="_blank">Violet Fuse</a>. Produced and mixed by myself, as well as mostly engineered. Consisting of original 9 songs. The band was nominated for a Jack Richardson Music Award as well as London Music Award under the Rock Categories in 2010. <a href="https://itunes.apple.com/ca/album/violet-fuse/id392458344" target="_blank">iTunes</a></p>
-              
-            </figure>
+          </div>
+          <h3>Other Examples</h3>
+          <div class="examples">
 
             <figure>
               
