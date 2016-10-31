@@ -548,7 +548,8 @@
           </footer>
       </div> 
     </div>
-    <div class="right-container">
+    <div class="right-container" id="right-container">
+      <div id="top-scroll"></div>
       <div class="panel story">
         <div class="section-container">
           <h1 class="sticky-header">Story</h1>
@@ -618,7 +619,7 @@
             </div>
             <div class="bottom-nav">
               <p>
-                <a href="#web">Next: Web Projects</a>
+                <a href="#web" onclick="scrollTo()">Next: Web Projects</a>
               </p>
             </div>
         </div>
@@ -681,8 +682,8 @@
           </div>
           <div class="bottom-nav">
               <p>
-                <a href="#story">Previous: Story</a>
-                <a href="#branding">Next: Branding</a>
+                <a href="#story" onclick="scrollTo()">Previous: Story</a>
+                <a href="#branding" onclick="scrollTo()">Next: Branding</a>
               </p>
             </div>
         </div>
@@ -760,8 +761,8 @@
           </div>
           <div class="bottom-nav">
               <p>
-                <a href="#web">Previous: Web Projects</a>
-                <a href="#music">Next: Music</a>
+                <a href="#web" onclick="scrollTo()">Previous: Web Projects</a>
+                <a href="#music" onclick="scrollTo()">Next: Music</a>
               </p>
             </div>
         </div>
@@ -900,8 +901,8 @@
           </div>
           <div class="bottom-nav">
               <p>
-                <a href="#branding">Previous: Branding</a>
-                <a href="#story">Home: Story</a>
+                <a href="#branding" onclick="scrollTo()">Previous: Branding</a>
+                <a href="#story" onclick="scrollTo()">Home: Story</a>
               </p>
             </div>
         </div>
@@ -928,6 +929,10 @@
           webkitRequestAnimationFrame || msRequestAnimationFrame;
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
       else window.addEventListener('load', loadDeferredStyles);
+
+      function scrollTo(){
+          document.getElementById('right-container').scrollTop = document.getElementById('top-scroll').offsetTop-10;
+      }
     </script>
 </body>
 </html>
