@@ -24,6 +24,8 @@
 <script async custom-element="amp-analytics"
     src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400">
+
   <style amp-custom>
 
     /* Color Palette
@@ -856,22 +858,8 @@
   </div>
 
   </div></div></div></div></div>
-  <noscript id="deferred-styles">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400">
-  </noscript>
-  <script>
-    var loadDeferredStyles = function() {
-      var addStylesNode = document.getElementById("deferred-styles");
-      var replacement = document.createElement("div");
-      replacement.innerHTML = addStylesNode.textContent;
-      document.body.appendChild(replacement)
-      addStylesNode.parentElement.removeChild(addStylesNode);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-    else window.addEventListener('load', loadDeferredStyles);
 
+  <script>
     function scrollTo(){
         document.getElementById('right-container').scrollTop = document.getElementById('top-scroll').offsetTop-10;
     }
