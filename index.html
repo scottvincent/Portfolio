@@ -390,7 +390,7 @@
       clear: both;
       height: 0;
     }
-    .bottom-nav a{
+    .bottom-nav a, .resume-download{
       color: rgba(0,0,0,0.5);
       padding: 1rem;
       float: left;
@@ -401,6 +401,15 @@
     }
     .bottom-nav a:hover{
       color: #fff;
+    }
+    .resume-download{
+      border: 1px solid rgba(0,0,0,0.5);
+      padding: 0.666rem 1rem;
+      margin-top: 1rem;
+    }
+    .resume-download:hover{
+      color: #fff;
+      border: 1px solid #fff;
     }
     .bottom-nav a:last-child{
       float: right;
@@ -418,6 +427,7 @@
       background-repeat: no-repeat;
       width: 215px;
       height: 150px;
+      content: url("sv-logo-bw.png");
     }
     .print-header-right{
       flex: 2;
@@ -622,6 +632,9 @@
         padding: 1rem 0;
         display: block;
       }
+      .resume-download{
+        display: none;
+      }
       .bottom-nav{
         display: none;
       }
@@ -823,6 +836,8 @@
                 </ul>
               </figure>
             </div>
+
+            <a href="pdf/Scott-Vincent-Designer-Resume.pdf" target="_blank" class="resume-download">Download PDF Version</a>
 
             <div class="bottom-nav">
               <p>
