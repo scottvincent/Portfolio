@@ -558,16 +558,16 @@
 
     @media print{
       .no-print{
-        display: none !important;
+        display: none;
       }
       .print{
-        display: flex !important;
+        display: flex;
         position: relative;
         left: 0;
       }
       
       *{
-        background: transparent !important;
+        background: transparent;
       }
       html, body{
         width: 768px;
@@ -588,8 +588,16 @@
         max-height: none;
         overflow: visible;
       }
-      .panel{
-        display: block !important;
+      .panel, 
+      #contact:target .story, 
+      #branding:target .story, 
+      #web:target .story, 
+      #music:target .story, 
+      #branding:target .branding,
+      #web:target .web,
+      #music:target .music,
+      .story{
+        display: block;
         overflow: visible;
         height: auto;
         opacity: 1;
@@ -608,10 +616,11 @@
       h4{
         font-weight: normal;
       }
-      .sticky-header{
+      .sticky-header, h1.sticky-header{
         position: relative;
-        font-size: 36px !important;
+        font-size: 36px;
         padding: 1rem 0;
+        display: block;
       }
       .bottom-nav{
         display: none;
@@ -629,7 +638,7 @@
         max-width: none;
       }
       .projects, .projects.ex1{
-        height: auto !important;
+        height: auto;
         padding: 0;
       }
       .project-info{
@@ -814,7 +823,7 @@
                 </ul>
               </figure>
             </div>
-            
+
             <div class="bottom-nav">
               <p>
                 <a href="#web" class="bottom-click">Next: Web Projects</a>
