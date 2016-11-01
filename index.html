@@ -27,10 +27,9 @@
   </script>
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-<script async custom-element="amp-analytics"
-    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400">
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400">
 
   <style amp-custom>
 
@@ -536,11 +535,11 @@
             <amp-img class="logo" layout="responsive" src="sv-logo-colour.png" width="480" height="352"></amp-img>
           </a>
           <ul>
-            <li><a href="#story" onclick="scrollTo();">Story</a></li>
-            <li><a href="#web" onclick="scrollTo();">Web Projects</a></li>
-            <li><a href="#branding" onclick="scrollTo();">Branding</a></li>
-            <li><a href="#music" onclick="scrollTo();">Music</a></li>
-            <li class="contact-toggle"><a href="#contact" onclick="scrollTo();">Contact</a></li>
+            <li><a href="#story" class="bottom-click">Story</a></li>
+            <li><a href="#web" class="bottom-click">Web Projects</a></li>
+            <li><a href="#branding" class="bottom-click">Branding</a></li>
+            <li><a href="#music" class="bottom-click">Music</a></li>
+            <li class="contact-toggle"><a href="#contact" class="bottom-click">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -567,7 +566,7 @@
           
           <div class="section-text">
             <h3>Front End Designer with work seen on over 1 Billion pageviews. (Yep, Billion)</h3>
-            <p>Experienced in graphic design, user interfaces, front end development, product design, project management, quality assurance.  I want the users of the product to love the results as much as I do. I believe putting care into the finest details along the way results in a final product that excedes expectations.</p>
+            <p>Experienced in graphic design, user interfaces, front end development, product design, project management, quality assurance.  I want the users of the product to love the results as much as I do. I believe putting care into the finest details along the way results in a final product that exceeds expectations.</p>
             
             <p>In high school I started to get into <a href="http://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>, Final Cut Pro and went into a 2 year TV Broadcasting program. At the same time as being apart of the daily live news program, I was gaining more experience in live auditorium audio and lighting systems in a theatre setting. The passion for video shooting &amp; editing almost landed me in TV Broadcasting, but at the last minute I decided to try something new and go into Multimedia Design &amp; Production at <a href="https://www.fanshawec.ca/" target="_blank">Fanshawe College</a>. After completing the two year diploma I got accepted into Music Industry Arts, and took my love of music to the studio setting. I've been lucky enough to have learned from some talented professionals, gaining valuable knowledge. </p>
 
@@ -589,11 +588,11 @@
                 <h4>Graphic / Web Designer</h4>
                 <figcaption>1/2009 - 7/2011</figcaption>
                 <p>St. Thomas, ON</p>
-                <p>Update and maintain website, Create ad samples to be placed in the weekly restaurant publication.</p>
+                <p>Update and maintain website, Create ad samples to be placed in the weekly restaurant publication. Setup and print editions with one colour process.</p>
               </figure>
               <figure>
                 <h3>Stiches Above</h3>
-                <h4>Machine Operator</h4>
+                <h4>CNC Machine Operator</h4>
                 <figcaption>6/2005 - 12/2008</figcaption>
                 <p>London, ON</p>
                 <p>A multi-head CNC machine operator for a custom embroidery company. The job consisted of unpacking, prepping, and embroidering items, such as hats, coats, &amp; shirts.</p>
@@ -633,7 +632,7 @@
             </div>
             <div class="bottom-nav">
               <p>
-                <a href="#web" onclick="scrollTo();">Next: Web Projects</a>
+                <a href="#web" class="bottom-click">Next: Web Projects</a>
               </p>
             </div>
         </div>
@@ -696,8 +695,8 @@
           </div>
           <div class="bottom-nav">
               <p>
-                <a href="#story" onclick="scrollTo();">Previous: Story</a>
-                <a href="#branding" onclick="scrollTo();">Next: Branding</a>
+                <a href="#story" class="bottom-click">Previous: Story</a>
+                <a href="#branding" class="bottom-click">Next: Branding</a>
               </p>
             </div>
         </div>
@@ -775,8 +774,8 @@
           </div>
           <div class="bottom-nav">
               <p>
-                <a href="#web" onclick="scrollTo();">Previous: Web Projects</a>
-                <a href="#music" onclick="scrollTo();">Next: Music</a>
+                <a href="#web" class="bottom-click">Previous: Web Projects</a>
+                <a href="#music" class="bottom-click">Next: Music</a>
               </p>
             </div>
         </div>
@@ -855,8 +854,8 @@
           
           <div class="bottom-nav">
               <p>
-                <a href="#branding" onclick="scrollTo();">Previous: Branding</a>
-                <a href="#story" onclick="scrollTo();">Home: Story</a>
+                <a href="#branding" class="bottom-click">Previous: Branding</a>
+                <a href="#story" class="bottom-click">Home: Story</a>
               </p>
             </div>
         </div>
@@ -868,12 +867,8 @@
   </div>
 
   </div></div></div></div></div>
-
-  <script>
-    function scrollTo(){
-        document.getElementById('right-container').scrollTop = document.getElementById('top-scroll').offsetTop-10;
-    }
-  </script>
+  <script async src="bottom-nav.js"></script>
+ 
   <amp-analytics type="googleanalytics" id="analytics1">
     <script type="application/json">
     {
