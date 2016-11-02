@@ -459,7 +459,6 @@
     @media (max-width: 960px){
       .education, .experience, .examples{
         display: block;
-        margin-left: 0.5rem;
         margin-right: 0.5rem;
       }
       figure, figure + figure{
@@ -541,7 +540,9 @@
         position:relative;
         padding: 0 1rem;
       }
-      
+      .education, .experience, .examples{
+        margin-left: 0.5rem;
+      }
       .projects, .projects.ex1{
         padding-top: 50vw;
       }
@@ -561,11 +562,13 @@
       h3{
         font-size: 5vmin;
       }
+      .resume-download{
+        margin-left: 0.5em;
+      }
       .bottom-nav a{
         font-size: 0.8rem;
       }
     }
-
     @media print{
       .no-print{
         display: none;
