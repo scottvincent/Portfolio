@@ -1,0 +1,28 @@
+### To Do:
+
+- [x] Section design and typography
+- [x] writeup 3M portal
+- [x] writeup branding case studies
+- [ ] animate logo and nav
+- [x] Logo examples to svg
+- [x] web example Images to svg
+- [x] Animate the web project pages
+- [x] wire up next and previous
+- [ ] inter page animations
+- [x] Allow paged or single view option maybe
+- [x] come up with multiple themes
+- [x] Theme Picker
+  - [x] palette theme background change on :target change
+  - [ ] animate between themes.
+- [ ] Optimize SVGs
+- [ ] content review
+  - [ ] Story
+  - [ ] Web Projects
+  - [ ] Branding
+  - [ ] Music
+  - [ ] Contact
+- [ ] print view
+- [ ] A11y testing
+- [ ] browser testing
+- [ ] GA events
+- [ ] Launch it

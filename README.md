@@ -1,2 +1,2 @@
 # Portfolio
-Portfolio site for Scott Vincent built with AMP
+A Portfolio site for Scott Vincent 2019. Version 4
