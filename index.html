@@ -1,1123 +1,1324 @@
 <!doctype html>
-<html amp lang="en">
+<html lang="en" class="theme--default">
 <head>
-  <meta charset="utf-8">
-  <title>Scott Vincent | Designer</title>
-  <link rel="canonical" href="http://scottvincent.ca/index.html" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon.png">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <meta property="og:title" content="Scott Vincent | Designer"/>
-  <meta property="og:url" content="http://scottvincent.ca"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="http://www.scottvincent.ca/Icon-Colour.png"/>
-  <meta property="og:site_name" content="Scott Vincent"/>
-  <meta property="og:description" content="Front End Designer with work seen on over 1 Billion pageviews. (Yep, Billion)">
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "headline": "Front End Designer with work seen on over 1 Billion pageviews. (Yep, Billion)",
-      "url": "http://www.scottvincent.ca/index.html",
-      "image": [
-      "http://www.scottvincent.ca/Icon-Colour.png"
-      ]
-    }
-  </script>
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<meta charset="utf-8">
+	<title>Scott Vincent | Designer</title>
+	<link rel="canonical" href="http://scottvincent.ca/index.html" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon.png">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+	<meta name="format-detection" content="telephone=no" />
+	<meta property="og:title" content="Scott Vincent | Designer"/>
+	<meta property="og:url" content="http://scottvincent.ca"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="http://www.scottvincent.ca/Icon-Colour.png"/>
+	<meta property="og:site_name" content="Scott Vincent"/>
+	<meta property="og:description" content="Interface Designer with work seen on over 1 Billion pageviews.">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebSite",
+			"headline": "Interface Designer with work seen on over 1 Billion pageviews.",
+			"url": "http://www.scottvincent.ca/index.html",
+			"image": [
+			"http://www.scottvincent.ca/Icon-Colour.png"
+			]
+		}
+	</script>
+	<noscript>
+		<!-- Hide all the nav items, theme-picker, and show it as one page -->
+		<style>
+			.bottom-nav .navigation-click,
+			.theme-picker {
+				display: none;
+			}
 
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400|Montserrat:400,700">
+			.page {
+				display: block !important;
+				height: auto !important;
+			}
 
-  <style amp-custom>
+			.project-animate .device-path {
+				stroke-dashoffset: 0;
+			}
 
-    /* Color Palette
-      Yellow: #F2E744
-      Green:  #33B846
-      Blue:   #44BEF2
-      Purple: #C144F2
-      Red:    #F24744
-      Orange: #F89924
-    */ 
-    *{
-      box-sizing: border-box;
-    }
-    body{
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-      margin: 0;
-      line-height: 1.6;
-      font-size: 16px;
-      color: #2D2E2F;
-      background: #777;
-      background: #f24744;
-      background: -moz-linear-gradient(-45deg,  #f24744 0%, #f89924 100%);
-      background: -webkit-linear-gradient(-45deg,  #f24744 0%,#f89924 100%);
-      background: linear-gradient(135deg,  #f24744 0%,#f89924 100%);
-      transition: all 0.3s ease-in-out;
-    } 
-    #branding, #web, #music, #contact{
-      background: transparent;
-      transition: all 0.3s ease-in-out;
-    } 
-    #story:target {
-      background: #f24744;
-      background: -moz-linear-gradient(-45deg,  #f24744 0%, #f89924 100%);
-      background: -webkit-linear-gradient(-45deg,  #f24744 0%,#f89924 100%);
-      background: linear-gradient(135deg,  #f24744 0%,#f89924 100%);
-    }
-    #branding:target{
-      background: #33b846;
-      background: -moz-linear-gradient(-45deg,  #33b846 0%, #44bef2 100%);
-      background: -webkit-linear-gradient(-45deg,  #33b846 0%,#44bef2 100%);
-      background: linear-gradient(135deg,  #33b846 0%,#44bef2 100%);
-    }
-    #web:target{
-      background: #44bef2;
-      background: -moz-linear-gradient(-45deg,  #44bef2 0%, #c144f2 100%);
-      background: -webkit-linear-gradient(-45deg,  #44bef2 0%,#c144f2 100%);
-      background: linear-gradient(135deg,  #44bef2 0%,#c144f2 100%);
-    }
-    #music:target{
-      background: #c144f2;
-      background: -moz-linear-gradient(-45deg,  #c144f2 0%, #f24744 100%);
-      background: -webkit-linear-gradient(-45deg,  #c144f2 0%,#f24744 100%);
-      background: linear-gradient(135deg,  #c144f2 0%,#f24744 100%);
-    }
-    #contact:target {
-      background: #f2e744;
-      background: -moz-linear-gradient(-45deg,  #f2e744 0%, #33b846 100%);
-      background: -webkit-linear-gradient(-45deg,  #f2e744 0%,#33b846 100%);
-      background: linear-gradient(135deg,  #f2e744 0%,#33b846 100%);
-    }
+			.projects__example {
+				filter: grayscale(0) !important;
+			}
 
-    h1,h2,h3{
-      line-height: 1.2;
-      color: #3d3e40;
-      font-weight: 400;
-      margin: 0;
-    }
-    h2, h3, h4, h5{
-      font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    }
-    h1{
-      font-size: 2.7rem;
-      letter-spacing: -0.05em;
-      font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    }
-    h2{
-      font-size: 2.3rem;
-      line-height: 1.5;
-    }
-    h3{
-      font-size: 1.5rem; 
-    }
-    a{
-      color: #4285f4;
-    }
-    a:hover{
-      color: #0d5bdd;
-    }
-    
-    hr{
-      border: none;
-      border-top-width: 0.2rem;
-    }
-    .flex-container{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: stretch;
-      height: 100vh;
-    }
+		</style>
+	</noscript>
 
-    /*---------------------- Navigation Styles -------------------*/
-    .left-container{
-      width: 16rem;
-      min-width: 16rem;
-      overflow: auto;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      color: #fff;
-      text-align: center;
-      z-index: 5;
-    }
-    .left-container a{
-      color: rgba(0,0,0,0.5);
-      text-decoration: none;
-    }
-    .left-container a:hover{
-      color: #fff;
-    }
-    header{
-      flex-grow: 2;
-    }
-    .logo{
-      max-width: 256px;
-      margin: 0 auto;
-    }
-    nav ul{
-      list-style-type: none;
-      padding: 0;
-      font-size: 1.2rem;
-      margin: 0;
-      border-top: 1rem solid #fff;
-    }
-    nav ul li a{
-      padding: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.125em;
-      display: block;
-    }
-    .contact-toggle{
-      display: none;
-    }
-    .contact{
-      overflow: hidden;
+	<link rel="stylesheet" href="/styles/styles.css">
+	</head>
+	<body>
+		<div class="main" id="main">
+			<header class="main__header">
+				<div class="theme-picker">
+					<label>
+						Theme
 
-    }
-    .contact-info{
-      font-size: 1.25rem;
-      text-decoration: none;
-      font-weight: 400;
-      padding: 0.667rem 0;
-    }
-    .city{
-      font-size: 0.667rem;
-      letter-spacing: 0.16em;
-      padding-bottom: 0.667rem;
-    }
-    .social{
-      font-weight: bolder;
-      font-size: 0.7rem;
-      padding-bottom: 0.667rem;
-    }
-    footer{
-      font-size: 0.7rem;
-      padding-bottom: 1rem;
-    }
+						<select id="themeSelect">
+							<option value="theme--default">Default</option>
+							<option value="theme--dark">Midnight</option>
+							<option value="theme--gradient">Palette</option>
+							<option value="theme--highlighter">Highlighter</option>
+							<!--<option value="theme--print">Print</option>-->
+						</select>
+					</label>
+				</div>
+				<nav>
+					<a href="index.html">
+						<span class="sr-only">Scott Vincent Design</span>
+						<svg class="logo" width="256" height="187" version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 352" style="enable-background:new 0 0 480 352;" xml:space="preserve">
+							<g class="logo__icon">
+								<path class="logo__circle" d="M240,60.3c52.3,0,94.7,42.4,94.7,94.7c0,52.3-42.4,94.7-94.7,94.7s-94.7-42.4-94.7-94.7C145.3,102.7,187.7,60.3,240,60.3
+								M240,30c-68.93,0-125,56.07-125,125s56.07,125,125,125s125-56.07,125-125S308.93,30,240,30L240,30z"/>
+								<path class="logo__v" d="M171.17,117.12h31.7c0.7,0,1.35,0.39,1.68,1.01l33.78,64.58c0.71,1.35,2.64,1.35,3.35,0l33.78-64.58
+								c0.33-0.62,0.97-1.01,1.68-1.01h31.7c1.42,0,2.34,1.51,1.67,2.77l-51.98,98.49c-0.33,0.62-0.97,1.01-1.67,1.01h-33.71
+								c-0.7,0-1.34-0.39-1.67-1.01l-51.98-98.49C168.83,118.64,169.74,117.12,171.17,117.12z"/>
+							</g>
+							<g class="logo__wordmark">
+								<path d="M44.27,300.8c-2.57,0-3.7,0.99-3.71,2.34c-0.07,1.47,1.23,2.32,4.13,2.93l2.52,0.54c6.77,1.45,9.55,4.73,9.58,9.4
+								c-0.03,6.05-4.69,9.4-12.45,9.4c-7.99,0-13.2-3.44-13.23-11.14H39c0.13,2.81,2.02,4.31,5.21,4.31c2.66,0,4.04-1.06,4.07-2.57
+								c-0.03-1.39-1.2-2.25-4.61-2.99l-3.05-0.66c-5.43-1.17-8.76-3.83-8.74-8.62c-0.04-5.84,5.1-9.76,12.39-9.76
+								c7.42,0,12.06,3.98,12.09,10H48.4C48.24,301.98,46.96,300.8,44.27,300.8z"/>
+								<path d="M58.11,313.61c0-7.07,4.43-11.86,11.92-11.86c6.77,0,11.03,3.89,11.08,9.88h-7.66c-0.22-2.41-1.47-3.71-3.29-3.71
+								c-2.17,0-3.59,1.86-3.59,5.63s1.42,5.63,3.59,5.63c1.81,0,3.11-1.3,3.29-3.71h7.66c-0.09,6.09-4.27,10-11.08,10
+								C62.54,325.47,58.11,320.68,58.11,313.61z"/>
+								<path d="M82.02,313.61c0-7.07,4.43-11.86,11.92-11.86c7.48,0,11.92,4.79,11.92,11.86s-4.43,11.86-11.92,11.86
+								C86.45,325.47,82.02,320.68,82.02,313.61z M97.41,313.55c0-3.61-1.32-5.81-3.41-5.81c-2.22,0-3.53,2.2-3.53,5.81
+								s1.32,5.81,3.53,5.81C96.09,319.36,97.41,317.16,97.41,313.55z"/>
+								<path d="M121.18,308.05h-3.95v9.61c0,0.96,0.48,1.44,1.56,1.44c0.49,0,1.3-0.16,1.62-0.24l1.2,5.81c-0.75,0.22-2.14,0.61-4.01,0.72
+								c-5.7,0.31-8.68-2.12-8.62-6.95v-10.39h-2.93v-5.99h2.93v-5.51h8.26v5.51h3.95V308.05z"/>
+								<path d="M136.98,308.05h-3.95v9.61c0,0.96,0.48,1.44,1.56,1.44c0.49,0,1.3-0.16,1.62-0.24l1.2,5.81c-0.75,0.22-2.14,0.61-4.01,0.72
+								c-5.7,0.31-8.68-2.12-8.62-6.95v-10.39h-2.93v-5.99h2.93v-5.51h8.26v5.51h3.95V308.05z"/>
+								<path d="M160.74,316.01h0.24l6.29-21.62h9.4l-10.12,30.66h-11.38l-10.12-30.66h9.4L160.74,316.01z"/>
+								<path d="M178,302.06h8.26v22.99H178V302.06z M178.06,295.89c0-2.08,1.83-3.77,4.07-3.77s4.07,1.69,4.07,3.77
+								c0,2.08-1.83,3.77-4.07,3.77S178.06,297.97,178.06,295.89z"/>
+								<path d="M197.56,325.05h-8.26v-22.99h7.84v4.37h0.24c1-2.9,3.68-4.67,7.07-4.67c4.88,0,8.04,3.62,8.02,8.62v14.67h-8.26v-12.93
+								c0.01-2.27-1.21-3.65-3.29-3.65c-2.05,0-3.34,1.38-3.35,3.65V325.05z"/>
+								<path d="M214.25,313.61c0-7.07,4.43-11.86,11.92-11.86c6.77,0,11.03,3.89,11.08,9.88h-7.66c-0.22-2.41-1.47-3.71-3.29-3.71
+								c-2.17,0-3.59,1.86-3.59,5.63s1.42,5.63,3.59,5.63c1.81,0,3.11-1.3,3.29-3.71h7.66c-0.09,6.09-4.27,10-11.08,10
+								C218.68,325.47,214.25,320.68,214.25,313.61z"/>
+								<path d="M238.16,313.61c0-7.12,4.55-11.86,11.68-11.86c6.95,0,11.44,4.48,11.44,11.8v1.92H246.3v0.36c0,2.21,1.44,3.83,3.89,3.83
+								c1.69,0,3.05-0.73,3.53-2.04h7.54c-0.78,4.79-4.88,7.84-11.26,7.84C242.65,325.47,238.16,321.05,238.16,313.61z M253.67,310.92
+								c-0.04-1.98-1.6-3.35-3.65-3.35c-2.02,0-3.67,1.36-3.71,3.35H253.67z"/>
+								<path d="M271.6,325.05h-8.26v-22.99h7.84v4.37h0.24c1-2.9,3.68-4.67,7.07-4.67c4.88,0,8.04,3.62,8.02,8.62v14.67h-8.26v-12.93
+								c0.01-2.27-1.21-3.65-3.29-3.65c-2.05,0-3.34,1.38-3.35,3.65V325.05z"/>
+								<path d="M302.6,308.05h-3.95v9.61c0,0.96,0.48,1.44,1.56,1.44c0.49,0,1.3-0.16,1.62-0.24l1.2,5.81c-0.75,0.22-2.14,0.61-4.01,0.72
+								c-5.7,0.31-8.68-2.12-8.62-6.95v-10.39h-2.93v-5.99h2.93v-5.51h8.26v5.51h3.95V308.05z"/>
+								<path d="M311.69,325.05v-30.66h11.68c9.46,0,15.39,5.75,15.39,15.33s-5.93,15.33-15.27,15.33H311.69z M323.19,317.98
+								c4.55,0,7.19-1.86,7.19-8.26s-2.63-8.26-7.42-8.26h-2.93v16.53H323.19z"/>
+								<path d="M340.25,313.61c0-7.12,4.55-11.86,11.67-11.86c6.95,0,11.44,4.48,11.44,11.8v1.92H348.4v0.36c0,2.21,1.44,3.83,3.89,3.83
+								c1.69,0,3.05-0.73,3.53-2.04h7.54c-0.78,4.79-4.88,7.84-11.26,7.84C344.75,325.47,340.25,321.05,340.25,313.61z M355.76,310.92
+								c-0.04-1.98-1.6-3.35-3.65-3.35c-2.02,0-3.67,1.36-3.71,3.35H355.76z"/>
+								<path d="M378.6,309.54c-0.12-1.41-1.48-2.28-3.11-2.28c-1.42,0-2.6,0.54-2.58,1.5c-0.03,0.67,0.46,1.3,2.22,1.62l4.67,0.84
+								c4.7,0.85,6.98,2.83,7.01,6.23c-0.03,4.92-4.72,8.02-11.08,8.02c-7.04,0-11.11-3.13-11.56-7.84h8.2c0.22,1.47,1.54,2.28,3.41,2.28
+								c1.51,0,2.6-0.54,2.63-1.5c-0.03-0.87-0.84-1.35-2.63-1.68l-4.07-0.72c-4.69-0.82-7.04-3.14-7.01-6.77
+								c-0.03-4.79,4.03-7.49,10.6-7.49c6.65,0,10.69,2.92,10.9,7.78H378.6z"/>
+								<path d="M388.71,302.06h8.26v22.99h-8.26V302.06z M388.77,295.89c0-2.08,1.83-3.77,4.07-3.77c2.25,0,4.07,1.69,4.07,3.77
+								c0,2.08-1.83,3.77-4.07,3.77C390.59,299.66,388.77,297.97,388.77,295.89z"/>
+								<path d="M399.7,326.55h7.96c0.24,1.23,1.63,1.8,3.53,1.8c2.14,0,3.71-0.88,3.71-3.35v-3.89h-0.24c-0.9,2.34-3.35,3.65-6.47,3.65
+								c-4.91,0-9.04-3.23-9.04-11.2c0-8.32,4.43-11.8,8.98-11.8c3.41,0,5.57,1.98,6.47,4.31h0.18v-4.01h8.26v22.93
+								c0,5.6-4.82,8.92-12.09,8.92C404.04,333.91,400.02,330.74,399.7,326.55z M414.91,313.55c0-3.41-1.38-5.45-3.65-5.45
+								s-3.59,2.04-3.59,5.45s1.32,5.33,3.59,5.33S414.91,316.91,414.91,313.55z"/>
+								<path d="M434.27,325.05h-8.26v-22.99h7.84v4.37h0.24c1-2.9,3.68-4.67,7.07-4.67c4.88,0,8.04,3.62,8.02,8.62v14.67h-8.26v-12.93
+								c0.01-2.27-1.21-3.65-3.29-3.65c-2.05,0-3.34,1.38-3.35,3.65V325.05z"/>
+							</g>
+						</svg>
+					</a>
+					<ul>
+						<li><a class="nav__link navigation-click nav__link--story" href="#story">Story</a></li>
+						<li><a class="nav__link navigation-click nav__link--web" href="#web">Web Projects</a></li>
+						<li><a class="nav__link navigation-click nav__link--branding" href="#branding">Branding</a></li>
+						<li><a class="nav__link navigation-click nav__link--music" href="#music">Music</a></li>
+						<li class="contact-toggle"><a class="nav__link nav__link--contact" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="contact-page">
+					<div class="contact-info"><a class="contact__email" href="mailto:contact@scottvincent.ca" target="_blank">contact@scottvincent.ca</a></div>
+					<div class="city">LONDON, ONTARIO, CANADA</div>
+					<div class="social">
+						<a class="contact__link" href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a>
+						<a class="contact__link" href="https://twitter.com/CmdOptEsc" target="_blank">Twitter</a>
+						<a class="contact__link" href="http://www.instagram.com/scott.v" target="_blank">Instagram</a>
+						<a class="contact__link" href="https://www.github.com/scottvincent" target="_blank">Github</a>
+						<a class="contact__link" href="https://www.gitlab.com/scottvincent" target="_blank">Gitlab</a>
+						<a class="contact__link" href="https://cssbattle.dev/player/scott" target="_blank">CSSBattle</a>
+					</div>
+					<div class="copyright">
+						&copy; 2019. All Rights Reserved
+					</div>
+				</div>
+			</header>
+			<div class="main__content">
+
+				<article id="story" class="page page--story page--active">
+					<div class="page__container">
+						<h1 class="page__header"><span class="page__header__text">Story</span></h1>
+
+						<section>
+							<div class="panel">
+								<h3>Interface Designer with work seen on over 1 Billion pageviews.</h3>
+								<p>Experienced in graphic design, user interfaces, front end development, product design, quality assurance testing. I want the users of the product to love the results as much as I do. I believe putting care into the finest details along the way results in a final product that exceeds expectations.</p>
+
+								<blockquote>Specializing in user interface design, it's about keeping things simple and predictable. Finding all the use case scenarios and coming up with clever solutions to them.</blockquote>
+
+								<p>During my professional career I was a part of many projects in a wide variety of industries. Staying on top of current web trends and technology has been the key to continued success. I have experience with <em>languages and libraries</em> (HTML5, CSS, Javascript,
+									<a href="http://www.lesscss.org" target="_blank">LESS</a>,
+									<a href="http://sass-lang.com/" target="_blank">SASS</a>,
+									<a href="http://www.jquery.com" target="_blank">JQuery</a>,
+									PHP, C# .NET,
+									<a href="https://reactjs.org/" target="_blank">ReactJS</a>,
+									<a href="http://angular.io/" target="_blank">AngularJS</a>,
+									<a href="http://ampproject.org/" target="_blank">AMP</a>,
+									<a href="https://cordova.apache.org" target="_blank">Cordova</a>,
+									WordPress, WPBakery Page Builder),
+									<em>frontend frameworks</em> (<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>,
+									<a href="https://material.google.com/" target="_blank">Google Material Design</a>,
+									<a href="https://www.carbondesignsystem.com/" target="_blank">Carbon Design System</a>),
+									and <em>Icon systems</em> (<a href="http://fontawesome.io/" target="_blank">Font Awesome</a>, <a href="http://icomoon.io/" target="_blank">Icomoon</a>).
+
+									Speed and proficiency in programs such as <a href="http://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>, <a href="http://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>, <a href="http://www.avid.com/pro-tools" target="_blank">Avid Pro Tools</a>, &amp; <a href="http://www.apple.com/logic-pro" target="_blank">Apple Logic Pro</a>.</p>
+
+								<p>In secondary school I started to get into Adobe Photoshop, Final Cut Pro and went into a 2 year TV Broadcasting program. At the same time as being apart of the daily live news program, I was gaining more experience in live auditorium audio and lighting systems in a theatre setting. The passion for video shooting &amp; editing almost landed me in TV Broadcasting, but at the last minute I decided to try something new and go into Multimedia Design &amp; Production at <a href="https://www.fanshawec.ca/" target="_blank">Fanshawe College</a>. After completing the two year diploma I got accepted into Music Industry Arts, and took my love of music to the studio setting. I've been lucky enough to have learned from some talented professionals, gaining valuable knowledge. </p>
+
+								<p>Being able to do anything that is necessary in a project gives me the flexibility to keep the job fresh and interesting.</p>
+							</div>
+						</section>
+
+						<section>
+							<h2 class="section-header"><span class="section-header__text">Experience</span></h2>
+							<div class="experience">
+								<figure>
+									<h3>tbk Creative</h3>
+									<figcaption>2016/11 - PRESENT</figcaption>
+									<h4>Intermediate Front End Developer</h4>
+									<p class="location">London, ON</p>
+									<hr>
+									<p>Build front end designs, interactive elements, and accessible web pages.</p>
+								</figure>
+								<figure>
+									<h3>IES Group Inc.</h3>
+									<figcaption>2011/4 - 2016/10</figcaption>
+									<h4>Graphic Designer / Front End Developer</h4>
+									<p class="location">London, ON</p>
+									<hr>
+									<p>Design &amp; develop web application interfaces (UI), user experience (UX), logo illustration, branding materials, &amp; marketing collateral.</p>
+								</figure>
+								<figure>
+									<h3>OUR Coffee News</h3>
+									<figcaption>2009/1 - 2011/7</figcaption>
+									<h4>Graphic / Web Designer</h4>
+									<p class="location">St. Thomas, ON</p>
+									<hr>
+									<p>Update and maintain website, Create ad samples to be placed in the weekly restaurant publication. Setup and print editions with one colour process.</p>
+								</figure>
+							</div>
+						</section>
+
+						<section>
+							<h2 class="section-header"><span class="section-header__text">Education</span></h2>
+							<div class="education">
+								<figure>
+									<h3>Music Industry Arts</h3>
+									<figcaption>2008 - 2010</figcaption>
+									<h4>Fanshawe College</h4>
+									<p class="location">London, ON</p>
+									<hr>
+									<ul>
+										<li>School of Contemporary Media Diploma</li>
+										<li>2009 MIA Award, Best Performance</li>
+									</ul>
+								</figure>
+								<figure>
+									<h3>Multimedia Design &amp; Production</h3>
+									<figcaption>2006 - 2008</figcaption>
+									<h4>Fanshawe College</h4>
+									<p class="location">London, ON</p>
+									<hr>
+									<ul>
+										<li>School of Contemporary Media Diploma</li>
+									</ul>
+								</figure>
+								<figure>
+									<h3>H.B. Beal Secondary School</h3>
+									<figcaption>2002 - 2006</figcaption>
+									<p class="location">London, ON</p>
+									<hr>
+									<ul>
+										<li>OSSD Diploma, Ontario Scholar</li>
+										<li>2006 Most Co-operative Student Award</li>
+										<li>2005 Skills Canada Video Challenge, Ontario Bronze Medal</li>
+									</ul>
+								</figure>
+							</div>
+						</section>
+
+						<nav class="bottom-nav no-print">
+							<a href="#music" class="button navigation-click">Last: Music</a>
+							<a href="pdf/Scott-Vincent-Designer-Resume.pdf" target="_blank" class="button button--outline bottom-nav__resume-download" style="display:none">Download PDF Version</a>
+							<a href="#web" class="button navigation-click">Next: Web Projects</a>
+						</nav>
+					</div>
+				</article>
+
+				<article id="web" class="page page--web">
+					<div class="page__container">
+						<h1 class="page__header"><span class="page__header__text">Web Projects</span></h1>
+
+						<section>
+							<div class="projects ex1">
+								<div class="projects__layout project-animate">
+									<!--<object type="image/svg+xml" class="projects__example" data="layouts/baitclick-layout.svg"></object>-->
+
+									<svg class="projects__window" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 2466.14 1162.2" style="enable-background:new 0 0 2466.14 1162.2;" xml:space="preserve">
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64v14.09h270.92v-14.09H242.44z M248.8,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S249.97,350.02,248.8,350.02z M254.05,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S255.22,350.02,254.05,350.02z M259.3,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S260.47,350.02,259.3,350.02z M264.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S265.72,350.02,264.55,350.02z M269.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S270.72,350.02,269.55,350.02z M300.72,350.61h-25.17v-5.54
+											h25.17V350.61z M398.05,350.61h-39v-5.54h39V350.61z M509.38,350.61h-39v-5.54h39V350.61z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,125.84h1458.59 M799.91,114.23c-4.28,0-7.74-3.58-7.74-7.99
+											c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.74,3.58,7.74,7.99C807.65,110.65,804.18,114.23,799.91,114.23z M826.14,114.23
+											c-4.28,0-7.75-3.58-7.75-7.99c0-4.41,3.47-7.99,7.75-7.99c4.28-0.01,7.74,3.58,7.74,7.99S830.4,114.23,826.14,114.23z
+											M852.48,114.23c-4.28,0-7.74-3.58-7.74-7.99c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.75,3.58,7.75,7.99
+											C860.24,110.65,856.76,114.23,852.48,114.23z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M1570.07,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-4.35,0-6.36,6.92-8.66,13.63c-2.28-6.71-4.7-13.62-9.92-13.62l-96.79-0.01c-4.04,0-6.05,5.95-8.16,12.16
+											c-2.14-6.22-4.58-12.16-9.42-12.15l-96.79-0.01c-4.05,0-6.06,5.97-8.17,12.21c-2.15-6.23-4.58-12.2-9.44-12.2l-96.79-0.01
+											c-4.06,0-6.07,6-8.19,12.25c-2.15-6.25-4.59-12.25-9.45-12.24l-96.79-0.01c-4.14,0-6.37,6.84-8.54,13.23 M1548.3,109.19
+											c2.78,0,5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03s-5.03-2.25-5.03-5.03S1545.52,109.19,1548.3,109.19z M1084.7,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1084.7,117,1084.7,114.22z M1199.13,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1199.13,117,1199.13,114.22z M1313.53,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1313.53,117,1313.53,114.22z M1432.93,119.25
+											c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03C1437.96,117,1435.71,119.25,1432.93,119.25z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M996.44,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-8.46,0-8.04,26.11-18.19,26.11 M973.98,119.08c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03
+											S976.76,119.08,973.98,119.08z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,161.44h1458.59 M807.98,148.87c0.64,0.72,0.59,1.53,0,2.11
+											c-0.6,0.58-1.6,0.54-2.16,0s-6.02-6.28-6.02-6.28c-0.3-0.29-0.45-0.67-0.45-1.05c0-0.39,0.15-0.77,0.45-1.06
+											c0,0,5.46-5.74,6.02-6.28c0.56-0.55,1.56-0.59,2.16-0.01s0.64,1.4,0,2.11l-5.01,5.23L807.98,148.87z M836.02,144.7
+											c0,0-5.46,5.73-6.02,6.28c-0.56,0.54-1.57,0.58-2.16,0.01c-0.59-0.58-0.64-1.4,0-2.11l5.01-5.23l-5.01-5.23
+											c-0.64-0.72-0.59-1.53,0-2.11s1.6-0.55,2.16,0c0.56,0.54,6.02,6.28,6.02,6.28c0.3,0.3,0.45,0.68,0.45,1.06
+											S836.32,144.41,836.02,144.7z M866.31,147.86l-4.37-4.88h3.12l-0.04-0.24c-0.43-2.38-2.5-4.11-4.92-4.11
+											c-2.77,0-5.01,2.25-5.01,5.02s2.25,5.02,5.01,5.02c1.07,0,2.1-0.33,2.96-0.97l0.35-0.26l1.91,2.04l-0.41,0.32
+											c-1.38,1.09-3.04,1.66-4.8,1.66c-4.3,0-7.8-3.51-7.8-7.82s3.5-7.82,7.8-7.82c4,0,7.33,2.99,7.75,6.97l0.02,0.19h2.82L866.31,147.86z
+											M2194.43,154.94c0.01,0.94-0.85,1.7-1.9,1.7H879.52c-1.05,0-1.9-0.77-1.9-1.7v-22.59c0-0.94,0.86-1.7,1.9-1.7h1313.02
+											c1.04,0,1.9,0.77,1.9,1.7v22.59H2194.43z M2213.78,154.57h-0.44c-1.03,0-1.86-0.97-1.86-2.18c0-1.21,0.83-2.18,1.86-2.18h0.44
+											c1.03,0,1.86,0.99,1.86,2.18C2215.64,153.59,2214.8,154.57,2213.78,154.57z M2213.78,145.83h-0.44c-1.03,0-1.86-0.97-1.86-2.18
+											c0-1.21,0.83-2.18,1.86-2.18h0.44c1.03,0,1.86,0.97,1.86,2.18C2215.64,144.85,2214.8,145.83,2213.78,145.83z M2213.78,137.08h-0.44
+											c-1.03,0-1.86-0.97-1.86-2.18c0-1.22,0.83-2.2,1.86-2.2h0.44c1.03,0,1.86,0.99,1.86,2.2S2214.8,137.08,2213.78,137.08z"/>
+										<g id="Device-1">
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,487.71h-0.31c-0.94,0-1.04-0.35-1.04-1.01v-40.36
+												c0-0.66,0.12-1.34,1.04-1.34h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,372.1h-0.31c-0.94,0-1.04-0.27-1.04-0.75v-29.5
+												c0-0.48,0.12-1.32,1.04-1.32h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,430.38h-0.31c-0.94,0-1.04-0.75-1.04-1.41v-40.36
+												c0-0.66,0.12-1.65,1.04-1.65h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64h270.92v482.88H242.44V340.64z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2310.93,67.69c0-35.79-29.01-64.79-64.79-64.79L770.21,5.07
+												c-35.79,0-64.8,29.01-64.8,64.79v0.28v1011.94h35.52h1534.49h35.52V70.14h-0.03L2310.93,67.69z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2408.5,1082.08h-0.62h-96.95c-0.03,0-0.06,0-0.09,0h-375.52h-356.47
+												h-155.2H608.47h-0.62c-31.53-0.03-47.55,4.2-47.55,4.2v31.03l2.07,0.09l52.36,2.46h100.32h1081.16h505.07h2.68h48.58h5.85h43.23
+												l52.36-2.46l2.07-0.09v-31.03C2456.05,1086.28,2440.03,1082.06,2408.5,1082.08L2408.5,1082.08z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2412.08,1119.44l-18.27,0.42h-92.53h-877.64H715.05h-92.53l-18.27-0.42
+												l-42.2-1.7c0,0,8.06,10.47,52.66,12.42h100.34h1081.16h91.71h413.36h100.34c44.6-1.95,52.66-12.42,52.66-12.42L2412.08,1119.44z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,87.15h1458.59v910.92H778.87V87.15z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M1360.99,1082.07c-0.02,0.43-0.04,0.86-0.04,1.29v4.76
+												c0,13.01,10.54,23.55,23.55,23.55h247.34c13.01,0,23.55-10.54,23.55-23.55v-4.76c0-0.43-0.01-0.86-0.03-1.29H1360.99z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M527.53,428.91c0,0.67-0.82,1.58-1.7,1.58h-0.29
+												c-0.88,0-1.03-0.91-1.03-1.58v-40.46c0-0.66,0.14-1.38,1.03-1.38h0.29c0.88,0,1.7,0.72,1.7,1.38V428.91z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M478.76,269.1l-204.69,0.39c-26.02,0-42.48,20.88-42.48,40.45l0.38,545.83
+												c0,11.91-0.38,40.99,45.49,40.99h201.19c40.65,0,44.82-20.61,44.82-40.02l1.08-547.37C524.55,289.58,514.68,269.1,478.76,269.1z
+												M350.91,310.36c-2.09,0-3.79-1.7-3.79-3.79s1.7-3.79,3.79-3.79s3.79,1.7,3.79,3.79S353,310.36,350.91,310.36z M378.41,879.32
+												c-10.75,0-19.47-8.72-19.47-19.47s8.72-19.47,19.47-19.47c10.76,0,19.47,8.72,19.47,19.47S389.17,879.32,378.41,879.32z
+												M407.59,308.72h-35.31c-0.79,0-1.43-0.89-1.43-2.04c0-1.14,0.64-2.03,1.43-2.03h35.31c0.79,0,1.43,0.88,1.43,2.03
+												C409.02,307.82,408.38,308.71,407.59,308.72z"/>
+										</g>
+									</svg>
+								</div>
+								<div class="panel">
+									<h2>Scott Vincent Design</h2>
+
+									<p>The site you're currently on is an exercise in functional, lightweight web design. Using modern techniques it ensures incredibly quick page load times. Lately it has become commonplace to add large libraries and heavy dependancies to accomplish fairly simple tasks, contributing to a bloated and inconsiderate atmosphere for users.</p>
+
+									<p>This site loads less than <b>1.5MB</b> onto your device to deliver all its information and imagery. It still takes into consideration the browser size and device type to deliver a responsive, user friendly experience. Rather than attempting to get the page to load exactly the same in outdated browsers, the name of the game is graceful degredation. When a user doesn't have access to a feature, account for that and serve them a different experience while giving them all the same important information.</p>
+
+									<ul>
+										<li>Multiple themes that will randomize on page load unless selected, then it will remember your preference.</li>
+										<li>The use of a new variable font format that reduces the number of files needed.</li>
+										<li>If javascript is disabled in the browser, the limited javascript necessary to display the content will adjust.</li>
+									</ul>
+									<p>With all of those things considered, I also want to make a site that I think looks good. Using color, layout, and typography to create something that I would be happy to visit myself.</p>
+								</div>
+							</div>
+							<div class="projects ex2">
+								<div class="projects__layout project-animate">
+									<object type="image/svg+xml" class="projects__example" data="layouts/diply-layout.svg"></object>
+
+									<svg class="projects__window" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 2466.14 1162.2" style="enable-background:new 0 0 2466.14 1162.2;" xml:space="preserve">
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64v14.09h270.92v-14.09H242.44z M248.8,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S249.97,350.02,248.8,350.02z M254.05,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S255.22,350.02,254.05,350.02z M259.3,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S260.47,350.02,259.3,350.02z M264.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S265.72,350.02,264.55,350.02z M269.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S270.72,350.02,269.55,350.02z M300.72,350.61h-25.17v-5.54
+											h25.17V350.61z M398.05,350.61h-39v-5.54h39V350.61z M509.38,350.61h-39v-5.54h39V350.61z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,125.84h1458.59 M799.91,114.23c-4.28,0-7.74-3.58-7.74-7.99
+											c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.74,3.58,7.74,7.99C807.65,110.65,804.18,114.23,799.91,114.23z M826.14,114.23
+											c-4.28,0-7.75-3.58-7.75-7.99c0-4.41,3.47-7.99,7.75-7.99c4.28-0.01,7.74,3.58,7.74,7.99S830.4,114.23,826.14,114.23z
+											M852.48,114.23c-4.28,0-7.74-3.58-7.74-7.99c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.75,3.58,7.75,7.99
+											C860.24,110.65,856.76,114.23,852.48,114.23z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M1570.07,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-4.35,0-6.36,6.92-8.66,13.63c-2.28-6.71-4.7-13.62-9.92-13.62l-96.79-0.01c-4.04,0-6.05,5.95-8.16,12.16
+											c-2.14-6.22-4.58-12.16-9.42-12.15l-96.79-0.01c-4.05,0-6.06,5.97-8.17,12.21c-2.15-6.23-4.58-12.2-9.44-12.2l-96.79-0.01
+											c-4.06,0-6.07,6-8.19,12.25c-2.15-6.25-4.59-12.25-9.45-12.24l-96.79-0.01c-4.14,0-6.37,6.84-8.54,13.23 M1548.3,109.19
+											c2.78,0,5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03s-5.03-2.25-5.03-5.03S1545.52,109.19,1548.3,109.19z M1084.7,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1084.7,117,1084.7,114.22z M1199.13,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1199.13,117,1199.13,114.22z M1313.53,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1313.53,117,1313.53,114.22z M1432.93,119.25
+											c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03C1437.96,117,1435.71,119.25,1432.93,119.25z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M996.44,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-8.46,0-8.04,26.11-18.19,26.11 M973.98,119.08c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03
+											S976.76,119.08,973.98,119.08z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,161.44h1458.59 M807.98,148.87c0.64,0.72,0.59,1.53,0,2.11
+											c-0.6,0.58-1.6,0.54-2.16,0s-6.02-6.28-6.02-6.28c-0.3-0.29-0.45-0.67-0.45-1.05c0-0.39,0.15-0.77,0.45-1.06
+											c0,0,5.46-5.74,6.02-6.28c0.56-0.55,1.56-0.59,2.16-0.01s0.64,1.4,0,2.11l-5.01,5.23L807.98,148.87z M836.02,144.7
+											c0,0-5.46,5.73-6.02,6.28c-0.56,0.54-1.57,0.58-2.16,0.01c-0.59-0.58-0.64-1.4,0-2.11l5.01-5.23l-5.01-5.23
+											c-0.64-0.72-0.59-1.53,0-2.11s1.6-0.55,2.16,0c0.56,0.54,6.02,6.28,6.02,6.28c0.3,0.3,0.45,0.68,0.45,1.06
+											S836.32,144.41,836.02,144.7z M866.31,147.86l-4.37-4.88h3.12l-0.04-0.24c-0.43-2.38-2.5-4.11-4.92-4.11
+											c-2.77,0-5.01,2.25-5.01,5.02s2.25,5.02,5.01,5.02c1.07,0,2.1-0.33,2.96-0.97l0.35-0.26l1.91,2.04l-0.41,0.32
+											c-1.38,1.09-3.04,1.66-4.8,1.66c-4.3,0-7.8-3.51-7.8-7.82s3.5-7.82,7.8-7.82c4,0,7.33,2.99,7.75,6.97l0.02,0.19h2.82L866.31,147.86z
+											M2194.43,154.94c0.01,0.94-0.85,1.7-1.9,1.7H879.52c-1.05,0-1.9-0.77-1.9-1.7v-22.59c0-0.94,0.86-1.7,1.9-1.7h1313.02
+											c1.04,0,1.9,0.77,1.9,1.7v22.59H2194.43z M2213.78,154.57h-0.44c-1.03,0-1.86-0.97-1.86-2.18c0-1.21,0.83-2.18,1.86-2.18h0.44
+											c1.03,0,1.86,0.99,1.86,2.18C2215.64,153.59,2214.8,154.57,2213.78,154.57z M2213.78,145.83h-0.44c-1.03,0-1.86-0.97-1.86-2.18
+											c0-1.21,0.83-2.18,1.86-2.18h0.44c1.03,0,1.86,0.97,1.86,2.18C2215.64,144.85,2214.8,145.83,2213.78,145.83z M2213.78,137.08h-0.44
+											c-1.03,0-1.86-0.97-1.86-2.18c0-1.22,0.83-2.2,1.86-2.2h0.44c1.03,0,1.86,0.99,1.86,2.2S2214.8,137.08,2213.78,137.08z"/>
+										<g id="Device-2">
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,487.71h-0.31c-0.94,0-1.04-0.35-1.04-1.01v-40.36
+												c0-0.66,0.12-1.34,1.04-1.34h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,372.1h-0.31c-0.94,0-1.04-0.27-1.04-0.75v-29.5
+												c0-0.48,0.12-1.32,1.04-1.32h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,430.38h-0.31c-0.94,0-1.04-0.75-1.04-1.41v-40.36
+												c0-0.66,0.12-1.65,1.04-1.65h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64h270.92v482.88H242.44V340.64z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2310.93,67.69c0-35.79-29.01-64.79-64.79-64.79L770.21,5.07
+												c-35.79,0-64.8,29.01-64.8,64.79v0.28v1011.94h35.52h1534.49h35.52V70.14h-0.03L2310.93,67.69z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2408.5,1082.08h-0.62h-96.95c-0.03,0-0.06,0-0.09,0h-375.52h-356.47
+												h-155.2H608.47h-0.62c-31.53-0.03-47.55,4.2-47.55,4.2v31.03l2.07,0.09l52.36,2.46h100.32h1081.16h505.07h2.68h48.58h5.85h43.23
+												l52.36-2.46l2.07-0.09v-31.03C2456.05,1086.28,2440.03,1082.06,2408.5,1082.08L2408.5,1082.08z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2412.08,1119.44l-18.27,0.42h-92.53h-877.64H715.05h-92.53l-18.27-0.42
+												l-42.2-1.7c0,0,8.06,10.47,52.66,12.42h100.34h1081.16h91.71h413.36h100.34c44.6-1.95,52.66-12.42,52.66-12.42L2412.08,1119.44z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,87.15h1458.59v910.92H778.87V87.15z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M1360.99,1082.07c-0.02,0.43-0.04,0.86-0.04,1.29v4.76
+												c0,13.01,10.54,23.55,23.55,23.55h247.34c13.01,0,23.55-10.54,23.55-23.55v-4.76c0-0.43-0.01-0.86-0.03-1.29H1360.99z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M527.53,428.91c0,0.67-0.82,1.58-1.7,1.58h-0.29
+												c-0.88,0-1.03-0.91-1.03-1.58v-40.46c0-0.66,0.14-1.38,1.03-1.38h0.29c0.88,0,1.7,0.72,1.7,1.38V428.91z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M478.76,269.1l-204.69,0.39c-26.02,0-42.48,20.88-42.48,40.45l0.38,545.83
+												c0,11.91-0.38,40.99,45.49,40.99h201.19c40.65,0,44.82-20.61,44.82-40.02l1.08-547.37C524.55,289.58,514.68,269.1,478.76,269.1z
+												M350.91,310.36c-2.09,0-3.79-1.7-3.79-3.79s1.7-3.79,3.79-3.79s3.79,1.7,3.79,3.79S353,310.36,350.91,310.36z M378.41,879.32
+												c-10.75,0-19.47-8.72-19.47-19.47s8.72-19.47,19.47-19.47c10.76,0,19.47,8.72,19.47,19.47S389.17,879.32,378.41,879.32z
+												M407.59,308.72h-35.31c-0.79,0-1.43-0.89-1.43-2.04c0-1.14,0.64-2.03,1.43-2.03h35.31c0.79,0,1.43,0.88,1.43,2.03
+												C409.02,307.82,408.38,308.71,407.59,308.72z"/>
+										</g>
+									</svg>
+								</div>
+
+								<div class="panel">
+									<h2>Diply</h2>
+									<p>Diply was an entertainment website that I worked on from 2013 to the end of 2014. Created initially as a online product showcase, it morphed into articles to be shared on social media.</p>
+
+									<p>Half of the 2 man team that built the initial site with <a href="https://getbootstrap.com/docs/3.4/" target="_blank">Bootstrap 3</a>, and leveraging <a href="http://lesscss.org/" target="_blank">LESS</a> css. Diply was an <a href="https://angular.io" target="_blank">AngularJS</a> web application with a custom content management system. I was the Lead UI Designer during the site's first year, responsible for prototyping, front-end styling, and user experience. From launch over the next year I was there, those pages were viewed over 1 billion times.</p>
+
+									<p><em>Project at IES Group Inc.</em></p>
+
+								</div>
+							</div>
+							<div class="projects ex3">
+								<div class="projects__layout project-animate">
+									<object type="image/svg+xml" class="projects__example" data="layouts/mediasonar-layout.svg"></object>
+
+									<svg class="projects__window" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 2466.14 1162.2" style="enable-background:new 0 0 2466.14 1162.2;" xml:space="preserve">
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64v14.09h270.92v-14.09H242.44z M248.8,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S249.97,350.02,248.8,350.02z M254.05,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S255.22,350.02,254.05,350.02z M259.3,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S260.47,350.02,259.3,350.02z M264.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S265.72,350.02,264.55,350.02z M269.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S270.72,350.02,269.55,350.02z M300.72,350.61h-25.17v-5.54
+											h25.17V350.61z M398.05,350.61h-39v-5.54h39V350.61z M509.38,350.61h-39v-5.54h39V350.61z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,125.84h1458.59 M799.91,114.23c-4.28,0-7.74-3.58-7.74-7.99
+											c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.74,3.58,7.74,7.99C807.65,110.65,804.18,114.23,799.91,114.23z M826.14,114.23
+											c-4.28,0-7.75-3.58-7.75-7.99c0-4.41,3.47-7.99,7.75-7.99c4.28-0.01,7.74,3.58,7.74,7.99S830.4,114.23,826.14,114.23z
+											M852.48,114.23c-4.28,0-7.74-3.58-7.74-7.99c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.75,3.58,7.75,7.99
+											C860.24,110.65,856.76,114.23,852.48,114.23z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M1570.07,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-4.35,0-6.36,6.92-8.66,13.63c-2.28-6.71-4.7-13.62-9.92-13.62l-96.79-0.01c-4.04,0-6.05,5.95-8.16,12.16
+											c-2.14-6.22-4.58-12.16-9.42-12.15l-96.79-0.01c-4.05,0-6.06,5.97-8.17,12.21c-2.15-6.23-4.58-12.2-9.44-12.2l-96.79-0.01
+											c-4.06,0-6.07,6-8.19,12.25c-2.15-6.25-4.59-12.25-9.45-12.24l-96.79-0.01c-4.14,0-6.37,6.84-8.54,13.23 M1548.3,109.19
+											c2.78,0,5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03s-5.03-2.25-5.03-5.03S1545.52,109.19,1548.3,109.19z M1084.7,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1084.7,117,1084.7,114.22z M1199.13,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1199.13,117,1199.13,114.22z M1313.53,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1313.53,117,1313.53,114.22z M1432.93,119.25
+											c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03C1437.96,117,1435.71,119.25,1432.93,119.25z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M996.44,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-8.46,0-8.04,26.11-18.19,26.11 M973.98,119.08c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03
+											S976.76,119.08,973.98,119.08z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,161.44h1458.59 M807.98,148.87c0.64,0.72,0.59,1.53,0,2.11
+											c-0.6,0.58-1.6,0.54-2.16,0s-6.02-6.28-6.02-6.28c-0.3-0.29-0.45-0.67-0.45-1.05c0-0.39,0.15-0.77,0.45-1.06
+											c0,0,5.46-5.74,6.02-6.28c0.56-0.55,1.56-0.59,2.16-0.01s0.64,1.4,0,2.11l-5.01,5.23L807.98,148.87z M836.02,144.7
+											c0,0-5.46,5.73-6.02,6.28c-0.56,0.54-1.57,0.58-2.16,0.01c-0.59-0.58-0.64-1.4,0-2.11l5.01-5.23l-5.01-5.23
+											c-0.64-0.72-0.59-1.53,0-2.11s1.6-0.55,2.16,0c0.56,0.54,6.02,6.28,6.02,6.28c0.3,0.3,0.45,0.68,0.45,1.06
+											S836.32,144.41,836.02,144.7z M866.31,147.86l-4.37-4.88h3.12l-0.04-0.24c-0.43-2.38-2.5-4.11-4.92-4.11
+											c-2.77,0-5.01,2.25-5.01,5.02s2.25,5.02,5.01,5.02c1.07,0,2.1-0.33,2.96-0.97l0.35-0.26l1.91,2.04l-0.41,0.32
+											c-1.38,1.09-3.04,1.66-4.8,1.66c-4.3,0-7.8-3.51-7.8-7.82s3.5-7.82,7.8-7.82c4,0,7.33,2.99,7.75,6.97l0.02,0.19h2.82L866.31,147.86z
+											M2194.43,154.94c0.01,0.94-0.85,1.7-1.9,1.7H879.52c-1.05,0-1.9-0.77-1.9-1.7v-22.59c0-0.94,0.86-1.7,1.9-1.7h1313.02
+											c1.04,0,1.9,0.77,1.9,1.7v22.59H2194.43z M2213.78,154.57h-0.44c-1.03,0-1.86-0.97-1.86-2.18c0-1.21,0.83-2.18,1.86-2.18h0.44
+											c1.03,0,1.86,0.99,1.86,2.18C2215.64,153.59,2214.8,154.57,2213.78,154.57z M2213.78,145.83h-0.44c-1.03,0-1.86-0.97-1.86-2.18
+											c0-1.21,0.83-2.18,1.86-2.18h0.44c1.03,0,1.86,0.97,1.86,2.18C2215.64,144.85,2214.8,145.83,2213.78,145.83z M2213.78,137.08h-0.44
+											c-1.03,0-1.86-0.97-1.86-2.18c0-1.22,0.83-2.2,1.86-2.2h0.44c1.03,0,1.86,0.99,1.86,2.2S2214.8,137.08,2213.78,137.08z"/>
+										<g id="Device-3">
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,487.71h-0.31c-0.94,0-1.04-0.35-1.04-1.01v-40.36
+												c0-0.66,0.12-1.34,1.04-1.34h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,372.1h-0.31c-0.94,0-1.04-0.27-1.04-0.75v-29.5
+												c0-0.48,0.12-1.32,1.04-1.32h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,430.38h-0.31c-0.94,0-1.04-0.75-1.04-1.41v-40.36
+												c0-0.66,0.12-1.65,1.04-1.65h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64h270.92v482.88H242.44V340.64z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2310.93,67.69c0-35.79-29.01-64.79-64.79-64.79L770.21,5.07
+												c-35.79,0-64.8,29.01-64.8,64.79v0.28v1011.94h35.52h1534.49h35.52V70.14h-0.03L2310.93,67.69z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2408.5,1082.08h-0.62h-96.95c-0.03,0-0.06,0-0.09,0h-375.52h-356.47
+												h-155.2H608.47h-0.62c-31.53-0.03-47.55,4.2-47.55,4.2v31.03l2.07,0.09l52.36,2.46h100.32h1081.16h505.07h2.68h48.58h5.85h43.23
+												l52.36-2.46l2.07-0.09v-31.03C2456.05,1086.28,2440.03,1082.06,2408.5,1082.08L2408.5,1082.08z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2412.08,1119.44l-18.27,0.42h-92.53h-877.64H715.05h-92.53l-18.27-0.42
+												l-42.2-1.7c0,0,8.06,10.47,52.66,12.42h100.34h1081.16h91.71h413.36h100.34c44.6-1.95,52.66-12.42,52.66-12.42L2412.08,1119.44z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,87.15h1458.59v910.92H778.87V87.15z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M1360.99,1082.07c-0.02,0.43-0.04,0.86-0.04,1.29v4.76
+												c0,13.01,10.54,23.55,23.55,23.55h247.34c13.01,0,23.55-10.54,23.55-23.55v-4.76c0-0.43-0.01-0.86-0.03-1.29H1360.99z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M527.53,428.91c0,0.67-0.82,1.58-1.7,1.58h-0.29
+												c-0.88,0-1.03-0.91-1.03-1.58v-40.46c0-0.66,0.14-1.38,1.03-1.38h0.29c0.88,0,1.7,0.72,1.7,1.38V428.91z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M478.76,269.1l-204.69,0.39c-26.02,0-42.48,20.88-42.48,40.45l0.38,545.83
+												c0,11.91-0.38,40.99,45.49,40.99h201.19c40.65,0,44.82-20.61,44.82-40.02l1.08-547.37C524.55,289.58,514.68,269.1,478.76,269.1z
+												M350.91,310.36c-2.09,0-3.79-1.7-3.79-3.79s1.7-3.79,3.79-3.79s3.79,1.7,3.79,3.79S353,310.36,350.91,310.36z M378.41,879.32
+												c-10.75,0-19.47-8.72-19.47-19.47s8.72-19.47,19.47-19.47c10.76,0,19.47,8.72,19.47,19.47S389.17,879.32,378.41,879.32z
+												M407.59,308.72h-35.31c-0.79,0-1.43-0.89-1.43-2.04c0-1.14,0.64-2.03,1.43-2.03h35.31c0.79,0,1.43,0.88,1.43,2.03
+												C409.02,307.82,408.38,308.71,407.59,308.72z"/>
+										</g>
+									</svg>
+								</div>
+								<div class="panel">
+									<h2>Media Sonar</h2>
+
+									<p>Media Sonar is a social media monitoring tool used for public safety and law enforcement. I was a part of the project from 2013 to 2016. After working on the first version of the application briefly in 2013, I was brought on as the Lead Designer for the version 2 refresh at the end of 2014. Prototyping, designing, and styling the front-end for a positive user experience.</p>
+
+									<p>An <a href="https://angular.io" target="_blank">AngularJS</a> web app, <a href="https://getbootstrap.com/docs/3.4/" target="_blank">Bootstrap 3</a> was the base styling framework used to build it fully responsive to fit any screen size. Using <a href="https://material.google.com" target="_blank">Google's Material Design Guidelines</a> as a starting point, eventually the design language transformed away from that core to meet the needs of the business. Utilizing <a href="http://lesscss.org/" target="_blank">LESS</a> css, I created a variable styling structure that allows multiple colour themes for users to switch between, as well as modular components for fast prototyping and delivery.</p>
+
+									<p><em>Project at IES Group Inc.</em></p>
+
+								</div>
+							</div>
+
+							<div class="projects ex4">
+								<div class="projects__layout project-animate">
+									<object type="image/svg+xml" class="projects__example" data="layouts/3m-layout.svg"></object>
+
+									<svg class="projects__window" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 2466.14 1162.2" style="enable-background:new 0 0 2466.14 1162.2;" xml:space="preserve">
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64v14.09h270.92v-14.09H242.44z M248.8,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S249.97,350.02,248.8,350.02z M254.05,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S255.22,350.02,254.05,350.02z M259.3,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S260.47,350.02,259.3,350.02z M264.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S265.72,350.02,264.55,350.02z M269.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S270.72,350.02,269.55,350.02z M300.72,350.61h-25.17v-5.54
+											h25.17V350.61z M398.05,350.61h-39v-5.54h39V350.61z M509.38,350.61h-39v-5.54h39V350.61z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,125.84h1458.59 M799.91,114.23c-4.28,0-7.74-3.58-7.74-7.99
+											c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.74,3.58,7.74,7.99C807.65,110.65,804.18,114.23,799.91,114.23z M826.14,114.23
+											c-4.28,0-7.75-3.58-7.75-7.99c0-4.41,3.47-7.99,7.75-7.99c4.28-0.01,7.74,3.58,7.74,7.99S830.4,114.23,826.14,114.23z
+											M852.48,114.23c-4.28,0-7.74-3.58-7.74-7.99c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.75,3.58,7.75,7.99
+											C860.24,110.65,856.76,114.23,852.48,114.23z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M1570.07,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-4.35,0-6.36,6.92-8.66,13.63c-2.28-6.71-4.7-13.62-9.92-13.62l-96.79-0.01c-4.04,0-6.05,5.95-8.16,12.16
+											c-2.14-6.22-4.58-12.16-9.42-12.15l-96.79-0.01c-4.05,0-6.06,5.97-8.17,12.21c-2.15-6.23-4.58-12.2-9.44-12.2l-96.79-0.01
+											c-4.06,0-6.07,6-8.19,12.25c-2.15-6.25-4.59-12.25-9.45-12.24l-96.79-0.01c-4.14,0-6.37,6.84-8.54,13.23 M1548.3,109.19
+											c2.78,0,5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03s-5.03-2.25-5.03-5.03S1545.52,109.19,1548.3,109.19z M1084.7,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1084.7,117,1084.7,114.22z M1199.13,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1199.13,117,1199.13,114.22z M1313.53,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1313.53,117,1313.53,114.22z M1432.93,119.25
+											c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03C1437.96,117,1435.71,119.25,1432.93,119.25z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M996.44,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-8.46,0-8.04,26.11-18.19,26.11 M973.98,119.08c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03
+											S976.76,119.08,973.98,119.08z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,161.44h1458.59 M807.98,148.87c0.64,0.72,0.59,1.53,0,2.11
+											c-0.6,0.58-1.6,0.54-2.16,0s-6.02-6.28-6.02-6.28c-0.3-0.29-0.45-0.67-0.45-1.05c0-0.39,0.15-0.77,0.45-1.06
+											c0,0,5.46-5.74,6.02-6.28c0.56-0.55,1.56-0.59,2.16-0.01s0.64,1.4,0,2.11l-5.01,5.23L807.98,148.87z M836.02,144.7
+											c0,0-5.46,5.73-6.02,6.28c-0.56,0.54-1.57,0.58-2.16,0.01c-0.59-0.58-0.64-1.4,0-2.11l5.01-5.23l-5.01-5.23
+											c-0.64-0.72-0.59-1.53,0-2.11s1.6-0.55,2.16,0c0.56,0.54,6.02,6.28,6.02,6.28c0.3,0.3,0.45,0.68,0.45,1.06
+											S836.32,144.41,836.02,144.7z M866.31,147.86l-4.37-4.88h3.12l-0.04-0.24c-0.43-2.38-2.5-4.11-4.92-4.11
+											c-2.77,0-5.01,2.25-5.01,5.02s2.25,5.02,5.01,5.02c1.07,0,2.1-0.33,2.96-0.97l0.35-0.26l1.91,2.04l-0.41,0.32
+											c-1.38,1.09-3.04,1.66-4.8,1.66c-4.3,0-7.8-3.51-7.8-7.82s3.5-7.82,7.8-7.82c4,0,7.33,2.99,7.75,6.97l0.02,0.19h2.82L866.31,147.86z
+											M2194.43,154.94c0.01,0.94-0.85,1.7-1.9,1.7H879.52c-1.05,0-1.9-0.77-1.9-1.7v-22.59c0-0.94,0.86-1.7,1.9-1.7h1313.02
+											c1.04,0,1.9,0.77,1.9,1.7v22.59H2194.43z M2213.78,154.57h-0.44c-1.03,0-1.86-0.97-1.86-2.18c0-1.21,0.83-2.18,1.86-2.18h0.44
+											c1.03,0,1.86,0.99,1.86,2.18C2215.64,153.59,2214.8,154.57,2213.78,154.57z M2213.78,145.83h-0.44c-1.03,0-1.86-0.97-1.86-2.18
+											c0-1.21,0.83-2.18,1.86-2.18h0.44c1.03,0,1.86,0.97,1.86,2.18C2215.64,144.85,2214.8,145.83,2213.78,145.83z M2213.78,137.08h-0.44
+											c-1.03,0-1.86-0.97-1.86-2.18c0-1.22,0.83-2.2,1.86-2.2h0.44c1.03,0,1.86,0.99,1.86,2.2S2214.8,137.08,2213.78,137.08z"/>
+										<g id="Device-4">
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,487.71h-0.31c-0.94,0-1.04-0.35-1.04-1.01v-40.36
+												c0-0.66,0.12-1.34,1.04-1.34h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,372.1h-0.31c-0.94,0-1.04-0.27-1.04-0.75v-29.5
+												c0-0.48,0.12-1.32,1.04-1.32h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,430.38h-0.31c-0.94,0-1.04-0.75-1.04-1.41v-40.36
+												c0-0.66,0.12-1.65,1.04-1.65h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64h270.92v482.88H242.44V340.64z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2310.93,67.69c0-35.79-29.01-64.79-64.79-64.79L770.21,5.07
+												c-35.79,0-64.8,29.01-64.8,64.79v0.28v1011.94h35.52h1534.49h35.52V70.14h-0.03L2310.93,67.69z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2408.5,1082.08h-0.62h-96.95c-0.03,0-0.06,0-0.09,0h-375.52h-356.47
+												h-155.2H608.47h-0.62c-31.53-0.03-47.55,4.2-47.55,4.2v31.03l2.07,0.09l52.36,2.46h100.32h1081.16h505.07h2.68h48.58h5.85h43.23
+												l52.36-2.46l2.07-0.09v-31.03C2456.05,1086.28,2440.03,1082.06,2408.5,1082.08L2408.5,1082.08z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2412.08,1119.44l-18.27,0.42h-92.53h-877.64H715.05h-92.53l-18.27-0.42
+												l-42.2-1.7c0,0,8.06,10.47,52.66,12.42h100.34h1081.16h91.71h413.36h100.34c44.6-1.95,52.66-12.42,52.66-12.42L2412.08,1119.44z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,87.15h1458.59v910.92H778.87V87.15z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M1360.99,1082.07c-0.02,0.43-0.04,0.86-0.04,1.29v4.76
+												c0,13.01,10.54,23.55,23.55,23.55h247.34c13.01,0,23.55-10.54,23.55-23.55v-4.76c0-0.43-0.01-0.86-0.03-1.29H1360.99z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M527.53,428.91c0,0.67-0.82,1.58-1.7,1.58h-0.29
+												c-0.88,0-1.03-0.91-1.03-1.58v-40.46c0-0.66,0.14-1.38,1.03-1.38h0.29c0.88,0,1.7,0.72,1.7,1.38V428.91z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M478.76,269.1l-204.69,0.39c-26.02,0-42.48,20.88-42.48,40.45l0.38,545.83
+												c0,11.91-0.38,40.99,45.49,40.99h201.19c40.65,0,44.82-20.61,44.82-40.02l1.08-547.37C524.55,289.58,514.68,269.1,478.76,269.1z
+												M350.91,310.36c-2.09,0-3.79-1.7-3.79-3.79s1.7-3.79,3.79-3.79s3.79,1.7,3.79,3.79S353,310.36,350.91,310.36z M378.41,879.32
+												c-10.75,0-19.47-8.72-19.47-19.47s8.72-19.47,19.47-19.47c10.76,0,19.47,8.72,19.47,19.47S389.17,879.32,378.41,879.32z
+												M407.59,308.72h-35.31c-0.79,0-1.43-0.89-1.43-2.04c0-1.14,0.64-2.03,1.43-2.03h35.31c0.79,0,1.43,0.88,1.43,2.03
+												C409.02,307.82,408.38,308.71,407.59,308.72z"/>
+										</g>
+									</svg>
+								</div>
+								<div class="panel">
+									<h2>3M Channel Partner Portal</h2>
+
+									<p>The Channel Marketing Portal for 3M Canada is a asset repository for all of their partners to use. The intention was for users to have a self serve way to gather their files and documents rather than requiring manual customer service. Starting with a simple wireframe and 3M's branding guidelines, I led the frontend direction for the user's experience of finding, bundling, and downloading their logos, ads, or sell sheets.</p>
+
+									<p>Build with <a href="https://reactjs.org" target="_blank">ReactJS</a>, <a href="https://sass-lang.com" target="_blank">SASS</a>, and utilizing <a href="https://wordpress.org" target="_blank">WordPress</a> as an administrator dashboard. A custom theme on top of the <a href="https://www.carbondesignsystem.com/"  target="_blank">Carbon Design System v9</a> was used for the basis of the frontend framework.</p>
+
+									<p><em>Project at tbk Creative.</em></p>
+								</div>
+							</div>
+							<div class="projects ex5">
+								<div class="projects__layout project-animate">
+									<object type="image/svg+xml" class="projects__example" data="layouts/g2po-layout.svg"></object>
+
+									<svg class="projects__window" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 2466.14 1162.2" style="enable-background:new 0 0 2466.14 1162.2;" xml:space="preserve">
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64v14.09h270.92v-14.09H242.44z M248.8,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S249.97,350.02,248.8,350.02z M254.05,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S255.22,350.02,254.05,350.02z M259.3,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S260.47,350.02,259.3,350.02z M264.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S265.72,350.02,264.55,350.02z M269.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S270.72,350.02,269.55,350.02z M300.72,350.61h-25.17v-5.54
+											h25.17V350.61z M398.05,350.61h-39v-5.54h39V350.61z M509.38,350.61h-39v-5.54h39V350.61z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,125.84h1458.59 M799.91,114.23c-4.28,0-7.74-3.58-7.74-7.99
+											c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.74,3.58,7.74,7.99C807.65,110.65,804.18,114.23,799.91,114.23z M826.14,114.23
+											c-4.28,0-7.75-3.58-7.75-7.99c0-4.41,3.47-7.99,7.75-7.99c4.28-0.01,7.74,3.58,7.74,7.99S830.4,114.23,826.14,114.23z
+											M852.48,114.23c-4.28,0-7.74-3.58-7.74-7.99c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.75,3.58,7.75,7.99
+											C860.24,110.65,856.76,114.23,852.48,114.23z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M1570.07,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-4.35,0-6.36,6.92-8.66,13.63c-2.28-6.71-4.7-13.62-9.92-13.62l-96.79-0.01c-4.04,0-6.05,5.95-8.16,12.16
+											c-2.14-6.22-4.58-12.16-9.42-12.15l-96.79-0.01c-4.05,0-6.06,5.97-8.17,12.21c-2.15-6.23-4.58-12.2-9.44-12.2l-96.79-0.01
+											c-4.06,0-6.07,6-8.19,12.25c-2.15-6.25-4.59-12.25-9.45-12.24l-96.79-0.01c-4.14,0-6.37,6.84-8.54,13.23 M1548.3,109.19
+											c2.78,0,5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03s-5.03-2.25-5.03-5.03S1545.52,109.19,1548.3,109.19z M1084.7,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1084.7,117,1084.7,114.22z M1199.13,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1199.13,117,1199.13,114.22z M1313.53,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1313.53,117,1313.53,114.22z M1432.93,119.25
+											c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03C1437.96,117,1435.71,119.25,1432.93,119.25z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M996.44,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-8.46,0-8.04,26.11-18.19,26.11 M973.98,119.08c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03
+											S976.76,119.08,973.98,119.08z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,161.44h1458.59 M807.98,148.87c0.64,0.72,0.59,1.53,0,2.11
+											c-0.6,0.58-1.6,0.54-2.16,0s-6.02-6.28-6.02-6.28c-0.3-0.29-0.45-0.67-0.45-1.05c0-0.39,0.15-0.77,0.45-1.06
+											c0,0,5.46-5.74,6.02-6.28c0.56-0.55,1.56-0.59,2.16-0.01s0.64,1.4,0,2.11l-5.01,5.23L807.98,148.87z M836.02,144.7
+											c0,0-5.46,5.73-6.02,6.28c-0.56,0.54-1.57,0.58-2.16,0.01c-0.59-0.58-0.64-1.4,0-2.11l5.01-5.23l-5.01-5.23
+											c-0.64-0.72-0.59-1.53,0-2.11s1.6-0.55,2.16,0c0.56,0.54,6.02,6.28,6.02,6.28c0.3,0.3,0.45,0.68,0.45,1.06
+											S836.32,144.41,836.02,144.7z M866.31,147.86l-4.37-4.88h3.12l-0.04-0.24c-0.43-2.38-2.5-4.11-4.92-4.11
+											c-2.77,0-5.01,2.25-5.01,5.02s2.25,5.02,5.01,5.02c1.07,0,2.1-0.33,2.96-0.97l0.35-0.26l1.91,2.04l-0.41,0.32
+											c-1.38,1.09-3.04,1.66-4.8,1.66c-4.3,0-7.8-3.51-7.8-7.82s3.5-7.82,7.8-7.82c4,0,7.33,2.99,7.75,6.97l0.02,0.19h2.82L866.31,147.86z
+											M2194.43,154.94c0.01,0.94-0.85,1.7-1.9,1.7H879.52c-1.05,0-1.9-0.77-1.9-1.7v-22.59c0-0.94,0.86-1.7,1.9-1.7h1313.02
+											c1.04,0,1.9,0.77,1.9,1.7v22.59H2194.43z M2213.78,154.57h-0.44c-1.03,0-1.86-0.97-1.86-2.18c0-1.21,0.83-2.18,1.86-2.18h0.44
+											c1.03,0,1.86,0.99,1.86,2.18C2215.64,153.59,2214.8,154.57,2213.78,154.57z M2213.78,145.83h-0.44c-1.03,0-1.86-0.97-1.86-2.18
+											c0-1.21,0.83-2.18,1.86-2.18h0.44c1.03,0,1.86,0.97,1.86,2.18C2215.64,144.85,2214.8,145.83,2213.78,145.83z M2213.78,137.08h-0.44
+											c-1.03,0-1.86-0.97-1.86-2.18c0-1.22,0.83-2.2,1.86-2.2h0.44c1.03,0,1.86,0.99,1.86,2.2S2214.8,137.08,2213.78,137.08z"/>
+										<g id="Device-5">
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,487.71h-0.31c-0.94,0-1.04-0.35-1.04-1.01v-40.36
+												c0-0.66,0.12-1.34,1.04-1.34h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,372.1h-0.31c-0.94,0-1.04-0.27-1.04-0.75v-29.5
+												c0-0.48,0.12-1.32,1.04-1.32h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,430.38h-0.31c-0.94,0-1.04-0.75-1.04-1.41v-40.36
+												c0-0.66,0.12-1.65,1.04-1.65h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64h270.92v482.88H242.44V340.64z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2310.93,67.69c0-35.79-29.01-64.79-64.79-64.79L770.21,5.07
+												c-35.79,0-64.8,29.01-64.8,64.79v0.28v1011.94h35.52h1534.49h35.52V70.14h-0.03L2310.93,67.69z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2408.5,1082.08h-0.62h-96.95c-0.03,0-0.06,0-0.09,0h-375.52h-356.47
+												h-155.2H608.47h-0.62c-31.53-0.03-47.55,4.2-47.55,4.2v31.03l2.07,0.09l52.36,2.46h100.32h1081.16h505.07h2.68h48.58h5.85h43.23
+												l52.36-2.46l2.07-0.09v-31.03C2456.05,1086.28,2440.03,1082.06,2408.5,1082.08L2408.5,1082.08z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2412.08,1119.44l-18.27,0.42h-92.53h-877.64H715.05h-92.53l-18.27-0.42
+												l-42.2-1.7c0,0,8.06,10.47,52.66,12.42h100.34h1081.16h91.71h413.36h100.34c44.6-1.95,52.66-12.42,52.66-12.42L2412.08,1119.44z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,87.15h1458.59v910.92H778.87V87.15z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M1360.99,1082.07c-0.02,0.43-0.04,0.86-0.04,1.29v4.76
+												c0,13.01,10.54,23.55,23.55,23.55h247.34c13.01,0,23.55-10.54,23.55-23.55v-4.76c0-0.43-0.01-0.86-0.03-1.29H1360.99z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M527.53,428.91c0,0.67-0.82,1.58-1.7,1.58h-0.29
+												c-0.88,0-1.03-0.91-1.03-1.58v-40.46c0-0.66,0.14-1.38,1.03-1.38h0.29c0.88,0,1.7,0.72,1.7,1.38V428.91z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M478.76,269.1l-204.69,0.39c-26.02,0-42.48,20.88-42.48,40.45l0.38,545.83
+												c0,11.91-0.38,40.99,45.49,40.99h201.19c40.65,0,44.82-20.61,44.82-40.02l1.08-547.37C524.55,289.58,514.68,269.1,478.76,269.1z
+												M350.91,310.36c-2.09,0-3.79-1.7-3.79-3.79s1.7-3.79,3.79-3.79s3.79,1.7,3.79,3.79S353,310.36,350.91,310.36z M378.41,879.32
+												c-10.75,0-19.47-8.72-19.47-19.47s8.72-19.47,19.47-19.47c10.76,0,19.47,8.72,19.47,19.47S389.17,879.32,378.41,879.32z
+												M407.59,308.72h-35.31c-0.79,0-1.43-0.89-1.43-2.04c0-1.14,0.64-2.03,1.43-2.03h35.31c0.79,0,1.43,0.88,1.43,2.03
+												C409.02,307.82,408.38,308.71,407.59,308.72z"/>
+										</g>
+									</svg>
+								</div>
+								<div class="panel">
+									<h2>G2PO</h2>
+
+									<p>A gaming video site that gave users options to search and follow video creators or specific game titles and view videos on the site. I was on the team as a designer and a front end developer through the evolution of two distinct versions in 2011 and 2014.</p>
+
+									<p>Responsive for mobile web use, built with <a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap 2</a> and C# .NET.</p>
+
+									<p><em>Project at IES Group Inc.</em></p>
+								</div>
+							</div>
+							<div class="projects ex6">
+								<div class="projects__layout project-animate">
+									<object type="image/svg+xml" class="projects__example" data="layouts/baitclick-layout.svg"></object>
+
+									<svg class="projects__window" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										viewBox="0 0 2466.14 1162.2" style="enable-background:new 0 0 2466.14 1162.2;" xml:space="preserve">
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64v14.09h270.92v-14.09H242.44z M248.8,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S249.97,350.02,248.8,350.02z M254.05,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S255.22,350.02,254.05,350.02z M259.3,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S260.47,350.02,259.3,350.02z M264.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S265.72,350.02,264.55,350.02z M269.55,350.02
+											c-1.17,0-2.12-0.95-2.12-2.12s0.95-2.12,2.12-2.12s2.12,0.95,2.12,2.12S270.72,350.02,269.55,350.02z M300.72,350.61h-25.17v-5.54
+											h25.17V350.61z M398.05,350.61h-39v-5.54h39V350.61z M509.38,350.61h-39v-5.54h39V350.61z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,125.84h1458.59 M799.91,114.23c-4.28,0-7.74-3.58-7.74-7.99
+											c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.74,3.58,7.74,7.99C807.65,110.65,804.18,114.23,799.91,114.23z M826.14,114.23
+											c-4.28,0-7.75-3.58-7.75-7.99c0-4.41,3.47-7.99,7.75-7.99c4.28-0.01,7.74,3.58,7.74,7.99S830.4,114.23,826.14,114.23z
+											M852.48,114.23c-4.28,0-7.74-3.58-7.74-7.99c0-4.41,3.47-7.99,7.74-7.99c4.28-0.01,7.75,3.58,7.75,7.99
+											C860.24,110.65,856.76,114.23,852.48,114.23z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M1570.07,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-4.35,0-6.36,6.92-8.66,13.63c-2.28-6.71-4.7-13.62-9.92-13.62l-96.79-0.01c-4.04,0-6.05,5.95-8.16,12.16
+											c-2.14-6.22-4.58-12.16-9.42-12.15l-96.79-0.01c-4.05,0-6.06,5.97-8.17,12.21c-2.15-6.23-4.58-12.2-9.44-12.2l-96.79-0.01
+											c-4.06,0-6.07,6-8.19,12.25c-2.15-6.25-4.59-12.25-9.45-12.24l-96.79-0.01c-4.14,0-6.37,6.84-8.54,13.23 M1548.3,109.19
+											c2.78,0,5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03s-5.03-2.25-5.03-5.03S1545.52,109.19,1548.3,109.19z M1084.7,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1084.7,117,1084.7,114.22z M1199.13,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1199.13,117,1199.13,114.22z M1313.53,114.22
+											c0-2.78,2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03s-2.25,5.03-5.03,5.03S1313.53,117,1313.53,114.22z M1432.93,119.25
+											c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03C1437.96,117,1435.71,119.25,1432.93,119.25z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M996.44,125.84c-8.46,0-8.04-26.12-18.19-26.11l-96.79-0.01
+											c-8.46,0-8.04,26.11-18.19,26.11 M973.98,119.08c-2.78,0-5.03-2.25-5.03-5.03s2.25-5.03,5.03-5.03s5.03,2.25,5.03,5.03
+											S976.76,119.08,973.98,119.08z"/>
+										<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,161.44h1458.59 M807.98,148.87c0.64,0.72,0.59,1.53,0,2.11
+											c-0.6,0.58-1.6,0.54-2.16,0s-6.02-6.28-6.02-6.28c-0.3-0.29-0.45-0.67-0.45-1.05c0-0.39,0.15-0.77,0.45-1.06
+											c0,0,5.46-5.74,6.02-6.28c0.56-0.55,1.56-0.59,2.16-0.01s0.64,1.4,0,2.11l-5.01,5.23L807.98,148.87z M836.02,144.7
+											c0,0-5.46,5.73-6.02,6.28c-0.56,0.54-1.57,0.58-2.16,0.01c-0.59-0.58-0.64-1.4,0-2.11l5.01-5.23l-5.01-5.23
+											c-0.64-0.72-0.59-1.53,0-2.11s1.6-0.55,2.16,0c0.56,0.54,6.02,6.28,6.02,6.28c0.3,0.3,0.45,0.68,0.45,1.06
+											S836.32,144.41,836.02,144.7z M866.31,147.86l-4.37-4.88h3.12l-0.04-0.24c-0.43-2.38-2.5-4.11-4.92-4.11
+											c-2.77,0-5.01,2.25-5.01,5.02s2.25,5.02,5.01,5.02c1.07,0,2.1-0.33,2.96-0.97l0.35-0.26l1.91,2.04l-0.41,0.32
+											c-1.38,1.09-3.04,1.66-4.8,1.66c-4.3,0-7.8-3.51-7.8-7.82s3.5-7.82,7.8-7.82c4,0,7.33,2.99,7.75,6.97l0.02,0.19h2.82L866.31,147.86z
+											M2194.43,154.94c0.01,0.94-0.85,1.7-1.9,1.7H879.52c-1.05,0-1.9-0.77-1.9-1.7v-22.59c0-0.94,0.86-1.7,1.9-1.7h1313.02
+											c1.04,0,1.9,0.77,1.9,1.7v22.59H2194.43z M2213.78,154.57h-0.44c-1.03,0-1.86-0.97-1.86-2.18c0-1.21,0.83-2.18,1.86-2.18h0.44
+											c1.03,0,1.86,0.99,1.86,2.18C2215.64,153.59,2214.8,154.57,2213.78,154.57z M2213.78,145.83h-0.44c-1.03,0-1.86-0.97-1.86-2.18
+											c0-1.21,0.83-2.18,1.86-2.18h0.44c1.03,0,1.86,0.97,1.86,2.18C2215.64,144.85,2214.8,145.83,2213.78,145.83z M2213.78,137.08h-0.44
+											c-1.03,0-1.86-0.97-1.86-2.18c0-1.22,0.83-2.2,1.86-2.2h0.44c1.03,0,1.86,0.99,1.86,2.2S2214.8,137.08,2213.78,137.08z"/>
+										<g id="Device-6">
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,487.71h-0.31c-0.94,0-1.04-0.35-1.04-1.01v-40.36
+												c0-0.66,0.12-1.34,1.04-1.34h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,372.1h-0.31c-0.94,0-1.04-0.27-1.04-0.75v-29.5
+												c0-0.48,0.12-1.32,1.04-1.32h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M231.06,430.38h-0.31c-0.94,0-1.04-0.75-1.04-1.41v-40.36
+												c0-0.66,0.12-1.65,1.04-1.65h0.31"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M242.44,340.64h270.92v482.88H242.44V340.64z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2310.93,67.69c0-35.79-29.01-64.79-64.79-64.79L770.21,5.07
+												c-35.79,0-64.8,29.01-64.8,64.79v0.28v1011.94h35.52h1534.49h35.52V70.14h-0.03L2310.93,67.69z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2408.5,1082.08h-0.62h-96.95c-0.03,0-0.06,0-0.09,0h-375.52h-356.47
+												h-155.2H608.47h-0.62c-31.53-0.03-47.55,4.2-47.55,4.2v31.03l2.07,0.09l52.36,2.46h100.32h1081.16h505.07h2.68h48.58h5.85h43.23
+												l52.36-2.46l2.07-0.09v-31.03C2456.05,1086.28,2440.03,1082.06,2408.5,1082.08L2408.5,1082.08z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M2412.08,1119.44l-18.27,0.42h-92.53h-877.64H715.05h-92.53l-18.27-0.42
+												l-42.2-1.7c0,0,8.06,10.47,52.66,12.42h100.34h1081.16h91.71h413.36h100.34c44.6-1.95,52.66-12.42,52.66-12.42L2412.08,1119.44z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M778.87,87.15h1458.59v910.92H778.87V87.15z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M1360.99,1082.07c-0.02,0.43-0.04,0.86-0.04,1.29v4.76
+												c0,13.01,10.54,23.55,23.55,23.55h247.34c13.01,0,23.55-10.54,23.55-23.55v-4.76c0-0.43-0.01-0.86-0.03-1.29H1360.99z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M527.53,428.91c0,0.67-0.82,1.58-1.7,1.58h-0.29
+												c-0.88,0-1.03-0.91-1.03-1.58v-40.46c0-0.66,0.14-1.38,1.03-1.38h0.29c0.88,0,1.7,0.72,1.7,1.38V428.91z"/>
+											<path vector-effect="non-scaling-stroke" class="device-path" d="M478.76,269.1l-204.69,0.39c-26.02,0-42.48,20.88-42.48,40.45l0.38,545.83
+												c0,11.91-0.38,40.99,45.49,40.99h201.19c40.65,0,44.82-20.61,44.82-40.02l1.08-547.37C524.55,289.58,514.68,269.1,478.76,269.1z
+												M350.91,310.36c-2.09,0-3.79-1.7-3.79-3.79s1.7-3.79,3.79-3.79s3.79,1.7,3.79,3.79S353,310.36,350.91,310.36z M378.41,879.32
+												c-10.75,0-19.47-8.72-19.47-19.47s8.72-19.47,19.47-19.47c10.76,0,19.47,8.72,19.47,19.47S389.17,879.32,378.41,879.32z
+												M407.59,308.72h-35.31c-0.79,0-1.43-0.89-1.43-2.04c0-1.14,0.64-2.03,1.43-2.03h35.31c0.79,0,1.43,0.88,1.43,2.03
+												C409.02,307.82,408.38,308.71,407.59,308.72z"/>
+										</g>
+									</svg>
+								</div>
+								<div class="panel">
+									<h2>Baitclick</h2>
+
+									<p>In response to the experience in looking behind the curtain of social sharing methods, a desire to build something to stand up to the clickbait machine was formed. A site where you paste links that pose a question, spoil the title, and share that insight with your friends. Saving them from the temptation to click on those links. Practicing simple user experience with a unique, fun idea was the goal after years of working on complicated, serious applications.</p>
+
+									<p>Co-founder of this 2 man project not released to the public yet, this site is built with <a href="http://meanjs.org/" target="_blank">MEAN.js</a> framework along with <a href="https://getbootstrap.com" target="_blank">Bootstrap 4</a>, and <a href="https://sass-lang.com/" target="_blank">SASS</a> css. Features include Day/Night modes, automatic image creation, and touch specific UI.</p>
+
+								</div>
+							</div>
+						</section>
+
+						<nav class="bottom-nav no-print">
+							<a href="#story" class="button navigation-click">Previous: Story</a>
+							<a href="#branding" class="button navigation-click">Next: Branding</a>
+						</nav>
+					</div>
+				</article>
+
+				<article id="branding" class="page page--branding">
+					<div class="page__container">
+						<h1 class="page__header"><span class="page__header__text">Branding</span></h1>
+
+						<section>
+							<div class="panel">
+								<h3>Crafting Brands &amp; Branding Crafts</h3>
+								<p>I enjoy designing &amp; constructing new things in <a href="http://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>, whether it is for startups, bands, or even recreational sports teams. The items below are a collection of logos I've created, some turned into large companies, some never got off the ground, and some of these were created and never used.</p>
+
+								<p>When a major brand makes a change, I'm immediately disecting what they've done and why. I will read <a href="http://www.underconsideration.com/brandnew/" target="_blank">branding blogs</a> daily to see what companies are doing and what the design community thinks of current trends. I usually pick apart when brands are being misused in the wild and get excited when brands nail it.</p>
+
+								<p>Also below are a couple of branding guide PDFs I created to help with styling the projects that I was developing at the time. The first one using the existing Media Sonar logo that wasn't one of my creations, refinining it and forming a guide around it. The second one for Pathogent, a project that didn't proceed further than the concept stage.</p>
+							</div>
+						</section>
+
+						<section>
+							<h2 class="section-header"><span class="section-header__text">Logo Illustration</span></h2>
+							<div class="examples examples--logos">
+								<figure>
+									<img src="img/logos/diply_logo.svg" width="960" height="560" alt="Diply"/>
+								</figure>
+								<figure>
+									<img src="img/logos/g2po_logo.svg" width="960" height="560" alt="G2PO"/>
+								</figure>
+								<figure>
+									<img src="img/logos/vf_logo.svg" width="960" height="560" alt="Violet Fuse"/>
+								</figure>
+								<figure>
+									<img src="img/logos/fiftyone_logo.svg" width="960" height="560" alt="Fifty-One"/>
+								</figure>
+
+								<figure>
+									<img src="img/logos/baitclick_logo.svg" width="960" height="560" alt="Baitclick"/>
+								</figure>
+								<figure>
+									<img src="img/logos/dsh_logo.svg" width="960" height="560" alt="Duelling Sledgehammers"/>
+								</figure>
+								<figure>
+									<img src="img/logos/radboots_logo.svg" width="960" height="560" alt="Radboots"/>
+								</figure>
+								<figure>
+									<img src="img/logos/Pizza_Cutter_logo.svg" width="960" height="560" alt="Radboots"/>
+								</figure>
+								<figure class="concept">
+									<img src="img/logos/hubspout_logo.svg" width="960" height="560" alt="Hub Spout"/>
+								</figure>
+								<figure class="concept">
+									<img src="img/logos/ies_logo.svg" width="960" height="560" alt="IES Group"/>
+								</figure>
+							</div>
+						</section>
+
+						<section>
+							<h2 class="section-header"><span class="section-header__text">Branding Guide Examples</span></h2>
+							<div class="examples examples--guides">
+								<figure class="concept">
+									<h3>Media Sonar Brand Identity</h3>
+									<p>A spec style guide for product and logo usage. Listed as a concept, as it was never officially used.</p>
+									<a target="_blank" href="pdf/Media-Sonar-Brand-Identity-Guidelines.pdf"><img src="img/Media-Sonar-Brand.png" alt="Media Sonar Technologies Logo & Brand Identity Guidelines"/><br />View PDF</a>
+								</figure>
+								<figure class="concept">
+									<h3>Pathogent Styleguide</h3>
+									<p>Brand guide, logo, and business card design for a new company proposal. The business never made it out of the planning phase, so the guide never saw usage. <em>Project at IES Group Inc.</em></p>
+									<a target="_blank" href="pdf/Pathogent-Style-Guide.pdf"><img src="img/Pathogent-Brand.png" alt="Pathogent Brand Guide"/><br />View PDF</a>
+								</figure>
+							</div>
+						</section>
+
+						<nav class="bottom-nav no-print">
+							<a href="#web" class="button navigation-click">Previous: Web Projects</a>
+							<a href="#music" class="button navigation-click">Next: Music</a>
+						</nav>
+					</div>
+				</article>
+
+				<article id="music" class="page page--music">
+					<div class="page__container">
+						<h1 class="page__header"><span class="page__header__text">Music</span></h1>
+
+						<section>
+							<div class="panel">
+								<h3>Audio Engineer, Music Producer, &amp; Musician</h3>
+								<p>Started playing guitar at 10 years old, I would go on to perform in the rock bands <a href="http://www.violetfuse.com" target="_blank">Violet Fuse</a> &amp; Duelling Sledgehammers. I'm perpetually working on new compositions and recordings, with a new record in the works.</p>
+								<p>I graduated from <a href="https://www.fanshawec.ca/programs/mia2-music-industry-arts/" target="_blank">Music Industry Arts</a> at Fanshawe College in 2010, gaining proficiency in <a href="http://www.avid.com/pro-tools" target="_blank">Avid Pro Tools</a>, <a href="http://www.apple.com/ca/logic-pro/" target="_blank">Logic Pro</a>, Avid D-Command interface, analog recording consoles, and music production techniques. I have some experience live music in small venues, as well as sound renforcement and lighting tech in a theatre setting. While never a career, I've spent a number of years writing, performing, producing, engineering, mixing, and mastering.</p>
+							</div>
+						</section>
+
+						<section>
+							<h2 class="section-header"><span class="section-header__text">Discography</span></h2>
+							<div class="examples examples--disc">
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>Violet Fuse</h3>
+											<h4><a href="http://www.violetfuse.com">Violet Fuse</a></h4>
+											<p class="location">2010</p>
+										</div>
+										<img class="discography__img" src="img/VF1.jpg" width="84" height="84" alt="Violet Fuse"/>
+									</div>
+									<hr />
+									<p>Engineer, Producer, Mixer, Mastering Engineer, Co-writer, Guitar. Nominated for a Jack Richardson Music Award as well as London Music Award under the Rock Categories in 2010. <a href="https://itunes.apple.com/ca/album/violet-fuse/id392458344" target="_blank">iTunes</a></p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>Good God DAMN!</h3>
+											<h4><a href="https://goodgoddamn.bandcamp.com/album/good-god-damn" target="_blank">Good God DAMN!</a></h4>
+											<p class="location">2010</p>
+										</div>
+										<img class="discography__img" src="img/ggd1.jpg" width="84" height="84" alt="Good God DAMN!"/>
+									</div>
+									<hr />
+									<p>Mastering Engineer</p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>Violet Fuse</h3>
+											<h4><a href="http://www.violetfuse.com">You're a Mean One Mr. Grinch</a></h4>
+											<p class="location">2011</p>
+										</div>
+										<img class="discography__img" src="img/grinch.jpg" width="84" height="84" alt="You're a Mean One Mr. Grinch"/>
+									</div>
+									<hr />
+									<p>Engineer, Producer, Mixer, Mastering Engineer, Guitar</p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>The Drop Pockets</h3>
+											<h4>Demos</h4>
+											<p class="location">2012</p>
+										</div>
+										<img class="discography__img" src="img/demos.png" width="84" height="84" alt="Demos"/>
+									</div>
+									<hr />
+									<p>Engineer, Mixer</p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>The Days</h3>
+											<h4>Demos</h4>
+											<p class="location">2012</p>
+										</div>
+										<img class="discography__img" src="img/demos.png" width="84" height="84" alt="Demos"/>
+									</div>
+									<hr />
+									<p>Engineer, Mixer, Mastering Engineer</p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>Good God DAMN!</h3>
+											<h4><a href="https://goodgoddamn.bandcamp.com/album/buen-dios-maldito" target="_blank">Buen Dios Maldito!</a></h4>
+											<p class="location">2013</p>
+										</div>
+										<img class="discography__img" src="img/ggd2.jpg" width="84" height="84" alt="Buen Dios Maldito!"/>
+									</div>
+									<hr />
+									<p>Mastering Engineer</p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>Tom Woods</h3>
+											<h4><a href="https://tomwoods.bandcamp.com/releases" target="_blank">Still Not Sober</a></h4>
+											<p class="location">2015</p>
+										</div>
+										<img class="discography__img" src="img/tomwoods.jpg" width="84" height="84" alt="Still Not Sober"/>
+									</div>
+									<hr />
+									<p>Mastering Engineer</p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>Violet Fuse</h3>
+											<h4><a href="http://www.violetfuse.com" target="_blank">Another Hello - EP</a></h4>
+											<p class="location">2015</p>
+										</div>
+										<img class="discography__img" src="img/VF2.jpg" width="84" height="84" alt="Another Hello - EP"/>
+									</div>
+									<hr />
+									<p>Engineer, Producer, Mixer, Mastering Engineer, Co-writer, Guitar. <a href="https://itunes.apple.com/ca/album/another-hello-ep/id1049398769" target="_blank">iTunes</a></p>
+								</figure>
+
+								<figure>
+									<div class="discography">
+										<div class="discography__content">
+											<h3>Sparring Partner</a></h3>
+											<h4><a href="https://sparringpartner.bandcamp.com/" target="_blank">Hardships</a></h4>
+											<p class="location">2017</p>
+										</div>
+										<img class="discography__img" src="img/sparringpartner.jpg" width="84" height="84" alt="Hardships"/>
+									</div>
+									<hr />
+									<p>Engineer <a href="https://music.apple.com/us/album/hardships-ep/1211001633" target="_blank">iTunes</a></p>
+								</figure>
+							</div>
+						</section>
+
+						<nav class="bottom-nav no-print">
+							<a href="#branding" class="button navigation-click">Previous: Branding</a>
+							<a href="#story" class="button navigation-click">Home: Story</a>
+						</nav>
+					</div>
+				</article>
+
+				<article class="page--temp">
+						<h1>Testing display of HTML elements</h1>
+						<h2>This is 2nd level heading</h2>
+						<p>This is a test paragraph.</p>
+						<h3>This is 3rd level heading</h3>
+						<p>This is a test paragraph.</p>
+						<h4>This is 4th level heading</h4>
+						<p>This is a test paragraph.</p>
+						<h5>This is 5th level heading</h5>
+						<p>This is a test paragraph.</p>
+						<h6>This is 6th level heading</h6>
+						<p>This is a test paragraph.</p>
+						<h2>Basic block level elements</h2>
+						<p>
+							This is a normal paragraph (<code>p</code> element).
+							To add some length to it, let us mention that this page was
+							primarily written for testing the effect of <strong>user style sheets</strong>.
+							You can use it for various other purposes as well, like just checking how
+							your browser displays various HTML elements by default.
+							It can also be useful when testing conversions from HTML
+							format to other formats, since some elements can go wrong then.
+						</p>
+						<p>
+							This is another paragraph. I think it needs to be added that
+							the set of elements tested is not exhaustive in any sense. I have selected
+							those elements for which it can make sense to write user style sheet rules,
+							in my opionion.
+						</p>
+						<div>
+							This is a <code>div</code> element. Authors may use such elements instead
+							of paragraph markup for various reasons. (End of <code>div</code>.)
+						</div>
+						<blockquote>
+							<p>
+								This is a block quotation containing a single
+								paragraph. Well, not quite, since this is not <em>really</em>
+								quoted text, but I hope you understand the point. After all, this
+								page does not use HTML markup very normally anyway.
+							</p>
+						</blockquote>
+						<p>The following contains address information about the author, in an <code>address</code>element.</p>
+						<address>
+							<a href="../personal.html" lang="fi" hreflang="en">Jukka Korpela</a>,
+							<a href="mailto:jkorpela@cs.tut.fi">jkorpela@cs.tut.fi</A><br>
+								Päivänsäteenkuja 4 A, Espoo, Finland
+						</address>
+						<h2>Lists</h2>
+						<p>
+							This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Note that
+							the spacing between a paragraph and a list before or after that is hard
+							to tune in a user style sheet. You can't guess which paragraphs are
+							logically related to a list, e.g. as a "list header".
+						</p>
+						<ul>
+							<li> One.</li>
+							<li> Two.</li>
+							<li> Three. Well, probably this list item should be longer. Note that for short items lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li>
+							<li> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li>
+						</ul>
+						<p>The following is a <code>menu</code> list:</p>
+						<menu>
+							<li> One.</li>
+							<li> Two.</li>
+							<li> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.</li>
+						</menu>
+						<p>The following is a <code>dir</code> list:</p>
+						<dir>
+							<li> One.</li>
+							<li> Two.</li>
+							<li> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.</li>
+						</dir>
+						<p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are	logically related to a list, e.g. as a "list header".</p>
+						<ol>
+							<li> One.</li>
+							<li> Two.</li>
+							<li> Three. Well, probably this list item should be longer. Note that if items are short, lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li>
+							<li> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li>
+						</ol>
+						<p>
+							This is a paragraph before a <strong>definition</strong> list (<code>dl</code>).
+							In principle, such a list should consist of <em>terms</em> and associated
+							definitions.
+							But many authors use <code>dl</code> elements for fancy "layout" things. Usually the
+							effect is not <em>too</em> bad, if you design user style sheet rules for <code>dl</code>
+							which are suitable
+							for real definition lists.
+						</p>
+						<dl>
+							<dt> recursion</dt>
+							<dd> see recursion</dd>
+							<dt> recursion, indirect</dt>
+							<dd> see indirect recursion</dd>
+							<dt> indirect recursion</dt>
+							<dd> see recursion, indirect</dd>
+							<dt> term</dt>
+							<dd> a word or other expression taken into specific use in
+							a well-defined meaning, which is often defined rather rigorously, even
+							formally, and may differ quite a lot from an everyday meaning</dd>
+						</dl>
+						<h2>Text-level markup</h2>
+						<ul>
+							<li> <abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation;
+							<code>abbr</code> markup used)
+							<li> <acronym title="radio detecting and ranging">radar</acronym> (an acronym; <code>acronym</code> markup used)
+							<li> <b>bolded</b> (<code>b</code> markup used - just bolding with unspecified
+							semantics)
+							<li> <big>big thing</big> (<code>big</code> markup used)
+							<li> <font size=6>large size</font> (<code>font size=6</code> markup used)
+							<li> <font face=Courier>Courier font</font> (<code>font face=Courier</code> markup used)
+							<li> <font color=red>red text</font> (<code>font color=red</code> markup used)
+							<li> <cite>Origin of Species</cite> (a book title;
+							<code>cite</code> markup used)
+							<li> <code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)
+							<li> here we have some <del>deleted</del> text (<code>del</code> markup used)
+							<li> an <dfn>octet</dfn> is an entity consisting of eight bits
+							(<code>dfn</code> markup used for the term being defined)
+							<li> this is <em>very</em> simple (<code>em</code> markup used for emphasizing
+							a word)
+							<li> <i lang="la">Homo sapiens</i> (should appear in italics;  <code>i</code> markup used)
+							<li> here we have some <ins>inserted</ins> text (<code>ins</code> markup used)
+							<li> type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup
+							used for text indicating keyboard input)
+							<li> <q>Hello!</q> (<code>q</code> markup used for quotation)
+							<li> He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)
+							<li> you may get the message <samp>Core dumped</samp> at times
+							(<code>samp</code> markup used for sample output)
+							<li> <small>this is not that important</small> (<code>small</code> markup used)
+							<li> <strike>overstruck</strike> (<code>strike</code> markup used; note:
+							<code>s</code> is a nonstandard synonym for <code>strike</code>)
+							<li> <strong>this is highlighted text</strong> (<code>strong</code>
+							markup used)
+							<li> In order to test how subscripts and superscripts (<code>sub</code> and
+							<code>sup</code> markup) work inside running text, we need some
+							dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O
+							(where subscripts occur). So here is some fill so that
+							you will (hopefully) see whether and how badly the subscripts
+							and superscripts mess up vertical spacing between lines.
+							Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some
+							mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>,
+							and some nested superscripts (exponents) too:
+							e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup>
+							(where 2 and a+b+c should appear as exponents of exponents).
+							<li> <tt>text in monospace font</tt> (<code>tt</code> markup used)
+							<li> <u>underlined</u> text (<code>u</code> markup used)
+							<li> the command <code>cat</code> <var>filename</var> displays the
+							file specified by the <var>filename</var> (<code>var</code> markup
+							used to indicate a word as a variable).
+						</ul>
+						<p>Some of the elements tested above are typically displayed in a monospace
+						font, often using the <em>same</em> presentation for all of them. This
+						tests whether that is the case on your browser:</p>
+						<ul>
+							<li> <code>This is sample text inside code markup</code>
+							<li> <kbd>This is sample text inside kbd markup</kbd>
+							<li> <samp>This is sample text inside samp markup</samp>
+							<li> <tt>This is sample text inside tt markup</tt>
+						</ul>
+						<h2>Links</h2>
+						<ul>
+							<li> <a href="../index.html">main page</a></li>
+							<li> <a href=
+							"http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf"
+							title="Writing Systems and Punctuation"
+							type="application/pdf"
+							>Unicode Standard, chapter&nbsp;6</a></li>
+						</ul>
+						<p>
+							This is a text paragraph that contains some
+							inline links. Generally, inline links (as opposite to e.g. links
+							lists) are problematic
+							from the
+							<a href="http://www.useit.com">usability</a> perspective,
+							but they may have use as
+							&#8220;incidental&#8221;, less relevant links. See the document
+							<cite><a href="links.html">Links Want To Be Links</a></cite>.
+						</p>
+						<h2>Forms</h2>
+						<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+							<div>
+								<input type="hidden" name="hidden field" value="42">
+								This is a form containing various fields (with some initial
+								values (defaults) set, so that you can see how input text looks
+								like without actually typing it):
+							</div>
+							<div>
+								<label for="but">Button:
+								<button id="but" type="submit" name="foo" value="bar">A cool button</button></label>
+							</div>
+							<div>
+								<label for="f0">Reset button:
+								<input id="f0" type="reset" name="reset" value="Reset"></label>
+							</div>
+							<div><label for="f1">Single-line text input field: <input id="f1" name="text" size="20" value="Default text."></label></div>
+							<div><
+								label for="f2">Multi-line text input field (textarea):</label><br>
+								<textarea id="f2" name="textarea" rows="2" cols="20">
+								Default text.
+								</textarea>
+							</div>
+							<div>
+								The following two radio buttons are inside
+								a <code>fieldset</code> element with a <code>legend</code>:
+							</div>
+							<fieldset>
+							<legend>Legend</legend>
+							<div><label for="f3"><input id="f3" type="radio" name="radio" value="1"> Radio button 1</label></div>
+							<div><label for="f4"><input id="f4" type="radio" name="radio" value="2" checked> Radio button 2 (initially checked)</label></div>
+							</fieldset>
+							<fieldset>
+							<legend>Check those that apply</legend>
+							<div><label for="f5"><input id="f5" type="checkbox" name="checkbox"> Checkbox 1</label></div>
+							<div><label for="f6"><input id="f6" type="checkbox" name="checkbox2" checked> Checkbox 2 (initially checked)</label></div>
+							</fieldset>
+							<div><label for="f10">A <code>select</code> element with <code>size="1"</code>
+							(dropdown box):
+							<select id="f10" name="select1" size="1">
+							<option>one
+							<option selected>two (default)
+							<option>three
+							</select></label></div>
+							<div><label for="f11">A <code>select</code> element with <code>size="3"</code>
+							(listbox):</label><br>
+							<select id="f11" name="select2" size="3">
+							<option>one
+							<option selected>two (default)
+							<option>three
+							</select></div>
+							<div><label for="f99">Submit button:
+							<input id="f99" type="submit" name="submit" value="Just a test"></label></div>
+						</form>
+						<h2>Tables</h2>
+						<p>
+							The following table has a caption. The first row and the first column
+							contain table header cells (<code>th</code> elements) only; other cells
+							are data cells (<code>td</code> elements), with <code>align="right"</code>
+							attributes:
+						</p>
+						<TABLE summary=
+							"Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+							<CAPTION>Sample table: Areas of the Nordic countries, in sq km</CAPTION>
+							<TR><th scope="col">Country</th> <th scope="col">Total area</TH> <th scope="col">Land area</TH>
+							<TR><th scope="row">Denmark</TH> <TD ALIGN=RIGHT> 43,070 </TD><TD ALIGN=RIGHT> 42,370</TR>
+							<TR><th scope="row">Finland</TH> <TD ALIGN=RIGHT>337,030 </TD><TD ALIGN=RIGHT>305,470</TR>
+							<TR><th scope="row">Iceland</TH> <TD ALIGN=RIGHT>103,000 </TD><TD ALIGN=RIGHT>100,250</TR>
+							<TR><th scope="row">Norway</TH>  <TD ALIGN=RIGHT>324,220 </TD><TD ALIGN=RIGHT>307,860</TR>
+							<TR><th scope="row">Sweden</TH>  <TD ALIGN=RIGHT>449,964 </TD><TD ALIGN=RIGHT>410,928</TR>
+						</TABLE>
+						<h2>Character test</h2>
+						<p>
+							The following table has some sample characters with
+							annotations. If the browser&#8217;s default font does not
+							contain all of them, they may get displayed using backup fonts.
+							This may cause stylistic differences, but it should not
+							prevent the characters from being displayed at all.
+						</p>
+						<table>
+							<tr><th>Char.</th> <th>Explanation</th> <th>Notes</th></tr>
+							<tr><td>ê</td> <td>e with circumflex</td> <td>Latin 1 character, should be ok</td>
+							<tr><td>&#8212; <td>em dash <td>Windows Latin 1 character, should be ok, too
+							<tr><td>&#x100; <td>A with macron (line above) <td>Latin Extended-A character, not present in all fonts
+							<tr><td>&Omega; <td>capital omega <td>A Greek letter
+							<tr><td>&#x2212; <td>minus sign <td>Unicode minus</td></td>
+							<tr><td>&#x2300; <td>diameter sign <td>relatively rare in fonts</td></td>
+						</table>
+						<h2>Hyphenation</h2>
+						<p>
+							In the following, a width setting should cause some hyphenation,
+							depending on support to various methods of hyphenation.
+						</p>
+						<h3>CSS-based hyphenation</h3>
+						<p class="limited hyphens">Until recently the great majority of naturalists believed that species were immutable productions, and had been separately created. This view has been ably maintained by many authors.</p>
+						<h3>JavaScript-driven hyphenation</h3>
+						<p class="limited hyphenate">Until recently the great majority of naturalists believed that species were immutable productions, and had been separately created. This view has been ably maintained by many authors.</p>
+						<h3>Explicit hyphenation hints (soft hyphens)</h3>
+						<p class="limited">
+							Un­til re­cent­ly the great
+							ma­jor­i­ty of nat­u­ral­ists
+							be­lieved that spe­cies were
+							im­mu­ta­ble
+							pro­duc­tions,
+							and had been sep­a­rate­ly cre­at­ed.
+							This view has been ably main­tain­ed by many au­thors.
+						</p>
+						<HR TITLE="Information about this document">
+
+						<address>
+							<a href="../personal.html" hreflang="en" lang="fi">Jukka Korpela</a>
+						</address>
+						<div>
+							<A TITLE="ISO 8601, the date and time representation standard" HREF="../iso8601.html">Date</A> of creation: 2000-09-15.	Last update: 2013-03-21.
+						</div>
+
+				</article>
 
 
-    /*---------------------- Body Styles -------------------*/
-    .right-container{
-      max-height: 100vh;
-      flex-grow: 1;
-      height: 100vh;
-      overflow: auto;
-    }
-    .panel, #contact:target .story, #branding:target .story, #web:target .story, #music:target .story{
-      transition: opacity 0.3s ease-in-out;
-      height: 0;
-      z-index: 0;
-      opacity: 0;
-      overflow: hidden;
-      background: rgb(248,153,36);
-      transition: opacity 0.3s ease-in-out ;
-    }
-    #branding:target .branding,
-    #web:target .web,
-    #music:target .music,
-    .story{
-      position: relative;
-      z-index: 3;
-      height: auto;
-      width: 100%;
-      opacity: 1;
-      overflow: auto;
-      background: transparent;
-      transition: opacity 0.3s ease-in-out 0.1s;
-    }
+				<div class="contact-page contact-page--mobile">
+					<div class="contact-info">
+						<a class="contact__email" href="mailto:contact@scottvincent.ca" target="_blank">contact@scottvincent.ca</a>
+					</div>
+					<div class="city">LONDON, ONTARIO, CANADA</div>
+					<div class="social">
+						<a class="contact__link" href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a>
+						<a class="contact__link" href="https://twitter.com/CmdOptEsc" target="_blank">Twitter</a>
+						<a class="contact__link" href="http://www.instagram.com/scott.v" target="_blank">Instagram</a>
+						<a class="contact__link" href="https://www.github.com/scottvincent" target="_blank">Github</a>
+						<a class="contact__link" href="https://www.gitlab.com/scottvincent" target="_blank">Gitlab</a>
+						<a class="contact__link" href="https://cssbattle.dev/player/scott" target="_blank">CSSBattle</a>
+					</div>
+					<div class="copyright">
+						&copy; 2019. All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</div>
 
-    .sticky-header {
-      font-size: 9vmin;
-      color: rgba(61,62,64,0.4);
-      position: fixed;
-      top: 0;
-      z-index: -1;
-      will-change: transform;
-    }
-    .section-container{
-      padding: 12vmin 0rem 0rem 1rem;
-      position: relative;   
-    }
-    .section-container > h3{
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .section-text{
-      padding: 1rem;
-      margin: 1rem 0;
-      max-width: 1024px;
-      background-color: rgba(255,255,255,0.8);
-      border: 1rem solid #fff;
-    }
-    .education, .experience, .examples{
-      display: flex;
-      max-width: 1024px;
-    }
-    .examples{
-      flex-wrap: wrap;
-    }
-    .examples figure{
-      min-width: 330px;
-    }
+		<script src="scripts.js"></script>
 
-    .examples.disc figure{
-      min-width: 240px;
-    }
-    .examples.disc amp-img{
-      margin-bottom: 1rem;
-      max-height: 250px;
-      max-width: 250px;
-    }
-    .examples a{
-      text-decoration: none;
-      border-bottom: 2px dotted rgba(0,0,0,0.8);
-      padding-bottom: 1px;
-      margin-bottom: -1px;
-      color: rgba(0,0,0,0.8);
-    }
-    .logos figure{
-      flex: inherit;
-      position: relative;
-    }
-    figure{
-      border: 0.2rem solid  rgba(61,62,64,0.4);
-      margin: 0.25rem 0.5rem 0.25rem 0;
-      padding: 1rem;
-      display: inline-block;
-      flex: 1;
-      color: #000;
-      
-    }
-    figure + figure{
-      margin-right: 0.5em;
-    }
+		<!-- Global site tag (gtag.js) - Google Analytics
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12946743-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-    figure h3{
-      color:  rgba(45, 46, 47, 0.8);
-      margin-bottom: 0.25rem;
-      line-height: 1;
-      font-size: 1em;
-    }
-    figure h4{
-      margin: 0;
-      line-height: 1.5em;
-    }
-    figcaption{
-      font-weight: lighter;
-      font-size: 1.2rem;
-      line-height: 1.4em;
-      letter-spacing: 0.1rem;
-      margin-bottom: 0.25rem;
-    }
-    figure ul{
-      margin: 0;
-      font-size: 0.8rem;
-      padding: 0 1rem;
-      list-style-type: square;
-    }
-    figure p{
-      font-size: 0.8rem;
-      margin: 0;
-    }
-    amp-soundcloud{
-      margin-bottom: 1rem;
-    }
-    .concept::after {
-      content: 'CONCEPT';
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        padding: 0.25rem 0.25rem 0.25rem 0.5rem;
-        background: rgba(61,62,64,0.4);
-        color: #fff;
-        font-size: 0.66em;
-        font-weight: lighter;
-        letter-spacing: 0.2rem;
-        line-height: 1;
-    }
-
-    .section-music{
-      max-width: 320px;
-    }
-    .projects{
-      background-size: contain;
-      background-position: right top;
-      background-repeat: no-repeat;
-      position: relative;
-      height: calc(100vh - 12vmin - 0.9rem);
-      border-bottom: 0.9rem solid #fff;
-    }
-    .projects.ex1{
-       height: calc(100vh - 12vmin - 0.9rem);
-       background-position: right top;
-    }
-    .ex1{
-      background-image: url("img/scottvincent.png");
-    }
-    .ex2{
-      background-image: url("img/mediasonar.png");
-    }
-    .ex3{
-      background-image: url("img/diply.png");
-    }
-    .ex4{
-      background-image: url("img/baitclick.png");
-    }
-    .ex6{
-      background-image: url("img/g2po.png");
-    }
-    .project-info{
-      background: rgba(255,255,255,0.8);
-      max-width: 768px;
-      position: absolute;
-      bottom: 0;
-      padding: 1rem 1.5rem;
-      border: 1rem solid #fff;
-      border-bottom: 0;
-      
-    }
-    .project-info h1{
-      font-size: 7vmin;
-    }
-    .project-info p a, .story-info p a, .branding-info p a, .section-text p a{
-      text-decoration: none;
-      border-bottom: 2px dotted #4285f4;
-      padding-bottom: 2px;
-      margin-bottom: -2px;
-    }
-    .bottom-nav{
-      
-      display: block;
-      max-width: 1024px;
-      margin-bottom: 1rem;
-      clear: both;
-    }
-    .bottom-nav:after {
-      visibility: hidden;
-      display: block;
-      content: "";
-      clear: both;
-      height: 0;
-    }
-    .bottom-nav a, .resume-download{
-      color: rgba(0,0,0,0.5);
-      padding: 1rem;
-      float: left;
-      text-decoration: none;
-      padding: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.125em;
-    }
-    .bottom-nav a:hover{
-      color: #fff;
-    }
-    .resume-download{
-      border: 1px solid rgba(0,0,0,0.5);
-      padding: 0.666rem 1rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    .resume-download:hover{
-      color: #fff;
-      border: 1px solid #fff;
-    }
-    .bottom-nav a:last-child{
-      float: right;
-    }
-    .print{
-      align-items: flex-end;
-      border-bottom: 0.4rem solid #000;
-      padding-bottom: 1rem;
-      display: none;
-    }
-    .print-header-left{
-      flex: 1;
-      background-image: url("sv-logo-bw.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 215px;
-      height: 150px;
-      content: url("sv-logo-bw.png");
-    }
-    .print-header-right{
-      flex: 2;
-    }
-    .print .city{
-      font-size: 12px;
-      padding-bottom: 0;
-    }
-    .print-disclaimer {
-      display: block;
-      border: 0.2rem dotted rgba(61,62,64,0.2);
-      padding: 0.5rem;
-      text-align: center;
-    }
-    .print-disclaimer h4{
-      margin: 0;
-      color: rgba(61,62,64,0.6);
-    }
-    .print-disclaimer h4 span{
-      color: #000;
-    }
-    .print-contact{
-      text-align: right;
-      margin-top: 1rem;
-      color: #000;
-    }
-
-    /*---------------------- Phone Styles -------------------*/
-    @media (max-width: 960px){
-      .education, .experience, .examples{
-        display: block;
-        margin-right: 0.5rem;
-      }
-      figure, figure + figure{
-        display: block;
-        width: inherit;
-        margin-left: 0;
-        margin-right: 0;
-      }
-      .examples figure{
-        min-width: 0;
-      }
-      .projects, .projects.ex1{
-        background-attachment: initial;
-        height: auto;
-        background-position: top center;
-        padding-top: 40vw;
-        background-size: contain;
-      }
-      .project-info{
-        position: relative;
-      }
-    }
-    @media (max-width: 768px){
-      .flex-container{
-        display: block;
-        height: auto;
-        min-height: 100vh;
-      }
-      .left-container{
-        width: auto;
-      }
-      .right-container{
-        width: auto;
-        height: auto;
-        max-height: none;
-      }
-      nav ul{
-        font-size: 1rem;
-        border-bottom: 1rem solid #fff;
-       
-      }
-      nav ul li{
-        display: inline-block;
-      }
-      .contact-toggle{
-        display: inline-block;
-      }
-      .contact{
-        height: 0;
-      }
-      #contact:target .contact{
-        height: auto;
-      }
-      .panel, #branding:target .story, #web:target .story, #music:target .story{
-        height: 0;
-        overflow: hidden;
-
-      }
-      .panel, 
-      #branding:target .branding,
-      #web:target .web,
-      #music:target .music,
-      .story{
-        max-height: none;
-        width: 100%;
-        position: relative;
-      }
-      #branding:target .branding,
-      #web:target .web,
-      #music:target .music,
-      .story{
-        height: auto;
-        overflow: initial;
-      }
-      .section-container{
-        padding: 1rem 0;
-      }
-      .sticky-header{
-        position:relative;
-        padding: 0 1rem;
-      }
-      .education, .experience, .examples{
-        margin-left: 0.5rem;
-      }
-      .projects, .projects.ex1{
-        padding-top: 50vw;
-      }
-      .project-info{
-        border-left: 0;
-        border-right: 0;
-      }
-      .section-text{
-        padding: 1rem;
-        border-left: 0;
-        border-right: 0;
-      }
-      .section-container > h3{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
-      h3{
-        font-size: 5vmin;
-      }
-      .resume-download{
-        margin-left: 0.5em;
-      }
-      .bottom-nav a{
-        font-size: 0.8rem;
-      }
-    }
-    @media print{
-      .no-print{
-        display: none;
-      }
-      .print{
-        display: flex;
-        position: relative;
-        left: 0;
-      }
-      
-      *{
-        background: transparent;
-      }
-      html, body{
-        width: 768px;
-        max-width: 100%;
-        height: auto;
-        max-height: auto;
-        font-size: 12px;
-      }
-      .print-header-left{
-        content: url("sv-logo-bw.png");
-        max-width: 180px;
-        max-height: 125px;
-      }
-      .print-header-right{
-        max-height: 125px;
-      }
-      .left-container{
-        display: none;
-      }
-      .right-container{
-        height: auto;
-        max-height: none;
-        overflow: visible;
-      }
-      .panel, 
-      #contact:target .story, 
-      #branding:target .story, 
-      #web:target .story, 
-      #music:target .story, 
-      #branding:target .branding,
-      #web:target .web,
-      #music:target .music,
-      .story{
-        display: block;
-        overflow: visible;
-        height: auto;
-        opacity: 1;
-        page-break-inside: avoid;
-      }
-      .story, .web{
-        page-break-after: auto;
-      }
-      h1{
-        font-size: 24px;
-        padding: 0;
-      }
-      h3{
-        font-size: 18px;
-      }
-      h4{
-        font-weight: normal;
-      }
-      .sticky-header, h1.sticky-header{
-        position: relative;
-        font-size: 36px;
-        padding: 1rem 0;
-        display: block;
-      }
-      .resume-download{
-        display: none;
-      }
-      .bottom-nav{
-        display: none;
-      }
-      .section-container{
-        padding: 0rem;
-      }
-      .section-container > h3{
-        padding: 0;
-      }
-      .section-text{
-        padding: 0;
-        border: 0;
-        margin: 0;
-        max-width: none;
-      }
-      .projects, .projects.ex1{
-        height: auto;
-        padding: 0;
-      }
-      .project-info{
-        position: relative;
-        max-width: none;
-        border: none;
-        padding: 0;
-        page-break-inside: avoid;
-      }
-      .project-info h1{
-        font-size: 18px;
-      }
-      .project-info p a, .story-info p a, .branding-info p a, .section-text p a, .examples a{
-        color: inherit;
-        border: 0;
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-      .education, .experience, .examples{
-        display: flex;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        width: 100%;
-        max-width: none;
-        page-break-inside: avoid;
-      }
-      figure{
-        display: inline-block;
-        box-sizing: border-box;
-        page-break-before: auto;
-        color: inherit;
-      }
-      figure amp-img{
-        display: none;
-      }
-      .experience figure, .education figure{
-        margin: 0.25rem 0.5rem 0.25rem 0;
-        vertical-align: top;
-        display: inline-block;
-      }
-      .logos{
-        display: none;
-      }
-      .disc{
-        display: none;
-      }
-      .disc img, .disc amp-img{
-        display: none;
-      }
-      .examples.disc figure{
-        min-width: 21%;
-        margin: 0.25rem 0.5rem 0.25rem 0;
-      }
-    }
-  </style>
-
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-
- 
-</head>
-<body>
-<div class="print">
-  <div class="print-header-left">
-  </div>
-  <div class="print-header-right">
-    <div class="print-disclaimer"><h4>This document was generated from a webpage.<br>Visit <span>www.scottvincent.ca</span> to view complete portfolio &amp; examples.</h4></div>
-    <div class="print-contact">
-      <h3>contact@scottvincent.ca</h3>
-      <h3>519.694.5254</h3>
-      <div class="city">LONDON, ONTARIO, CANADA</div>
-    </div>
-  </div>
-</div>
-<div id="story">
-<div id="web">
-<div id="branding">
-<div id="music">
-<div id="contact">
-
-<div class="flex-container">
-    <div class="left-container">
-      <header>
-        <nav>
-          <a href="index.html">
-            <amp-img class="logo" layout="responsive" src="sv-logo-colour.png" width="480" height="352" alt="Scott Vincent Design"></amp-img>
-          </a>
-          <ul>
-            <li><a href="#story" class="bottom-click">Story</a></li>
-            <li><a href="#web" class="bottom-click">Web Projects</a></li>
-            <li><a href="#branding" class="bottom-click">Branding</a></li>
-            <li><a href="#music" class="bottom-click">Music</a></li>
-            <li class="contact-toggle"><a href="#contact" class="bottom-click">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class="contact">
-          <div class="contact-info">contact@scottvincent.ca</div>
-          <div class="city">LONDON, ONTARIO, CANADA</div>
-          <div class="social">
-            <a href="http://ca.linkedin.com/pub/scott-vincent/3a/49b/596" target="_blank">LinkedIn</a> &nbsp;&nbsp;
-            <a href="https://twitter.com/CmdOptEsc" target="_blank">Twitter</a> &nbsp;&nbsp;
-            <a href="http://www.github.com/scottvincent" target="_blank">Github</a> &nbsp;&nbsp;
-            <a href="http://www.instagram.com/scott.v" target="_blank">Instagram</a>
-          </div>
-          <footer>
-            &copy; 2017. All Rights Reserved 
-          </footer>
-      </div> 
-    </div>
-    <div class="right-container" id="right-container">
-      <div id="top-scroll"></div>
-      <div class="panel story">
-        <div class="section-container">
-          <h1 class="sticky-header">Story</h1>
-          
-          <div class="section-text">
-            <h3>Front End Designer with work seen on over 1 Billion pageviews. (Yep, Billion)</h3>
-            <p>Experienced in graphic design, user interfaces, front end development, product design, project management, quality assurance.  I want the users of the product to love the results as much as I do. I believe putting care into the finest details along the way results in a final product that exceeds expectations.</p>
-            
-            <p>In high school I started to get into Adobe Photoshop, Final Cut Pro and went into a 2 year TV Broadcasting program. At the same time as being apart of the daily live news program, I was gaining more experience in live auditorium audio and lighting systems in a theatre setting. The passion for video shooting &amp; editing almost landed me in TV Broadcasting, but at the last minute I decided to try something new and go into Multimedia Design &amp; Production at <a href="https://www.fanshawec.ca/" target="_blank">Fanshawe College</a>. After completing the two year diploma I got accepted into Music Industry Arts, and took my love of music to the studio setting. I've been lucky enough to have learned from some talented professionals, gaining valuable knowledge. </p>
-
-            <p>During my professional career I was a part of many projects in a wide variety of industries. Staying on top of current web trends and technology has been the key to continued success. I have experience with languages and frameworks such as HTML5, CSS, Javascript, JQuery, <a href="http://www.lesscss.org" target="_blank">LESS</a>, <a href="http://sass-lang.com/" target="_blank">SASS</a>, <a href="http://ampproject.org/" target="_blank">AMP</a>, <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>, <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>, <a href="https://material.google.com/" target="_blank">Google Material Design</a>, &amp; <a href="http://angular.io/" target="_blank">AngularJS</a>. Speed and proficiency in programs such as <a href="http://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>, <a href="http://www.adobe.com/products/photoshop.html" target="_blank">Adobe Photoshop</a>, <a href="http://www.avid.com/pro-tools" target="_blank">Avid Pro Tools</a>, &amp; <a href="http://www.apple.com/logic-pro" target="_blank">Apple Logic Pro</a>.</p>
-
-            <p>Being able to do anything that is necessary in a project gives me the flexibility to keep the job fresh and interesting.</p>
-          </div>
-            
-
-            <h3>Experience</h3>
-            <div class="experience">
-              <figure>
-                <h3>tbk Creative</h3>
-                <h4>Intermediate Front End Developer</h4>
-                <figcaption>11/2016 - Present</figcaption>
-                <p>London, ON</p>
-                <p>Build front end designs, interactive elements, and accessible web pages.</p>
-              </figure>
-              <figure>
-                <h3>IES Group Inc.</h3>
-                <h4>Graphic / Web / Product Designer, UI/UX Lead, Front End Developer</h4>
-                <figcaption>4/2011 - 10/2016</figcaption>
-                <p>London, ON</p>
-                <p>Design &amp; develop web application interfaces, user experience, logo illustration, branding materials, &amp; marketing collateral.</p>
-              </figure>
-              <figure>
-                <h3>OUR Coffee News</h3>
-                <h4>Graphic / Web Designer</h4>
-                <figcaption>1/2009 - 7/2011</figcaption>
-                <p>St. Thomas, ON</p>
-                <p>Update and maintain website, Create ad samples to be placed in the weekly restaurant publication. Setup and print editions with one colour process.</p>
-              </figure>
-              <figure>
-                <h3>Stiches Above</h3>
-                <h4>CNC Machine Operator</h4>
-                <figcaption>6/2005 - 12/2008</figcaption>
-                <p>London, ON</p>
-                <p>A multi-head CNC machine operator for a custom embroidery company. The job consisted of unpacking, prepping, and embroidering items, such as hats, coats, &amp; shirts.</p>
-              </figure>
-            </div>
-
-            <h3>Education</h3>
-            <div class="education">
-              <figure>
-                <h3>Fanshawe College</h3>
-                <h4>Music Industry Arts</h4>
-                <figcaption>2008 - 2010</figcaption>
-                <ul>
-                  <li>School of Contemporary Media Diploma</li>
-                  <li>2009 MIA Award, Best Performance</li>
-                </ul>
-              </figure>
-              <figure>
-                <h3>Fanshawe College</h3>
-                <h4>Multimedia Design &amp; Production</h4>
-                
-                <figcaption>2006 - 2008</figcaption>
-                <ul>
-                  <li>School of Contemporary Media Diploma</li>
-                </ul>
-              </figure>
-              <figure>
-                <h3>H.B. Beal Secondary School</h3>
-                <figcaption>2002 - 2006</figcaption>
-                <ul>
-                  <li>OSSD Diploma, Ontario Scholar</li>
-                  <li>2 year Television Broadcasting</li>
-                  <li>2006 Most Co-operative Student Award</li>
-                  <li>2005 Skills Canada Video Challenge, Ontario Bronze Medal</li>
-                </ul>
-              </figure>
-            </div>
-
-            <a href="pdf/Scott-Vincent-Designer-Resume.pdf" target="_blank" class="resume-download">Download PDF Version</a>
-
-            <div class="bottom-nav">
-              <p>
-                <a href="#web" class="bottom-click">Next: Web Projects</a>
-              </p>
-            </div>
-        </div>
-      </div>
-
-      <div class="panel web">
-        <div class="section-container">
-          <h1 class="sticky-header">Web Projects</h1>
-          <div class="projects ex1">
-            <div class="project-info">
-              <h1>Scott Vincent Design</h1>
-
-              <p>The site you're currently on is an exercise in lightweight web design. Utilizing <a href="https://www.ampproject.org/" target="_blank">Google's Accelerated Mobile Pages</a> guidelines, it ensures incredibly quick page load times. AMP is a validation specification that combats the bloated and inconsiderate web. Currently it's become commonplace to add large libraries and heavy dependancies to accomplish fairly simple tasks. This is about getting down to what really is the problem you are trying to solve with a website, without punishing users with data and loading times.</p>
-
-              <p>This site loads less than <b>500KB</b> onto your device to deliver all its information and imagery. Along with the shear speed in which it loads, it still takes into consideration the browser size and device type to deliver a responsive user friendly experience.</p>
-
-            </div>
-          </div>
-          <div class="projects ex2">
-            <div class="project-info">
-              <h1>Media Sonar</h1>
-
-              <p>Media Sonar is a social media monitoring tool used for public safety and law enforcement. I was a part of the project from 2013 to 2016. After working on the first version of the application briefly in 2013, I was brought on as the Lead Designer for the version 2 refresh at the end of 2014. Prototyping, designing, and styling the front-end for a positive user experience.</p>
-
-              <p>An <a href="https://angular.io" target="_blank">AngularJS</a> web app, <a href="https://getbootstrap.com" target="_blank">Bootstrap 3</a> was the base styling framework used to build it fully responsive to fit any screen size. Using <a href="https://material.google.com" target="_blank">Google's Material Design Guidelines</a> as a starting point, eventually the design language transformed away from that core to meet the needs of the business. Utilizing <a href="http://lesscss.org/" target="_blank">LESS</a> css, I created a variable styling structure that allows multiple colour themes for users to switch between, as well as modular components for fast prototyping and delivery.</p>
-
-            </div>
-          </div>
-          <div class="projects ex3">
-            <div class="project-info">
-              <h1>Diply</h1>
-              
-              <p>Diply was an entertainment website that I worked on from 2013 to the end of 2014. Created initially as a online product showcase, it morphed into articles to be shared on social media.</p>
-
-              <p>Half of the 2 man team that built the initial site with <a href="https://getbootstrap.com" target="_blank">Bootstrap 3</a>, and leveraging <a href="http://lesscss.org/" target="_blank">LESS</a> css. Diply was an <a href="https://angular.io" target="_blank">Angular</a> web application with a custom content management system. I was the Lead UI Designer during the site's first year, responsible for prototyping, front-end styling, and user experience. From launch over the next year I was there, those pages were viewed over 1 billion times.</p>
-            
-            </div>
-          </div>
-         
-          
-          <div class="projects ex6">
-            <div class="project-info">
-              <h1>G2PO</h1>
-
-              <p>A gaming video site that gave users options to search and follow video creators or specific game titles and view videos on the site. I was on the team as a designer and a front end developer through the evolution of two distinct versions in 2011 and 2014. </p>
-
-              <p>Responsive for mobile web use, built with <a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap 2</a> and C# .NET.</p>
-
-            </div>
-          </div>
-           <div class="projects ex4">
-            <div class="project-info">
-              <h1>Baitclick</h1>
-
-              <p>In response to the experience in looking behind the curtain of social sharing methods, a desire to build something to stand up to the clickbait machine was formed. A site where you paste links that pose a question, spoil the title, and share that insight with your friends. Saving them from the temptation to click on those links. Practicing simple user experience with a unique, fun idea was the goal after years of working on complicated, serious applications.</p>
-
-              <p>Co-founder of this 2 man project not released to the public yet, this site is built with <a href="http://meanjs.org/" target="_blank">MEAN.js</a> framework along with <a href="https://getbootstrap.com" target="_blank">Bootstrap 3</a>, and <a href="http://lesscss.org/" target="_blank">LESS</a> css. Features include Day/Night modes, automatic image creation, and mobile specific UI.</p>
-
-            </div>
-          </div>
-          <div class="bottom-nav">
-              <p>
-                <a href="#story" class="bottom-click">Previous: Story</a>
-                <a href="#branding" class="bottom-click">Next: Branding</a>
-              </p>
-            </div>
-        </div>
-      </div> 
-
-      <div class="panel branding">
-        <div class="section-container">
-          <h1 class="sticky-header">Branding</h1>
-          <div class="section-text">
-            <h3>One of my favourite activities is to think about branding.</h3>
-            <p>When a major brand makes a change, I'm usually disecting what they've done and why. I will read <a href="http://www.underconsideration.com/brandnew/" target="_blank">branding blogs</a> daily to see what companies are doing and what the design community thinks of current trends. I have such an attention to detail, I usually pick apart when brands are being misused in the wild or if they're nailing it with little fanfare.</p>
-            <p>I enjoy designing &amp; constructing new things in <a href="http://www.adobe.com/products/illustrator.html" target="_blank">Adobe Illustrator</a>, whether it is for startups, bands, or even recreational sports teams. The <span class="no-print">items below are a</span> collection of logos I've created, some turned into large companies, some never got off the ground, and some of these were created and never used.</p>
-            <p class="no-print">Also below are a couple of branding guide PDFs I created to help with styling that I was developing at the time. Using the existing Media Sonar logo that wasn't one of my creations and forming a brand around it. The second one for Pathogent, a project that didn't proceed further than the concept stage.</p>
-
-          </div>
-          
-          
-          <h3 class="no-print">Logo Illustration</h3>
-            <div class="examples logos">
-              <figure>
-                <amp-img layout="responsive" src="img/logos/diply.png" width="960" height="560" alt="Diply"></amp-img>
-              </figure>
-              <figure>
-                <amp-img layout="responsive" src="img/logos/g2po.png" width="960" height="560" alt="G2PO"></amp-img>
-              </figure>
-              <figure>
-                <amp-img layout="responsive" src="img/logos/violetfuse.png" width="960" height="560" alt="Violet Fuse"></amp-img>
-              </figure>
-              <figure>
-                <amp-img layout="responsive" src="img/logos/fifty-one.png" width="960" height="560" alt="Fifty-One"></amp-img>
-              </figure>
-              
-              <figure>
-                <amp-img layout="responsive" src="img/logos/baitclick.png" width="960" height="560" alt="Baitclick"></amp-img>
-              </figure>
-              
-              <figure>
-                <amp-img layout="responsive" src="img/logos/askthetop.png" width="960" height="560" alt="Ask The Top"></amp-img>
-              </figure>
-              <figure>
-                <amp-img layout="responsive" src="img/logos/dsh.png" width="960" height="560" alt="Duelling Sledgehammers"></amp-img>
-              </figure>
-              <figure class="concept">
-                <amp-img layout="responsive" src="img/logos/hubspout.png" width="960" height="560" alt="Hub Spout"></amp-img>
-              </figure>
-              <figure class="concept">
-                <amp-img layout="responsive" src="img/logos/pathogent.png" width="960" height="560" alt="Pathogent"></amp-img>
-              </figure>
-              <figure class="concept">
-                <amp-img layout="responsive" src="img/logos/iesgroup.png" width="960" height="560" alt="IES Group"></amp-img>
-              </figure>
-              <figure class="concept">
-                <amp-img layout="responsive" src="img/logos/umpire.png" width="960" height="560" alt="Umpire"></amp-img>
-              </figure>
-              <figure class="concept">
-                <amp-img layout="responsive" src="img/logos/tagdrone.png" width="960" height="560" alt="Tag Drone"></amp-img>
-              </figure>
-              <figure>
-                <amp-img layout="responsive" src="img/logos/radboots.png" width="960" height="560" alt="Radboots"></amp-img>
-              </figure>
-            </div>
-            <h3 class="no-print">Branding Guide Examples</h3>
-          <div class="examples logos">
-            <figure class="concept">
-              <h3>Media Sonar Spec Branding Guide</h3>
-              <a target="_blank" href="pdf/Media-Sonar-Brand-Identity-Guidelines.pdf"><amp-img layout="fixed" src="img/Media-Sonar-Brand.png" width="164" height="232" alt="Media Sonar Spec Brand Guide"></amp-img><br>View PDF</a>
-            </figure>
-            <figure class="concept">
-              <h3>Pathogent Styleguide</h3>
-              <a target="_blank" href="pdf/Pathogent-Style-Guide.pdf"><amp-img layout="fixed" src="img/Pathogent-Brand.png" width="266" height="205.7" alt="Pathogent Brand Guide"></amp-img><br>View PDF</a>
-            </figure>
-          </div>
-          <div class="bottom-nav">
-              <p>
-                <a href="#web" class="bottom-click">Previous: Web Projects</a>
-                <a href="#music" class="bottom-click">Next: Music</a>
-              </p>
-            </div>
-        </div>
-      </div>  
-
-      <div class="panel music">
-        <div class="section-container">
-          <h1 class="sticky-header">Music</h1>
-          <div class="section-text">
-            <h3>Audio Engineer, Music Producer, &amp; Guitarist</h3>
-            <p>Music has always been a part of my life, starting on guitar at 10 years old, I would go on to play in the bands <a href="http://www.violetfuse.com" target="_blank">Violet Fuse</a> &amp; <a href="http://www.duellingsledgehammers.com" target="_blank">Duelling Sledgehammers</a>.</p>
-            <p>I graduated from Music Industry Arts at Fanshawe College in 2010, gaining proficiency in <a href="http://www.avid.com/pro-tools" target="_blank">Avid Pro Tools</a>, Avid D-Command interface, analog recording consoles, <a href="http://www.apple.com/ca/logic-pro/" target="_blank">Logic Pro</a>, and music production techniques.</p>
-            <p class="no-print">Listed below are my music production credits.</p>
-          </div>
-          <h3 class="no-print">Discography</h3>
-          <div class="examples disc">
-            
-            <figure>
-              <amp-img layout="responsive" src="img/VF2.jpg" width="250" height="250" alt="Another Hello - EP"></amp-img>
-              <h3>Violet Fuse</a></h3>
-              <h4><a href="http://www.violetfuse.com" target="_blank">Another Hello - EP</a></h4>
-              <figcaption>2015</figcaption>
-              <p>Engineer, Producer, Mixer, Mastering Engineer, Co-writer, Guitar. <a href="https://itunes.apple.com/ca/album/another-hello-ep/id1049398769" target="_blank">iTunes</a></p>
-            </figure>
-            <figure>
-              <amp-img layout="responsive" src="img/tomwoods.jpg" width="250" height="250" alt="Still Not Sober"></amp-img>
-              <h3>Tom Woods</h3>
-              <h4><a href="https://tomwoods.bandcamp.com/releases" target="_blank">Still Not Sober</a></h4>
-              <figcaption>2015</figcaption>
-              <p>Mastering Engineer</p>
-            </figure>
-            <figure>
-              <amp-img layout="responsive" src="img/ggd2.jpg" width="250" height="250" alt="Buen Dios Maldito!"></amp-img>
-              <h3>Good God DAMN!</h3>
-              <h4><a href="https://goodgoddamn.bandcamp.com/album/buen-dios-maldito" target="_blank">Buen Dios Maldito!</a></h4>
-              <figcaption>2013</figcaption>
-              <p>Mastering Engineer</p>
-            </figure>
-            <figure>
-              <amp-img layout="responsive" src="img/demos.png" width="250" height="250" alt="Demos"></amp-img>
-              <h3>The Days</h3>
-              <h4>Demos</h4>
-              <figcaption>2012</figcaption>
-              <p>Engineer, Mixer, Mastering Engineer</p>
-            </figure>
-            <figure>
-              <amp-img layout="responsive" src="img/demos.png" width="250" height="250" alt="Demos"></amp-img>
-              <h3>The Drop Pockets</h3>
-              <h4>Demos</h4>
-              <figcaption>2012</figcaption>
-              <p>Engineer, Mixer</p>
-            </figure>
-            <figure>
-              <amp-img layout="responsive" src="img/grinch.jpg" width="250" height="250" alt="You're a Mean One Mr. Grinch"></amp-img>
-              <h3>Violet Fuse</h3>
-              <h4><a href="http://www.violetfuse.com">You're a Mean One Mr. Grinch</a></h4>
-              <figcaption>2011</figcaption>
-              <p>Engineer, Producer, Mixer, Mastering Engineer, Guitar</p>
-            </figure>
-            <figure>
-              <amp-img layout="responsive" src="img/ggd1.jpg" width="250" height="250" alt="Good God DAMN!"></amp-img>
-              <h3>Good God DAMN!</h3>
-              <h4><a href="https://goodgoddamn.bandcamp.com/album/good-god-damn" target="_blank">Good God DAMN!</a></h4>
-              <figcaption>2010</figcaption>
-              <p>Mastering Engineer</p>
-            </figure>
-            <figure>
-              <amp-img layout="responsive" src="img/VF1.jpg" width="250" height="250" alt="Violet Fuse"></amp-img>
-              <h3>Violet Fuse</h3>
-              <h4><a href="http://www.violetfuse.com">Violet Fuse</a></h4>
-              <figcaption>2010</figcaption>
-              <p>Engineer, Producer, Mixer, Mastering Engineer, Co-writer, Guitar. Nominated for a Jack Richardson Music Award as well as London Music Award under the Rock Categories in 2010. <a href="https://itunes.apple.com/ca/album/violet-fuse/id392458344" target="_blank">iTunes</a></p>
-            </figure>
-
-          </div>
-          
-          <div class="bottom-nav">
-              <p>
-                <a href="#branding" class="bottom-click">Previous: Branding</a>
-                <a href="#story" class="bottom-click">Home: Story</a>
-              </p>
-            </div>
-        </div>
-      </div> 
-
-      
-    </div>
-
-  </div>
-
-  </div></div></div></div></div>
-  
- 
-  <amp-analytics type="googleanalytics" id="analytics1">
-    <script type="application/json">
-    {
-      "vars": {
-        "account": "UA-12946743-2"
-      },
-      "triggers": {
-        "trackPageview": {
-          "on": "visible",
-          "request": "pageview"
-        }
-      }
-    }
-    </script>
-  </amp-analytics>
-</body>
+			gtag('config', 'UA-12946743-2');
+		</script> -->
+	</body>
 </html>
