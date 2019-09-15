@@ -5,10 +5,6 @@
 @import 'type';
 @import 'nav';
 
-.page--temp {
-	display: none;
-}
-
 :root {
 	--body-bg: #{$theme-light};
 	--text-color: #{$theme-dark};
@@ -63,6 +59,8 @@
 	&--gradient {
 		--body-bg: linear-gradient(135deg,  #{$theme-red} 0%, #{$theme-orange} 100%);
 		--section-border: 0.125rem solid #fff;
+		--nav-link-color: #151515;
+		--nav-link-hover-color: #000;
 
 		hr {
 			border-color: #fff;
@@ -409,6 +407,8 @@ select {
 	color: var(--btn-hover-color, #{$btn-hover-color});
 	font-weight: 600;
 	line-height: 1.3;
+	letter-spacing: 0;
+	text-transform: none;
 	border-radius: 0;
 	border: 1px solid $btn-color;
 	border: 1px solid var(--btn-color, #{$btn-color});
@@ -438,11 +438,16 @@ blockquote {
 	font-style: italic;
 }
 
+ul.small {
+	@include small;
+}
+
 :target {
 	display: block;
 }
 
 :target.page {
+	display: block;
 	height: auto;
 }
 
@@ -452,6 +457,7 @@ blockquote {
 	height: 0;
 	overflow: hidden;
 	will-change: scroll-position;
+	display: none;
 
 	.page__container {
 		padding-bottom: 3rem;
