@@ -29,10 +29,6 @@ function mainPageChange() {
 	if( location.hash === '#web' ) {
 		if (elementsToShow !== null) { animateLoop() };
 	}
-
-	setTimeout(function() {
-		//window.scrollTo(0,0);
-	}, 1)
 }
 
 window.onload = function(e){
@@ -52,6 +48,9 @@ window.onload = function(e){
 	// If you come in on the home page without a :target, set to the first page.
 	if (!location.hash.length) {
 		location.hash = '#story';
+		setTimeout(function(){
+			window.scrollTo(0,0);
+		}, 2);
 	}
 
 	mainPageChange();
