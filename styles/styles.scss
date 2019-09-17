@@ -252,7 +252,6 @@ body {
 	color: var(--text-color, $text-color);
 	background: $body-bg;
 	background: var(--body-bg, $body-bg);
-	transition: all 0.3s ease-in-out;
 
 	&:after {
 		position: fixed;
