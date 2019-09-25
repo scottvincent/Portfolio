@@ -5,6 +5,7 @@
 var themeChooser = document.getElementById('themeSelect');
 var main = document.getElementById('main');
 var elementsToShow = document.getElementsByClassName('project-animate');
+var pageHeaders = document.getElementsByClassName('page__header__text');
 var pause = false;
 
 function setTheme(x) {
@@ -37,6 +38,8 @@ function mainPageChange() {
 	} else {
 		pause = true;
 	}
+
+	animateHeaders();
 }
 
 window.onload = function(e){
@@ -113,4 +116,11 @@ function isElementInViewport(el) {
 		(rect.top >= 0 &&
 			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
 		);
+}
+
+function animateHeaders() {
+	var i;
+	for (i = 0; i < pageHeaders.length; i++) {
+		pageHeaders[i].classList.add('page__header__text--animate');
+	}
 }

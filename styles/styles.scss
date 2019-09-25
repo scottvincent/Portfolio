@@ -501,6 +501,10 @@ ul.small {
 		display: inline-block;
 		color: $text-color;
 		color: var(--text-color, #{$text-color});
+
+		i {
+			font-style: normal;
+		}
 	}
 }
 
@@ -689,6 +693,13 @@ figcaption{
 		display: block !important;
 		height: auto !important;
 	}
+
+	.page__header__text {
+		i {
+			font-weight: 700 !important;
+			letter-spacing: -0.05em !important;
+		}
+	}
 }
 
 .projects {
@@ -782,5 +793,64 @@ figcaption{
 
 	.projects__example {
 		filter: grayscale(0) !important;
+	}
+}
+
+@keyframes animateWeight {
+	50% {
+		font-weight: 900;
+
+	}
+
+	100% {
+		font-weight: inherit;
+		letter-spacing: -0.050em;
+	}
+}
+
+.page__header__text--animate {
+	i {
+		font-weight: 100;
+		letter-spacing: 0.25em;
+		animation: animateWeight $timing--fast $cubic-bezier forwards;
+		& + i {
+			animation-delay: 0.1s;
+			& + i {
+				animation-delay: 0.2s;
+				& + i {
+					animation-delay: 0.3s;
+					& + i {
+						animation-delay: 0.4s;
+						& + i {
+							animation-delay: 0.5s;
+							& + i {
+								animation-delay: 0.6s;
+								& + i {
+									animation-delay: 0.7s;
+									& + i {
+										animation-delay: 0.8s;
+										& + i {
+											animation-delay: 1s;
+											& + i {
+												animation-delay: 1.1s;
+												& + i {
+													animation-delay: 1.2s;
+													& + i {
+														animation-delay: 1.3s;
+														& + i {
+															animation-delay: 1.4s;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
