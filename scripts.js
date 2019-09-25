@@ -5,6 +5,7 @@
 var themeChooser = document.getElementById('themeSelect');
 var main = document.getElementById('main');
 var elementsToShow = document.getElementsByClassName('project-animate');
+var pause = false;
 
 function setTheme(x) {
 	var i;
@@ -27,7 +28,14 @@ function mainPageChange() {
 	main.classList.add( location.hash.substr(1) );
 
 	if( location.hash === '#web' ) {
-		if (elementsToShow !== null) { animateLoop() };
+		if (elementsToShow !== null) {
+			pause = false;
+			animateLoop();
+		} else {
+			pause = true;
+		};
+	} else {
+		pause = true;
 	}
 }
 
@@ -75,7 +83,6 @@ var scroll = window.requestAnimationFrame ||
 		window.setTimeout(callback, 1000/60)
 	};
 
-
 function animateLoop() {
 	var i;
 	for (i = 0; i < elementsToShow.length; i++) {
@@ -86,10 +93,11 @@ function animateLoop() {
 		}
 	}
 
-	scroll(animateLoop);
+	if (pause) return;
+	setTimeout(function() {
+		scroll(animateLoop);
+	}, 250);
 }
-
-
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
